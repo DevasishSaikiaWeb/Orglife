@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer components {
+  .font-h1 {
+    @apply md:text-[7.5rem] uppercase md:leading-[7rem] text-[3rem] leading-[90%] font-bold tracking-tight;
+  }
+
+  .font-h2 {
+    @apply text-3xl font-semibold md:text-4xl;
+  }
+
+  .font-h3 {
+    @apply text-[2.5rem] font-semibold md:text-[4rem] uppercase text-balance;
+  }
+
+  .font-h4 {
+    @apply text-xl md:text-3xl font-medium;
+  }
+
+  .font-body {
+    @apply text-balance lg:max-w-[75%] text-[1.5rem] leading-[2rem];
+  }
+
+  .font-small-body {
+    @apply text-balance text-[1rem] leading-relaxed;
+  }
+}
+/* 
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2");
+} */
