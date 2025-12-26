@@ -393,4 +393,75 @@ export const PROJECT_DETAILS = {
       },
     ],
   },
+  Verity: {
+    title: "Verity",
+    subTitle: "This is a sample subtitle for the work details page.",
+    main_image:
+      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840611/Verity_Logo_pdydei.mp4",
+    main_content: {
+      title: "Racing Against Time When Every Hour Matters",
+      paragraphs: [
+        "In the wake of a devastating earthquake, immediate action is crucial to save lives and provide relief to those affected. Our collaboration with a leading humanitarian organization focused on rapid response efforts, ensuring that aid reached the most vulnerable communities swiftly and efficiently.",
+        "Through strategic brand development, we crafted a compelling narrative that highlighted the urgency of the situation and the organization's pivotal role in disaster response. By leveraging powerful storytelling and impactful visuals, we were able to convey the critical need for support and mobilize resources quickly.",
+      ],
+    },
+
+    sections: [
+      {
+        main_image:
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840625/IMAGE_2_mfdowt.jpg",
+
+        half_image: [
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840658/IMAGE_3_PRODUCT_1_VIDEO_lgtegs.mp4",
+        ],
+      },
+      {
+        second_image:
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840680/Image_6_Hedphone_zdputx.mp4",
+        half_image: [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840666/Verity_1_fcsbbg.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840667/Verity_2_lfppht.jpg",
+        ],
+      },
+      {
+        half_image: [
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840687/Image_7_phone_reel_kkpgsc.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840698/Image_8_Phone_Reel_ybuhad.mp4",
+        ],
+      },
+    ],
+  },
+  Wantasanta: {
+    title: "Wantasanta",
+    subTitle: "This is a sample subtitle for the work details page.",
+    main_image:
+      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840041/Wanta_Santa_L_ta52mr.mp4",
+    main_content: {
+      title: "Racing Against Time When Every Hour Matters",
+      paragraphs: [
+        "In the wake of a devastating earthquake, immediate action is crucial to save lives and provide relief to those affected. Our collaboration with a leading humanitarian organization focused on rapid response efforts, ensuring that aid reached the most vulnerable communities swiftly and efficiently.",
+        "Through strategic brand development, we crafted a compelling narrative that highlighted the urgency of the situation and the organization's pivotal role in disaster response. By leveraging powerful storytelling and impactful visuals, we were able to convey the critical need for support and mobilize resources quickly.",
+      ],
+    },
+
+    sections: [
+      {
+        main_image:
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840340/IMAGE_2_-_EARTH_TO_MARS_91_s3bwxi.mp4",
+
+        half_image: [
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840508/Image_3_Mangal_to_erth_92_cdgjtl.mp4",
+        ],
+      },
+      {
+        second_image:
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840552/IMAGE_7_-_FULL_SCREEN_-_ELLI_THE_3D_CHARACTER_xjkuc2.mp4",
+        half_image: [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840527/Image_4_Winter_wonderland_ngprnf.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840539/Image_5_Astronaut_moy3bb.jpg",
+        ],
+      },
+      ,
+    ],
+  },
 };
