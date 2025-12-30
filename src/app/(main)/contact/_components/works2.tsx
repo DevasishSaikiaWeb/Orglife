@@ -16,13 +16,13 @@ function Work2() {
               key={index}
             >
               {projects.map((project) => (
-                <div className="h-full w-full  group overflow-hidden">
+                <div className="h-full w-full  rounded-lg group overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={400}
                     height={225}
-                    className="object-cover h-full w-full  transition-all duration-500 ease-in-out group-hover:scale-110"
+                    className="object-cover h-full w-full rounded-lg transition-all duration-500 ease-in-out group-hover:scale-110"
                   />
                 </div>
               ))}
