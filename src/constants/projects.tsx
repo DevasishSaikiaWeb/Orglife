@@ -74,6 +74,20 @@ export const OTHER_PROJECTS = [
         "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739583/IMAGE_4._PHOTOGRAPHY_PROJECT_c9f8rw.png",
       title: "Project 1",
     },
+  ],
+  [
+    {
+      image:
+        "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
+      title: "Project 1",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dpblcamaw/image/upload/v1767076974/oMAGE_2_r1luqp.jpg",
+      title: "Project 1",
+    },
+  ],
+  [
     {
       image:
         "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
@@ -91,18 +105,8 @@ export const OTHER_PROJECTS = [
         "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739583/IMAGE_4._PHOTOGRAPHY_PROJECT_c9f8rw.png",
       title: "Project 1",
     },
-    {
-      image:
-        "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
-      title: "Project 1",
-    },
   ],
   [
-    {
-      image:
-        "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739583/IMAGE_4._PHOTOGRAPHY_PROJECT_c9f8rw.png",
-      title: "Project 1",
-    },
     {
       image:
         "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
@@ -111,18 +115,6 @@ export const OTHER_PROJECTS = [
     {
       image:
         "https://res.cloudinary.com/dpblcamaw/image/upload/v1767076974/oMAGE_2_r1luqp.jpg",
-      title: "Project 1",
-    },
-  ],
-  [
-    {
-      image:
-        "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739583/IMAGE_4._PHOTOGRAPHY_PROJECT_c9f8rw.png",
-      title: "Project 1",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
       title: "Project 1",
     },
   ],

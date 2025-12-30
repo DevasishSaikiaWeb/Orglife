@@ -9,9 +9,9 @@ function Work2() {
           {OTHER_PROJECTS.map((projects, index) => (
             <div
               className={
-                index === 2 || index === 0
-                  ? "grid grid-cols-1 md:grid-cols-3 gap-6"
-                  : "grid grid-cols-1 md:grid-cols-2 gap-6"
+                projects.length > 1
+                  ? "grid grid-cols-1 md:grid-cols-2 gap-6"
+                  : "grid grid-cols-1 md:grid-cols-1 gap-6"
               }
               key={index}
             >
