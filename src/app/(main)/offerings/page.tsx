@@ -1,8 +1,15 @@
 import { ContactForPartnership } from "@/components/contact-for-partnership";
-import { OFFERING_CARDS, OFFERING_DETAILS } from "@/constants/offerings";
+import {
+  FINAL_OFFERING_SECTION,
+  OFFERING_CARDS,
+  OFFERING_DETAILS,
+  PAGE_DETAILS_SUBTITLE,
+  PAGE_DETAILS_TITLE,
+} from "@/constants/offerings";
 import { OfferingCard } from "./_components/card";
 import { DetailsCard } from "./_components/details-card";
 import { PageDetails } from "./_components/page-details";
+import { Heading1 } from "@/components/heading";
 
 export default function OffetingsPage() {
   return (
@@ -27,6 +34,12 @@ export default function OffetingsPage() {
       {OFFERING_DETAILS.map((service) => (
         <DetailsCard key={service.title} {...service} />
       ))} */}
+
+      <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
+      <div className="space-y-8">
+        <OfferingCard {...FINAL_OFFERING_SECTION[0]} />
+        <DetailsCard {...FINAL_OFFERING_SECTION[0]} />
+      </div>
 
       <ContactForPartnership />
     </main>

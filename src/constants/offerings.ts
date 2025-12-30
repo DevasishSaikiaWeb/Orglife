@@ -3,6 +3,9 @@ export const PAGE_DETAILS_TITLE = "A powerpacked triad of services.";
 export const PAGE_DETAILS_SUBTITLE =
   "We’re set on a journey to explore the modern evolution of visual content. And our services cater to brands, organizations and.";
 
+export const PAGE_DETAILS_TITLE2 = "A powerpacked triad of services.";
+export const PAGE_DETAILS_SUBTITLE2 =
+  "Our expertise lies in creating compelling visual content that not only captures attention but also drives meaningful engagement and conversions.";
 // Offering cards
 export const OFFERING_CARDS = [
   {
@@ -140,6 +143,40 @@ export const OFFERING_DETAILS = [
       },
       {
         label: "Digital advertising, SEO and Automation planning",
+        isComingSoon: false,
+      },
+    ],
+  },
+];
+
+export const FINAL_OFFERING_SECTION = [
+  {
+    title: "Brand Foundation Design",
+    description: "Creating brand identities that resonate with audiences.",
+    action: {
+      label: "Book a Free Consultation",
+      href: "/offerings/brand-foundation-design",
+    },
+    img: "/images/demo1.webp",
+    list: [
+      {
+        label: "Brand identity design",
+        isComingSoon: false,
+      },
+      {
+        label: "Brand guidelines and manual",
+        isComingSoon: false,
+      },
+      {
+        label: "Market and audience research",
+        isComingSoon: false,
+      },
+      {
+        label: "Brand narrative and storytelling",
+        isComingSoon: false,
+      },
+      {
+        label: "Rebranding strategy",
         isComingSoon: false,
       },
     ],

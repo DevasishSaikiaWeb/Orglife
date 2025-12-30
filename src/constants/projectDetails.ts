@@ -104,7 +104,7 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766739453/IMAGE_2-Slider_video_INDIAN_ARMY_Photoshoot_-_Arunachal_slider_epueie.mp4",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767076974/oMAGE_2_r1luqp.jpg",
         half_image: [
           "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739579/IMAGE_3._TRAINING_WORKSHOP_hkoqrc.png",
         ],
@@ -160,7 +160,7 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766739908/IMAGE_9_Capt_uvqubk.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077377/IMAGE_9_Capt_yqqh6g.mp4",
       },
     ],
   },
@@ -316,7 +316,7 @@ export const PROJECT_DETAILS = {
         main_image:
           "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740216/2_MEA_Video_d5tgog.mp4",
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740276/Image_5_IDM_st0iyh.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767073167/Image_5_IDM_itthxf.jpg",
         half_image: [
           "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740246/Image_3_Laptop_ho3aae.jpg",
           "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740266/Image_4_Phone_gejto5.jpg",
@@ -409,23 +409,23 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840625/IMAGE_2_mfdowt.jpg",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767073439/IMAGE_2-_kggem3.mp4",
 
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840658/IMAGE_3_PRODUCT_1_VIDEO_lgtegs.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767073772/IMAGE_3_PRODUCT_VIDEO_de8mms.mp4",
         ],
       },
       {
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840680/Image_6_Hedphone_zdputx.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767074658/Image_6_Hedphone_mp8sj5.mp4",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840666/Verity_1_fcsbbg.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840667/Verity_2_lfppht.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767074236/Verity_1_etvqb4.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767074258/Verity_2_a0bgtw.jpg",
         ],
       },
       {
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840687/Image_7_phone_reel_kkpgsc.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767074534/Image_7_phone_reel_jlwqex.mp4",
           "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840698/Image_8_Phone_Reel_ybuhad.mp4",
         ],
       },

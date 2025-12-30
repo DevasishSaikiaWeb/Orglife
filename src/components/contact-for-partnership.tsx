@@ -33,20 +33,15 @@ export function ContactForPartnership() {
         </div>
       </div>
       <div className="flex-1">
-        <Image
-          src={"/images/work/demo.webp"}
-          alt="Contact for pa"
-          className="object-cover min-h-full min-w-full"
-          width={920}
-          height={1080}
-        />
-        {/* <video
-          src={"/WEBSITE-INVESTINTOMO.mp4"}
+        <video
+          src={
+            "https://res.cloudinary.com/dpblcamaw/video/upload/v1767080037/WEBSITE_-_INVEST_IN_TOMO_vqznjn.mp4"
+          }
           className="object-cover min-h-full min-w-full"
           autoPlay
           loop
           muted
-        /> */}
+        />
       </div>
     </section>
   );

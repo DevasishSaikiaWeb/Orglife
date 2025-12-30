@@ -38,7 +38,7 @@ export function DetailsCard({
             <Link href={action.href}>{action.label}</Link>
           </Button>
         </div>
-        <ul className="flex-3 divide-y divide-muted-foreground/60 border-y border-muted-foreground/60">
+        <ul className="flex-3 divide-y divide-muted-foreground/60 border-b border-muted-foreground/60">
           {list.map((item) => (
             <li
               key={item.label}
