@@ -5,10 +5,8 @@ import {
   PAGE_DETAILS_TITLE,
   PAGE_DETAILS_TITLE2,
 } from "@/constants/offerings";
-// import Tabs from "./tabs";
-// import Work from "./works";
 import Work2 from "./works2";
-import LogoAnimation from "@/components/text-image-card";
+import BrandsLogos from "@/components/BrandsLogos";
 
 export function PageDetails() {
   return (
@@ -19,7 +17,7 @@ export function PageDetails() {
       <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
       {/* <Tabs /> */}
       {/* <Work /> */}
-      <LogoAnimation />
+      <BrandsLogos />
     </section>
   );
 }

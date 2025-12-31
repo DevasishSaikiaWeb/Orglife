@@ -15,9 +15,9 @@ export function PageDetails() {
       />
 
       <div className="mt-20 flex flex-col gap-20">
-        {PROJECTS.map((data, index) => (
+        {PROJECTS.map((data) => (
           <div>
-            {data.image.includes(".mp4") ? (
+            {data.image.includes(".mp4") ? (  
               <video
                 src={data.image}
                 width={800}
