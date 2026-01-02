@@ -13,7 +13,7 @@ import { Heading1 } from "@/components/heading";
 
 export default function OffetingsPage() {
   return (
-    <main className="space-y-16 md:space-y-32 pt-32 sm:pt-64 max-w-368 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <main className="space-y-16 md:space-y-28 pt-32 sm:pt-64 max-w-368 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
       <PageDetails />
 
       {OFFERING_CARDS.map((service, index) => (
@@ -26,21 +26,13 @@ export default function OffetingsPage() {
         </div>
       ))}
 
-      {/* --- Old layout ---
-      {OFFERING_CARDS.map((service) => (
-        <OfferingCard key={service.title} {...service} />
-      ))}
-
-      {OFFERING_DETAILS.map((service) => (
-        <DetailsCard key={service.title} {...service} />
-      ))} */}
-
-      <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
+      <section>
+        <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
+      </section>
       <div className="space-y-8">
         <OfferingCard {...FINAL_OFFERING_SECTION[0]} />
         <DetailsCard {...FINAL_OFFERING_SECTION[0]} />
       </div>
-
       <ContactForPartnership />
     </main>
   );
