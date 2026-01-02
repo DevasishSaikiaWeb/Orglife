@@ -7,6 +7,7 @@ import {
 } from "@/constants/offerings";
 import Work2 from "./works2";
 import BrandsLogos from "@/components/BrandsLogos";
+import Work from "./works";
 
 export function PageDetails() {
   return (
@@ -16,8 +17,8 @@ export function PageDetails() {
 
       <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
       {/* <Tabs /> */}
-      {/* <Work /> */}
-      <BrandsLogos />
+      <Work />
+      {/* <BrandsLogos /> */}
     </section>
   );
 }
