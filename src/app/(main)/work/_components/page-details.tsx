@@ -6,7 +6,6 @@ import {
   PAGE_DETAILS_TITLE2,
 } from "@/constants/offerings";
 import Work2 from "./works2";
-import BrandsLogos from "@/components/BrandsLogos";
 import Work from "./works";
 
 export function PageDetails() {

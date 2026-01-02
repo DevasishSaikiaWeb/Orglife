@@ -2,14 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import {
-  motion,
-  useAnimationFrame,
-  useReducedMotion,
-  useMotionValue,
-} from "framer-motion";
-import DotGrid from "./ui/dots";
+import React from "react";
 
 type TextWithImageCardProps = {
   img: string;

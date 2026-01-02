@@ -11,7 +11,6 @@ function Work() {
               key={project.title}
               img={project.img}
               title={project.title}
-              squareImage={project.squareImage}
             />
           ))}
         </div>
