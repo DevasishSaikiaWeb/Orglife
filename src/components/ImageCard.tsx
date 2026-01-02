@@ -6,9 +6,10 @@ import React from "react";
 type TextWithImageCardProps = {
   img: string;
   title: string;
+  index: number;
 };
 
-export function ImageCard({ img, title }: TextWithImageCardProps) {
+export function ImageCard({ img, title, index }: TextWithImageCardProps) {
   return (
     <div
       id="project-image-wrapper"
@@ -27,7 +28,11 @@ export function ImageCard({ img, title }: TextWithImageCardProps) {
         />
       ) : (
         <Image
-          className="object-cover w-[50%] max-h-full h-auto transition-all duration-500 ease-in-out group-hover:scale-110"
+          className={` ${
+            index == 34
+              ? "scale-150 group-hover:scale-170"
+              : "group-hover:scale-110"
+          } object-cover w-[55%] max-h-full h-auto transition-all duration-500 ease-in-out group-hover:scale-110`}
           src={img}
           alt={`${title}`}
           height={450}
