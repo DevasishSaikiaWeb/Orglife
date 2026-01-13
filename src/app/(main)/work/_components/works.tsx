@@ -7,7 +7,7 @@ function Work() {
       {
         <div className="mt-8 mb-40 grid grid-cols-1 md:grid-cols-4 gap-8 gap-y-8">
           {Array.from({ length: 36 }).map((project, i) => (
-            <ImageCard key={i} img={`/logos/${i + 1}.png`} index={i} />
+            <ImageCard key={i} img={`/logos/${i + 1}.jpg`} index={i} />
           ))}
         </div>
       }

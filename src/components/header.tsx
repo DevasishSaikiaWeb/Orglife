@@ -22,10 +22,10 @@ const NAV_ITEMS: NavItemType[] = [
     label: "Work",
     href: "/work",
   },
-  {
-    label: "Up Comming",
-    href: "/upcomming",
-  },
+  // {
+  //   label: "Up Comming",
+  //   href: "/upcomming",
+  // },
   {
     label: "Contact Us",
     href: "/contact",
