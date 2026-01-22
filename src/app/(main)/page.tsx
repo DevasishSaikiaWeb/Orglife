@@ -4,6 +4,7 @@ import { CurrentProjectsSection } from "./_components/current-projects";
 import { HeroSection } from "./_components/hero";
 import { ProjectsSection } from "./_components/projects";
 import { TeamSection } from "./_components/team";
+import Memories from "./_components/Memories";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <div className="-mb-8 md:-mb-16"></div>
       <CurrentProjectsSection />
       <ProjectsSection />
+      <Memories />
       <BlogsSection />
       <ContactForPartnership />
     </main>
