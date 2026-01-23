@@ -54,7 +54,7 @@ export function ShowcaseColumnGrid({
          
          --- Solve the error --- */}
 
-        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col justify-between md:min-h-96">
+        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col gap-16 max-sm:gap-4 md:min-h-96">
           {typeof rightFirstHeader === "string" ? (
             <p className="uppercase font-heading text-[2.5rem] leading-10 font-semibold">
               {rightFirstHeader}
@@ -67,7 +67,7 @@ export function ShowcaseColumnGrid({
           </p>
         </div>
 
-        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col justify-between md:min-h-96">
+        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col gap-16 max-sm:gap-4 md:min-h-96">
           {typeof rightSecondHeader === "string" ? (
             <p className="uppercase font-heading text-wrap text-[2.5rem] leading-10 font-semibold">
               {rightSecondHeader}
@@ -80,7 +80,7 @@ export function ShowcaseColumnGrid({
           </p>
         </div>
 
-        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col justify-between md:min-h-96">
+        <div className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col gap-16 max-sm:gap-4 md:min-h-96">
           {typeof rightThirdHeader === "string" ? (
             <p className="uppercase font-heading text-[2.5rem] leading-10 font-semibold">
               {rightThirdHeader}
