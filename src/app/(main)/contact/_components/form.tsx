@@ -38,8 +38,8 @@ function Form() {
     ],
   };
   return (
-    <div className="w-1/2 flex flex-col gap-6">
-      <div className="grid grid-cols-2 gap-6">
+    <div className="w-1/2 max-sm:w-full flex flex-col gap-6">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
         <input
           type="text"
           className="border-white/60 focus:border-white border-1 outline-none h-10 px-4"

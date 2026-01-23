@@ -13,7 +13,7 @@ export function PageDetails() {
       />
 
       <div className="mt-20 flex flex-col md:flex-row gap-12 justify-between">
-        <div className=" flex flex-col gap-4 w-1/3 ">
+        <div className=" flex flex-col gap-4 w-1/3 max-sm:w-full">
           <div className="flex gap-4 items-start">
             <div className="w-6">
               <MapPinIcon className="inline-block w-6 h-6 mr-2 mt-3" />

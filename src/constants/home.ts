@@ -49,6 +49,7 @@ export const MEMORIES_SECTION_TITLE =
     "CREATING MEMORIES THROUGH LIVE EXPERIENCES.",
   MEMORIES_SECTION_SUBTITLE =
     "Orglife Studio along with its partner organisation Why Not Entertainment, an event-management powerhouse, design and curate grand event concepts, often for brands – from high-voltage music concerts to soul-stirring folk festivals. Every event we create is driven by a deep understanding of audience psychology and the urge for flawless execution at scale.";
+
 export const APPROACH_SECTION_TITLE = "AN APPROACH TO STRATEGIC CLARITY.",
   APPROACH_SECTION_SUBTITLE =
     "A strategic roadmap that aligns impact with financial success in 90 days.",
