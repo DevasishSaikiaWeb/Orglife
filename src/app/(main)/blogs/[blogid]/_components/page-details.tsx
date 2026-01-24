@@ -29,7 +29,9 @@ export function PageDetails({ data }: { data: Project_Details }) {
         />
       )}
 
-      <div className="mt-16 mb-20 w-full">{data?.content}</div>
+      <div className="mt-16 mb-20 w-full  text-justify text-[1rem] leading-relaxed max-w-4xl  mx-auto">
+        {data?.content}
+      </div>
     </section>
   );
 }

@@ -30,11 +30,11 @@ export const DETAILED_BLOGS = {
       "Objects in mirror are closer than they appear – Welcome to AI-powered Brand Identity",
     image: "/images/demo1.webp",
     content: (
-      <div className="flex flex-col gap-4 font-small-body ">
+      <div className="flex flex-col gap-4 ">
         <p>
           They say the mirror never lies. But here we are today, still trying to
           figure out what’s near and all that’s yet far away. Let’s put things
-          to context straight away.{" "}
+          to context straight away.
         </p>
         <p>
           In the macro view, from global giants to Indian startups and legacy
@@ -59,7 +59,7 @@ export const DETAILED_BLOGS = {
           people, not with them.
         </p>
 
-        <strong className="italic">
+        <strong className="italic my-6">
           That time is already behind us — even if many brands haven’t realised
           it yet.
         </strong>
@@ -78,7 +78,7 @@ export const DETAILED_BLOGS = {
           brand identity is not coming. It is already here — quietly reshaping
           how brands are born, experienced, and remembered.
         </p>
-        <strong className="italic">Welcome to the new ‘Living system’.</strong>
+        <strong className="italic my-6">Welcome to the new ‘Living system’.</strong>
 
         <p>A system that can:</p>
 
@@ -93,7 +93,7 @@ export const DETAILED_BLOGS = {
           This isn’t about replacing creativity. It’s about redefining what
           creativity looks like when intelligence enters the room.
         </p>
-        <strong className="italic">
+        <strong className="italic my-6">
           Now, why this shift feels inevitable?
         </strong>
 
@@ -123,7 +123,7 @@ export const DETAILED_BLOGS = {
           you respond.
         </p>
 
-        <strong className="italic">India: The Pandora’s AI Box</strong>
+        <strong className="italic my-6">India: The Pandora’s AI Box</strong>
 
         <p>
           Nowhere is this transformation more fascinating or more urgent than in
@@ -155,7 +155,7 @@ export const DETAILED_BLOGS = {
           The Indian AI-in-marketing market is growing at nearly 30% CAGR, not
           because it’s trendy — but because it works.
         </p>
-        <strong className="italic">The new role of brand custodians</strong>
+        <strong className="italic my-6">The new role of brand custodians</strong>
         <p>
           In an AI-powered branding world, the role of founders, marketers, and
           brand leaders is shifting.
@@ -178,7 +178,7 @@ export const DETAILED_BLOGS = {
           here to tag along as your most reliable partner in your business.
         </p>
 
-        <strong className="italic">Closer Than We Think</strong>
+        <strong className="italic my-6">Closer Than We Think</strong>
         <p>
           When brands hesitate today, it’s often because AI feels abstract,
           complex, and overwhelming.
@@ -195,7 +195,7 @@ export const DETAILED_BLOGS = {
     title: "The Emotional Core Still Matters",
     image: "/images/demo1.webp",
     content: (
-      <div className="flex flex-col gap-4 font-small-body ">
+      <div className="flex flex-col gap-4 ">
         <p>
           We are still figuring out what to call this piece of literature. This
           is not an article actually. It’s more of an admission, an
@@ -253,8 +253,8 @@ export const DETAILED_BLOGS = {
       "Case: “Not Just a Cadbury Ad” — How AI Turned India’s Festive Storytelling into a Hyper-Personalized Brand Success",
     image: "/images/demo1.webp",
     content: (
-      <div className="flex flex-col gap-4 font-small-body ">
-        <p>
+      <div className="flex flex-col gap-4  ">
+        <p className="0">
           Diwali is more than a festival in India — it’s a feeling, a collective
           heartbeat that pulses through every street, every home, every shop.
           Sprinkle that feeling with generosity, and suddenly an ad isn’t just
@@ -266,7 +266,7 @@ export const DETAILED_BLOGS = {
           campaign titled “Not Just a Cadbury Ad” — and what it teaches the
           world about the power of AI-enabled brand storytelling.
         </p>
-        <strong className="italic">
+        <strong className="italic my-6">
           Beyond Traditional Ads: A Personal Touch at Scale
         </strong>
         <p>
@@ -289,25 +289,23 @@ export const DETAILED_BLOGS = {
         <p>What was the effect?</p>
         <ul className="list-disc ml-5">
           <li>
-        
-           Over 1,800 local retailers across 260+ pin codes were
-            featured.{" "}
+            Over 1,800 local retailers across 260+ pin codes were featured.{" "}
           </li>
           <li>
-           The ad became hyper-relevant to each viewer, making people feel
+            The ad became hyper-relevant to each viewer, making people feel
             instantly seen and understood.
           </li>
           <li>
-          The campaign tagline — “When all of us support our local stores,
-            all of us can have a Happy Diwali” — became more than a line; it
-            became a participatory call to action.{" "}
+            The campaign tagline — “When all of us support our local stores, all
+            of us can have a Happy Diwali” — became more than a line; it became
+            a participatory call to action.{" "}
           </li>
         </ul>
         <p>
           In a market as vast and diverse as India, this level of
           personalization was unprecedented.
         </p>
-        <strong className="italic">
+        <strong className="italic my-6">
           AI as an Enabler of Emotional Brand Storytelling
         </strong>
         <p>
@@ -332,7 +330,7 @@ export const DETAILED_BLOGS = {
           overlooks small players.
         </p>
 
-        <strong className="italic">
+        <strong className="italic my-6">
           Scale Meets Relevance — The Future of Festive Branding
         </strong>
         <p>
@@ -361,7 +359,7 @@ export const DETAILED_BLOGS = {
           This is the essence of AI-enabled variation: content isn’t just
           different — it’s meaningfully different.
         </p>
-        <strong className="italic">Impact Beyond Visibility</strong>
+        <strong className="italic my-6">Impact Beyond Visibility</strong>
 
         <p>
           While specific sales figures from the campaign haven’t been publicly
@@ -392,7 +390,7 @@ export const DETAILED_BLOGS = {
           community values.
         </p>
 
-        <strong className="italic">
+        <strong className="italic my-6">
           Lessons for Marketers and Brand Builders
         </strong>
 
@@ -415,7 +413,7 @@ export const DETAILED_BLOGS = {
           — but the story was human. That’s where the brand magic happened.
         </p>
 
-        <strong className="italic">AI as a Tool for Inclusive Branding</strong>
+        <strong className="italic my-6">AI as a Tool for Inclusive Branding</strong>
 
         <p>
           The success of Cadbury’s Diwali campaign teaches us that AI isn’t just
