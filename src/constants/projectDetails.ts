@@ -260,14 +260,14 @@ export const PROJECT_DETAILS = {
 
   "Ministry Of External Affairs": {
     title: "Ministry Of External Affairs",
-    subTitle: "This is a sample subtitle for the work details page.",
+    subTitle:
+      "We designed visuals and narratives that spoke diplomacy and national affairs in color and form. ",
     main_image:
       "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740082/MEA_LOGO_ANIMATION_LOOP_c4qio7.mp4",
     main_content: {
-      title: "Racing Against Time When Every Hour Matters",
+      title: "Adapting and innovating along with time.",
       paragraphs: [
-        "In the wake of a devastating earthquake, immediate action is crucial to save lives and provide relief to those affected. Our collaboration with a leading humanitarian organization focused on rapid response efforts, ensuring that aid reached the most vulnerable communities swiftly and efficiently.",
-        "Through strategic brand development, we crafted a compelling narrative that highlighted the urgency of the situation and the organization's pivotal role in disaster response. By leveraging powerful storytelling and impactful visuals, we were able to convey the critical need for support and mobilize resources quickly.",
+        "Through thoughtful design and captivating content, we helped the Ministry communicate with clarity, impact, precision and elegance — making every message resonate on a national and global stage. It all started with the official ebook of the first-ever International Day of Yoga in 2015 titled ‘Celebrating the Journey to the Inner Self – International Day of Yoga’, followed by ‘A Trip to the Heart of Asia’ and ‘International Day of Yoga 2016’. A new concept for that time, the projects were challenging yet highly rewarding.",
       ],
     },
 
@@ -283,11 +283,9 @@ export const PROJECT_DETAILS = {
         ],
         content: [
           {
-            title: "Strategic Brand Development for Humanitarian Impact",
+            title: "Literature and communication packed as visual delight.",
             paragraphs: [
-              "Despite operating for a decade and delivering consistent results, Instant Aid faced a fundamental challenge: their vital work remained largely invisible. Operating under the radar meant missing critical opportunities for expansion precisely when credibility determines partnership potential.",
-              "Government officials and major supporters require proof of legitimacy before committing resources. Without established credibility markers, even the most effective organisations struggle to secure the partnerships that amplify their reach and deepen their impact.",
-              "When Instant Aid approached us, they carried the weight of a previous design process that had fallen short of expectations. Their website, brand materials, and social presence felt fragmented. This created a jarring disconnect between their life-saving capabilities and how they presented to the world. This misalignment left potential partners questioning their credibility, despite their proven track record of effective, evidence-based aid delivery.",
+              "Projects like the Namami Gange Program and Swacchh Bharat Abhiyaan, under the India Development Foundation of Overseas Indians gave us the opportunity to create engaging visual communication concepts to align the Ministry’s efforts with the dynamics of overseas Indians willing to participate in nation-building initiatives.",
             ],
           },
         ],
@@ -301,14 +299,14 @@ export const PROJECT_DETAILS = {
 
   "Group Landmark": {
     title: "Group Landmark",
-    subTitle: "This is a sample subtitle for the work details page.",
+    subTitle:
+      "We helped Group Landmark tell its story in multiple formats and across multiple global automobile brands that it represented. From creative communication strategies to everyday social content, we made sure every message reached its enthusiastic stakeholders across India.",
     main_image:
       "https://res.cloudinary.com/dpblcamaw/video/upload/v1766737584/Image_1_Logo_animation_t2bw89.mp4",
     main_content: {
-      title: "Racing Against Time When Every Hour Matters",
+      title: "We transformed ideas to marketable content.",
       paragraphs: [
-        "In the wake of a devastating earthquake, immediate action is crucial to save lives and provide relief to those affected. Our collaboration with a leading humanitarian organization focused on rapid response efforts, ensuring that aid reached the most vulnerable communities swiftly and efficiently.",
-        "Through strategic brand development, we crafted a compelling narrative that highlighted the urgency of the situation and the organization's pivotal role in disaster response. By leveraging powerful storytelling and impactful visuals, we were able to convey the critical need for support and mobilize resources quickly.",
+        "We had been with the brand for close to half a decade, in every step of the way, bringing ideas to life through videos. From shaping event concepts to executing cinematic shoots and producing high-impact promotional videos, we ensured every frame told the right story to its audience. We have created content for brands like Volkswagen, Mercedes and Honda on Landmark’s behalf, and our work captured the energy, innovation and personality of each of them, creating content that connected with audiences and drove engagement across different media platforms.",
       ],
     },
 
@@ -320,11 +318,10 @@ export const PROJECT_DETAILS = {
           "https://res.cloudinary.com/dpblcamaw/video/upload/v1766737846/Image_3_Grishma_Final-_kq2ocx.mp4",
         content: [
           {
-            title: "Strategic Brand Development for Humanitarian Impact",
+            title:
+              "Keeping the brand vibrant and engaging across social media.",
             paragraphs: [
-              "Despite operating for a decade and delivering consistent results, Instant Aid faced a fundamental challenge: their vital work remained largely invisible. Operating under the radar meant missing critical opportunities for expansion precisely when credibility determines partnership potential.",
-              "Government officials and major supporters require proof of legitimacy before committing resources. Without established credibility markers, even the most effective organisations struggle to secure the partnerships that amplify their reach and deepen their impact.",
-              "When Instant Aid approached us, they carried the weight of a previous design process that had fallen short of expectations. Their website, brand materials, and social presence felt fragmented. This created a jarring disconnect between their life-saving capabilities and how they presented to the world. This misalignment left potential partners questioning their credibility, despite their proven track record of effective, evidence-based aid delivery.",
+              "We helped the brand stay vibrant and connected on social media. From striking images to engaging motion graphics, and from everyday posts to festive greetings, we created content that captured attention and inspired audiences to communicate with the auto brands.",
             ],
           },
         ],
@@ -338,11 +335,9 @@ export const PROJECT_DETAILS = {
         ],
         content: [
           {
-            title: "Strategic Brand Development for Humanitarian Impact",
+            title: "Greeting audiences in unconventional ways.",
             paragraphs: [
-              "Despite operating for a decade and delivering consistent results, Instant Aid faced a fundamental challenge: their vital work remained largely invisible. Operating under the radar meant missing critical opportunities for expansion precisely when credibility determines partnership potential.",
-              "Government officials and major supporters require proof of legitimacy before committing resources. Without established credibility markers, even the most effective organisations struggle to secure the partnerships that amplify their reach and deepen their impact.",
-              "When Instant Aid approached us, they carried the weight of a previous design process that had fallen short of expectations. Their website, brand materials, and social presence felt fragmented. This created a jarring disconnect between their life-saving capabilities and how they presented to the world. This misalignment left potential partners questioning their credibility, despite their proven track record of effective, evidence-based aid delivery.",
+              "We helped the brand, especially its Volkswagen dealerships, to ensure that they didn’t just wish on Diwali and Halloween. They celebrated in 3D. From twinkling lights and fireworks to a roaring Dracula and zombies, our animated efforts turned festive greeting into little spectacles.",
             ],
           },
         ],
@@ -355,14 +350,15 @@ export const PROJECT_DETAILS = {
   },
   Verity: {
     title: "Verity",
-    subTitle: "This is a sample subtitle for the work details page.",
+    subTitle:
+      "From realistic product visualizations to engaging animated video content, our services helped Verity showcase its gaming products and peripherals’ features, functionality and design innovation.",
     main_image:
       "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840611/Verity_Logo_pdydei.mp4",
     main_content: {
-      title: "Racing Against Time When Every Hour Matters",
+      title:
+        "Beyond the Surface: Photoreal 3D models that engaged and inspired",
       paragraphs: [
-        "In the wake of a devastating earthquake, immediate action is crucial to save lives and provide relief to those affected. Our collaboration with a leading humanitarian organization focused on rapid response efforts, ensuring that aid reached the most vulnerable communities swiftly and efficiently.",
-        "Through strategic brand development, we crafted a compelling narrative that highlighted the urgency of the situation and the organization's pivotal role in disaster response. By leveraging powerful storytelling and impactful visuals, we were able to convey the critical need for support and mobilize resources quickly.",
+        "We focused our efforts on end-to-end 3D product visualization that transformed electronic products into captivating digital experiences. From meticulous 3D modelling and photorealistic rendering to detailed texturing and dynamic animations, we brought every product to life with striking realism and precision. Our work powered their product demonstrations, display advertisements, social media content and digital campaigns, allowing Verity’s audiences to explore features, functionality, and design innovations in an immersive mode. By blending technical accuracy with creative storytelling, we helped it launch a range of 10+ products",
       ],
     },
 

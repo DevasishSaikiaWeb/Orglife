@@ -5,6 +5,7 @@ export const BLOGS = [
     img: "/images/demo1.webp",
     category: ["AI in Branding"],
     urlSlug: "Objects in mirror are closer than they appear",
+    date: "january 01, 2026",
   },
   {
     title: "The Emotional Core Still Matters",
@@ -13,6 +14,7 @@ export const BLOGS = [
     img: "/images/demo1.webp",
     category: ["AI & Emotions", "Modern Branding"],
     urlSlug: "The Emotional Core Still Matters",
+    date: "january 01, 2026",
   },
   {
     title:
@@ -21,6 +23,7 @@ export const BLOGS = [
     img: "/images/demo1.webp",
     category: ["Cadbury", "AI-powered Brands"],
     urlSlug: "Not Just a Cadbury Ad - How AI Turned Indias",
+    date: "january 01, 2026",
   },
 ];
 
@@ -29,6 +32,7 @@ export const DETAILED_BLOGS = {
     title:
       "Objects in mirror are closer than they appear – Welcome to AI-powered Brand Identity",
     image: "/images/demo1.webp",
+    date: "january 01, 2026",
     content: (
       <div className="flex flex-col gap-4 ">
         <p>
@@ -78,7 +82,9 @@ export const DETAILED_BLOGS = {
           brand identity is not coming. It is already here — quietly reshaping
           how brands are born, experienced, and remembered.
         </p>
-        <strong className="italic my-6">Welcome to the new ‘Living system’.</strong>
+        <strong className="italic my-6">
+          Welcome to the new ‘Living system’.
+        </strong>
 
         <p>A system that can:</p>
 
@@ -155,7 +161,9 @@ export const DETAILED_BLOGS = {
           The Indian AI-in-marketing market is growing at nearly 30% CAGR, not
           because it’s trendy — but because it works.
         </p>
-        <strong className="italic my-6">The new role of brand custodians</strong>
+        <strong className="italic my-6">
+          The new role of brand custodians
+        </strong>
         <p>
           In an AI-powered branding world, the role of founders, marketers, and
           brand leaders is shifting.
@@ -194,6 +202,7 @@ export const DETAILED_BLOGS = {
   "The Emotional Core Still Matters": {
     title: "The Emotional Core Still Matters",
     image: "/images/demo1.webp",
+    date: "january 01, 2026",
     content: (
       <div className="flex flex-col gap-4 ">
         <p>
@@ -252,6 +261,7 @@ export const DETAILED_BLOGS = {
     title:
       "Case: “Not Just a Cadbury Ad” — How AI Turned India’s Festive Storytelling into a Hyper-Personalized Brand Success",
     image: "/images/demo1.webp",
+    date: "january 01, 2026",
     content: (
       <div className="flex flex-col gap-4  ">
         <p className="0">
@@ -413,7 +423,9 @@ export const DETAILED_BLOGS = {
           — but the story was human. That’s where the brand magic happened.
         </p>
 
-        <strong className="italic my-6">AI as a Tool for Inclusive Branding</strong>
+        <strong className="italic my-6">
+          AI as a Tool for Inclusive Branding
+        </strong>
 
         <p>
           The success of Cadbury’s Diwali campaign teaches us that AI isn’t just

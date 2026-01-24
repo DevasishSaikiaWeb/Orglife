@@ -24,6 +24,9 @@
   .font-small-body {
     @apply text-balance text-[1rem] leading-relaxed;
   }
+  .font-xs-body {
+    @apply text-balance text-[0.9rem] leading-relaxed;
+  }
 }
 /* 
 @font-face {

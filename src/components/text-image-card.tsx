@@ -12,6 +12,7 @@ type TextWithImageCardProps = {
   squareImage?: boolean;
   isBlog?: Boolean;
   urlSlug?: string;
+  date?: String;
 };
 
 export function TextWithImageCard({
@@ -22,6 +23,7 @@ export function TextWithImageCard({
   category,
   isBlog,
   urlSlug,
+  date,
 }: TextWithImageCardProps) {
   return (
     <Link
@@ -56,7 +58,8 @@ export function TextWithImageCard({
       </div>
       <div className="h-full flex flex-col justify-between">
         <div>
-          <p className="font-body mt-4 text-wrap">{title}</p>
+          <p className=" font-body mt-4 text-pretty lg:max-w-full">{title}</p>
+          <p className="font-xs-body mt-2 text-muted-foreground">{date}</p>
           <p className="font-small-body mt-2 text-muted-foreground text-wrap">
             {description}
           </p>

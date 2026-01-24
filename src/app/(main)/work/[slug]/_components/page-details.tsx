@@ -118,7 +118,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
                     src={section.second_image}
                     width={800}
                     height={600}
-                    className="w-full"
+                    className="w-full "
                     autoPlay
                     loop
                     muted
