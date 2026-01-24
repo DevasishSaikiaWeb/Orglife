@@ -8,8 +8,10 @@ type TextWithImageCardProps = {
   img: string;
   title: string;
   description: string;
-  category: string[];
+  category?: string[];
   squareImage?: boolean;
+  isBlog?: Boolean;
+  urlSlug?: string;
 };
 
 export function TextWithImageCard({
@@ -18,14 +20,19 @@ export function TextWithImageCard({
   description,
   squareImage = false,
   category,
+  isBlog,
+  urlSlug,
 }: TextWithImageCardProps) {
   return (
-    <Link href={`/work/${title}`} className="flex flex-col">
+    <Link
+      href={isBlog ? `/blogs/${urlSlug}` : `/work/${title}`}
+      className="flex flex-col"
+    >
       <div
         id="project-image-wrapper"
         className={cn(
           "overflow-clip w-full",
-          squareImage ? "aspect-square" : "aspect-[4/4.5]"
+          squareImage ? "aspect-square" : "aspect-[4/4.5]",
         )}
       >
         {img?.includes(".mp4") ? (
@@ -55,7 +62,7 @@ export function TextWithImageCard({
           </p>
         </div>
         <div className="mt-6 flex gap-2 flex-wrap">
-          {category.map((cat) => (
+          {category?.map((cat) => (
             <span
               key={cat}
               className="font-small-body border border-muted-foreground/75 py-0.5 px-4 rounded-full"

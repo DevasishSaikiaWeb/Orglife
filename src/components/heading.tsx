@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 type ActionType = {
   label: string;
-  href: string;
+  href?: string;
 };
 
 type HeadingProps = {
@@ -33,7 +33,11 @@ export function Heading2({ title, subtitle, action }: HeadingProps) {
       )}
       {action && (
         <Button asChild className="mt-8">
-          <Link href={action.href}>{action.label}</Link>
+          {action.href ? (
+            <Link href={action.href}>{action.label}</Link>
+          ) : (
+            <p>{action.label}</p>
+          )}
         </Button>
       )}
     </>

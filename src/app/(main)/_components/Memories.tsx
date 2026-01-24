@@ -13,8 +13,7 @@ function Memories() {
         title={MEMORIES_SECTION_TITLE}
         subtitle={MEMORIES_SECTION_SUBTITLE}
         action={{
-          href: "/work",
-          label: "Our Work",
+          label: "Our Events",
         }}
       />
 
@@ -25,7 +24,6 @@ function Memories() {
             img={project.img}
             title={project.title}
             description={project.description}
-            category={project.category}
           />
         ))}
       </div>

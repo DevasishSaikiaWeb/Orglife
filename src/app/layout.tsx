@@ -7,7 +7,7 @@ import { LenisProvider } from "@/components/lenis";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
-  subsets: ["latin"],
+  subsets: ["latin"], 
 });
 
 const clashDisplay = localFont({
