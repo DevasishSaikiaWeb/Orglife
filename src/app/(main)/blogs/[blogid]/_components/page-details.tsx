@@ -1,14 +1,21 @@
 import Image from "next/image";
-import { Heading1, Heading2, Heading3, Heading4 } from "@/components/heading";
+import { Heading1, Heading2, Heading4 } from "@/components/heading";
 import { Project_Details } from "@/constants/projectDetails";
 
 export function PageDetails({ data }: { data: Project_Details }) {
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-[70vh] flex justify-center items-center ">
+        <div className="mb-[10%] ">Loading...</div>
+      </div>
+    );
   }
   return (
     <section>
-      <Heading3 title={data.title} subtitle={data.subTitle} />
+      <Heading1 title={`Blog #${data.id}`} />
+      <Heading4 title={data.title} />
+      <Heading2 subtitle={data.date} />
+
       {data?.image.includes(".mp4") ? (
         <video
           src={data.image}

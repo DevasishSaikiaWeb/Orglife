@@ -4,7 +4,11 @@ import { Project_Details } from "@/constants/projectDetails";
 
 export function PageDetails({ data }: { data: Project_Details }) {
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-[70vh] flex justify-center items-center ">
+        <div className="mb-[10%] ">Loading...</div>
+      </div>
+    );
   }
   return (
     <section>
@@ -42,7 +46,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
                 >
                   {para}
                 </p>
-              )
+              ),
             )}
         </div>
       </div>

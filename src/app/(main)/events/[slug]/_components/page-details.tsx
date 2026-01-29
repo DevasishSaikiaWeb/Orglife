@@ -3,7 +3,11 @@ import { Heading4 } from "@/components/heading";
 
 export function PageDetails({ data }: { data: any }) {
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-[70vh] flex justify-center items-center ">
+        <div className="mb-[10%] ">Loading...</div>
+      </div>
+    );
   }
   console.log(data);
   return (

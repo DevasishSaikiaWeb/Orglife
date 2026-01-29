@@ -29,6 +29,7 @@ export const BLOGS = [
 
 export const DETAILED_BLOGS = {
   "Objects in mirror are closer than they appear": {
+    id: 1,
     title:
       "Objects in mirror are closer than they appear – Welcome to AI-powered Brand Identity",
     image: "/images/demo1.webp",
@@ -200,6 +201,7 @@ export const DETAILED_BLOGS = {
     ),
   },
   "The Emotional Core Still Matters": {
+    id: 2,
     title: "The Emotional Core Still Matters",
     image: "/images/demo1.webp",
     date: "january 01, 2026",
@@ -258,6 +260,7 @@ export const DETAILED_BLOGS = {
   },
 
   "Not Just a Cadbury Ad - How AI Turned Indias": {
+    id: 3,
     title:
       "Case: “Not Just a Cadbury Ad” — How AI Turned India’s Festive Storytelling into a Hyper-Personalized Brand Success",
     image: "/images/demo1.webp",
