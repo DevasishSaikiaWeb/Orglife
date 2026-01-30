@@ -22,9 +22,9 @@ export function BlogsSection() {
         {BLOGS.slice(0, 6).map((blog) => (
           <TextWithImageCard
             key={blog.title}
-            {...blog} 
+            {...blog}
             squareImage
-            isBlog={true}
+            type="blog"
           />
         ))}
       </div>

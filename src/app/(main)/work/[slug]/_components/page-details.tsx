@@ -3,6 +3,7 @@ import { Heading1, Heading4 } from "@/components/heading";
 import { Project_Details } from "@/constants/projectDetails";
 
 export function PageDetails({ data }: { data: Project_Details }) {
+  console.log("Data ==> ", data);
   if (!data) {
     return (
       <div className="h-[70vh] flex justify-center items-center ">

@@ -10,7 +10,7 @@ type TextWithImageCardProps = {
   description: string;
   category?: string[];
   squareImage?: boolean;
-  isBlog?: Boolean;
+  type?: string;
   urlSlug?: string;
   date?: String;
 };
@@ -21,13 +21,19 @@ export function TextWithImageCard({
   description,
   squareImage = false,
   category,
-  isBlog,
+  type = "work",
   urlSlug,
   date,
 }: TextWithImageCardProps) {
   return (
     <Link
-      href={isBlog ? `/blogs/${urlSlug}` : `/work/${title}`}
+      href={
+        type === "event"
+          ? `/events/${title}`
+          : type === "blog"
+            ? `/blogs/${title}`
+            : `/work/${title}`
+      }
       className="flex flex-col"
     >
       <div

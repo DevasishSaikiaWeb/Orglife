@@ -13,6 +13,7 @@ function Work() {
               title={project.title}
               description={project.description}
               category={project.category}
+              
             />
           ))}
         </div>

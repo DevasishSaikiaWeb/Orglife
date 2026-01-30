@@ -9,16 +9,16 @@ export function PageDetails({ data }: { data: any }) {
       </div>
     );
   }
-  console.log(data);
+  console.log("event data is ==> ", data);
   return (
     <section className="grid grid-cols-1 space-y-32">
       {data.map((event: any) => {
         return (
           <div className="grid grid-cols-1 space-8 ">
-            {event.images.map((images: any) =>
-              images.length > 1 ? (
+            {event?.images.map((images: any) =>
+              images?.length > 1 ? (
                 <div className={"mt-8 grid gap-8 grid-cols-2"}>
-                  {images.map((img: string) => {
+                  {images?.map((img: string) => {
                     return img.includes(".mp4") ? (
                       <video
                         src={img}
@@ -42,7 +42,7 @@ export function PageDetails({ data }: { data: any }) {
                 </div>
               ) : (
                 <div className="mt-8">
-                  {images.map((img: string) => {
+                  {images?.map((img: string) => {
                     return img.includes(".mp4") ? (
                       <video
                         src={img}

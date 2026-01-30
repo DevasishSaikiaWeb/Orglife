@@ -60,12 +60,10 @@ export const Events: events = {
     {
       title: "Enchanted Expo",
       images: [
-        "/images/demo1.webp",
-        "/images/demo1.webp",
-        "/images/demo1.webp",
-        "/images/demo1.webp",
-        "/images/demo1.webp",
-        "/images/demo1.webp",
+        ["/images/demo1.webp"],
+
+        ["/images/demo1.webp", "/images/demo1.webp"],
+        ["/images/demo1.webp"],
       ],
       year: "2025",
       genre: "Fantasy",

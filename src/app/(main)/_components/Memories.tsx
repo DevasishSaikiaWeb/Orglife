@@ -24,6 +24,7 @@ function Memories() {
             img={project.img}
             title={project.title}
             description={project.description}
+            type="event"
           />
         ))}
       </div>
