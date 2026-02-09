@@ -44,15 +44,19 @@ export const Events: events = {
       location: "Ahmedabad, Gujarat",
     },
     {
-      title: "Enchanted Expo",
+      title: "Houdini",
       images: [
-        ["/images/demo1.webp", "/images/demo1.webp"],
-        ["/images/demo1.webp", "/images/demo1.webp"],
-        ["/images/demo1.webp"],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646473/1.32.jpg_qzqcmw.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646461/1.33.jpg_xufj1t.jpg",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646455/1.31.jpg_cbxxxe.jpg",
+        ],
       ],
-      year: "2025",
-      genre: "Fantasy",
-      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+      year: "2020",
+      genre: "Electronic/ Techno Concert",
+      location: "Ahmedabad, Gujarat",
     },
     {
       title: "Enchanted Expo",
