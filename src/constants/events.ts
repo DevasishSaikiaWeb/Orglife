@@ -31,8 +31,13 @@ export const Events: events = {
     {
       title: "Enchanted Expo",
       images: [
-        ["/images/demo1.webp"],
-        ["/images/demo1.webp", "/images/demo1.webp"],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645855/1.211.jpg_vsmyac.jpg",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645799/1.22.jpg_olymwx.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645824/1.23.jpg_cvkntj.jpg",
+        ],
       ],
       year: "2025",
       genre: "Fantasy",

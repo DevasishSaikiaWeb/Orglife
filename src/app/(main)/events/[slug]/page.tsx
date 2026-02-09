@@ -1,7 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { PROJECT_DETAILS } from "@/constants/projectDetails";
 import { PageDetails } from "./_components/page-details";
 import { useLenis } from "lenis/react";
 import { Events } from "@/constants/events";
@@ -14,18 +13,13 @@ function page({ params }: any) {
   const slugFromParams = params?.slug;
   const slug = Array.isArray(slugFromParams)
     ? slugFromParams[0]
-    : slugFromParams ??
+    : (slugFromParams ??
       (typeof pathname === "string"
         ? pathname.split("/").filter(Boolean).pop()
-        : undefined);
-
-  console.log("check log == :", slug.replace(/\s+/g, "-").replace(/%20/g, " "));
-  console.log("keys", Object.keys(Events));
+        : undefined));
 
   useEffect(() => {
-    const events =
-      Events?.[slug.replace(/\s+/g, "-").replace(/%20/g, " ")];
-    console.log("filtered data :", events);
+    const events = Events?.[slug.replace(/\s+/g, "-").replace(/%20/g, " ")];
     setData(events);
   }, [slug]);
 
