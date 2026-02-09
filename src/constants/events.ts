@@ -28,16 +28,37 @@ export const Events: events = {
       genre: "Rock Concert",
       location: "Ahmedabad, Gujarat",
     },
-    // {
-    //   title: "Enchanted Expo",
-    //   images: [
-    //     ["/images/demo1.webp"],
-    //     ["/images/demo1.webp", "/images/demo1.webp"],
-    //   ],
-    //   year: "2025",
-    //   genre: "Fantasy",
-    //   location: "Mehdi Nawaz Jung Hall: Ahmedabad",
-    // },
+    {
+      title: "Enchanted Expo",
+      images: [
+        ["/images/demo1.webp"],
+        ["/images/demo1.webp", "/images/demo1.webp"],
+      ],
+      year: "2025",
+      genre: "Fantasy",
+      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+    },
+    {
+      title: "Enchanted Expo",
+      images: [
+        ["/images/demo1.webp", "/images/demo1.webp"],
+        ["/images/demo1.webp", "/images/demo1.webp"],
+        ["/images/demo1.webp"],
+      ],
+      year: "2025",
+      genre: "Fantasy",
+      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+    },
+    {
+      title: "Enchanted Expo",
+      images: [
+        ["/images/demo1.webp", "/images/demo1.webp"],
+        ["/images/demo1.webp", "/images/demo1.webp"],
+      ],
+      year: "2025",
+      genre: "Fantasy",
+      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+    },
   ],
 
   Festivals: [
