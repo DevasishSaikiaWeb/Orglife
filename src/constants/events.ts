@@ -29,7 +29,7 @@ export const Events: events = {
       location: "Ahmedabad, Gujarat",
     },
     {
-      title: "Enchanted Expo",
+      title: "Ritviz",
       images: [
         [
           "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645855/1.211.jpg_vsmyac.jpg",
@@ -39,9 +39,9 @@ export const Events: events = {
           "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645824/1.23.jpg_cvkntj.jpg",
         ],
       ],
-      year: "2025",
-      genre: "Fantasy",
-      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+      year: "2020",
+      genre: "Electronic Concert",
+      location: "Ahmedabad, Gujarat",
     },
     {
       title: "Enchanted Expo",
