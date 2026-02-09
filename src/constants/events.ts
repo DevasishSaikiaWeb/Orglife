@@ -59,14 +59,33 @@ export const Events: events = {
       location: "Ahmedabad, Gujarat",
     },
     {
-      title: "Enchanted Expo",
+      title: "Ana Lilia + Flymeon + Lucas Firtzer",
       images: [
-        ["/images/demo1.webp", "/images/demo1.webp"],
-        ["/images/demo1.webp", "/images/demo1.webp"],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.41.jpg_l2sxr7.jpg",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.42.jpg_mjkpbj.jpg",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646794/1.43.jpg_xmj45d.jpg",
+        ],
       ],
-      year: "2025",
-      genre: "Fantasy",
-      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+      year: "2024",
+      genre: "Electronic/ Techno Concert",
+      location: "Bengaluru",
+    },
+    {
+      title: "Divine",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770647262/1.51.jpg_d5781p.jpg",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770647239/1.52.jpg_tzqngh.jpg",
+        ],
+      ],
+      year: "2019",
+      genre: "Bollywood Music Concert",
+      location: "Ahmedabad, Gujarat",
     },
   ],
 
@@ -74,8 +93,6 @@ export const Events: events = {
     {
       title: "Enchanted Expo",
       images: [
-        ["/images/demo1.webp"],
-
         ["/images/demo1.webp", "/images/demo1.webp"],
         ["/images/demo1.webp"],
       ],
