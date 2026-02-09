@@ -1,12 +1,13 @@
 export const HERO_SECTION_TITLE =
-    "WE’RE A CREATIVE COMMUNICATION AND TECH STUDIO.",
+    "WE’RE A CREATIVE COMMUNICATION AND AI-POWERED TECH STUDIO.",
   HERO_SECTION_SUBTITLE =
     "We create awesome brand stories and assets through storytelling and technology.";
 
 export const ABOUT_SECTION_UPPER_TITLE =
     "Hello. We are pixel-perfect minds with 64-bit hearts.",
   ABOUT_SECTION_TITLE = "We Are Orglife.",
-  ABOUT_SECTION_SUBTITLE = "We are a new-age creative studio – a brand laboratory where we partner with brands to explore innovative ways to create impactful identities, content strategies, visual communications and AI tech solutions. A young and dynamic team, we love to blend creativity with technology and power up brand strategy in a way which is magical, in every sense."
+  ABOUT_SECTION_SUBTITLE =
+    "We are a new-age creative studio – a brand laboratory where we partner with brands to explore innovative ways to create impactful identities, content strategies, visual communications and AI tech solutions. A young and dynamic team, we love to blend creativity with technology and power up brand strategy in a way which is magical, in every sense.";
 
 export const TEAM_SECTION_TITLE = "Creative hearts. Insightful minds.",
   TEAM_SECTION_SUBTITLE =
