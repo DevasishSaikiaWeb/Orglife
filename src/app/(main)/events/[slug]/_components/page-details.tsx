@@ -22,8 +22,8 @@ export function PageDetails({ data }: { data: any }) {
                     return img.includes(".mp4") ? (
                       <video
                         src={img}
-                        width={800}
-                        height={600}
+                        width={1200}
+                        height={1200}
                         className="w-full"
                         autoPlay
                         loop
@@ -33,9 +33,9 @@ export function PageDetails({ data }: { data: any }) {
                       <Image
                         src={img}
                         alt={`Section Image ${img}`}
-                        width={800}
-                        height={600}
-                        className="w-full"
+                        width={1200}
+                        height={1200}
+                        className="w-full h-full"
                       />
                     );
                   })}
@@ -57,8 +57,8 @@ export function PageDetails({ data }: { data: any }) {
                       <Image
                         src={img}
                         alt={`Section Image ${img}`}
-                        width={800}
-                        height={600}
+                        width={1400}
+                        height={1400}
                         className="w-full"
                       />
                     );
