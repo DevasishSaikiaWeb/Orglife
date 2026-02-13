@@ -101,6 +101,27 @@ export const Events: events = {
     },
 
     {
+      title: "Big Ban Theory",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991335/Big_Ban_Theory_1_zt0fsg.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991523/Big_Ban_Theory_2_tl2nqp.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991499/Big_Ban_Theory_3_qrrywx.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991276/Big_Ban_Theory_4_wje86t.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Rock Concert",
+      location: "KLFF, Ahmedabad, Gujarat",
+    },
+
+    {
       title: "The Local Train",
       images: [
         [
