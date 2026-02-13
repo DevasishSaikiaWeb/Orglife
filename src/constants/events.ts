@@ -86,6 +86,21 @@ export const Events: events = {
     },
 
     {
+      title: "Gurleen Pannu",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770990320/Gurleen_Pannu_1_jfrbxa.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770990298/Gurleen_Pannu_2_pcgn1f.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Stand-up Comedy Show",
+      location: "Ahmedabad, Gujarat",
+    },
+
+    {
       title: "The Local Train",
       images: [
         [
