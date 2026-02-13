@@ -14,6 +14,78 @@ type events = {
 export const Events: events = {
   Concerts: [
     {
+      title: "Harsh Gujral",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989391/Harsh_Gujral_1_xfmcvv.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989363/Harsh_Gujral_2_wxeptm.png",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989364/Harsh_Gujral_3_phwngn.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Stand-up Comedy Show",
+      location: "Ahmedabad, Gujarat",
+    },
+
+    {
+      title: "Shruti Pathak",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989314/Shruti_Pathak_1_uyxeiv.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989303/Shruti_Pathak_2_igvzfv.png",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989332/Shruti_Pathak_3_s4aorn.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Music Concert",
+      location: "Ahmedabad, Gujarat",
+    },
+    {
+      title: "Vishal and Shekhar",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989343/Vishal_Shekhar_1_modk6r.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989327/Vishal_Shekhar_2_phlxlm.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989325/Vishal_Shekhar_3_g3jzn6.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989334/Vishal_Shekhar_4_cwkzoj.png",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989346/Vishal_Shekhar_5_o5egk1.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Music Concert [Fundraiser]",
+      location: "Ahmedabad, Gujarat",
+    },
+
+    {
+      title: "Maati Baani",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989381/Maati_Baani_1_fx3mf2.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989384/Maati_Baani_2_q7bmie.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989344/Maati_Baani_3_yyr25o.png",
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989343/Maati_Baani_4_zjbox6.png",
+        ],
+      ],
+      year: "2023",
+      genre: "Contemporary/ Folk Music Concert",
+      location: "Ahmedabad, Gujarat",
+    },
+
+    {
       title: "The Local Train",
       images: [
         [

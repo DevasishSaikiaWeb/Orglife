@@ -31,7 +31,7 @@ function page({ params }: any) {
 
   return (
     <main className="space-y-32 md:space-y-64 pt-32 sm:pt-64 max-w-368 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <PageDetails data={data} />
+      <PageDetails data={data} title={slug.replace(/\s+/g, "-").replace(/%20/g, " ")}/>
     </main>
   );
 }
