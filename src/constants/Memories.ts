@@ -13,7 +13,7 @@ export const MemoriesData: Memories[] = [
       "From brand identity design concepts to ingenious brand communications, we are empowering this young and dynamic fashion brand.",
   },
   {
-    img: "https://res.cloudinary.com/dpblcamaw/image/upload/v1770641910/2.jpg_fgurhw.jpg",
+    img: "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161654/Sheri_Circle_Garba_Home_Page_pza0tm.png",
     title: "Festivals",
     description:
       "Our engagement covers multiple visual communication assignments for the Indian Army across domains and geographies.",
