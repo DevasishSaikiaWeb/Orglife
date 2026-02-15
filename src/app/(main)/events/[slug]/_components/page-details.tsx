@@ -74,7 +74,8 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                 <Heading4 title={event?.title} />
                 <p className="text-muted-foreground">{event.year}</p>
                 <p className="text-muted-foreground">{event.genre}</p>
-                <p>{event.location}</p>
+                <p className="text-muted-foreground">{event.location}</p>
+                <p>{event?.subtext}</p>
               </div>
             </div>
           );

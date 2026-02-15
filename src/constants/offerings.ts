@@ -5,7 +5,7 @@ export const PAGE_DETAILS_SUBTITLE =
 
 export const PAGE_DETAILS_TITLE2 = "A powerpacked triad of services.";
 export const PAGE_DETAILS_SUBTITLE2 =
-  "Our expertise lies in creating compelling visual content that not only captures attention but also drives meaningful engagement and conversions.";
+  "Orglife Studio has been a part of the journeys of many brands - with some, during their initial start-up stage while with others in their quest for expansion.";
 // Offering cards
 export const OFFERING_CARDS = [
   {

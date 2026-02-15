@@ -18,6 +18,6 @@ export function PageDetails() {
       {/* <Tabs /> */}
       <Work />
       {/* <BrandsLogos /> */}
-    </section>
+    </section>  
   );
 }

@@ -19,8 +19,8 @@ const NAV_ITEMS: NavItemType[] = [
     href: "/offerings",
   },
   {
-    label: "Work",
-    href: "/work",
+    label: "Projects",
+    href: "/projects",
   },
   // {
   //   label: "Up Comming",
@@ -66,7 +66,7 @@ export function Header() {
       <header
         className={cn(
           "z-9999 backdrop-blur-md transition-colors duration-500 fixed inset-x-0 top-0",
-          isOpen ? "bg-background" : "bg-background/75"
+          isOpen ? "bg-background" : "bg-background/75",
         )}
       >
         <nav className="max-w-368 h-24 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden flex justify-between items-center">
@@ -92,7 +92,7 @@ export function Header() {
       <ul
         className={cn(
           "fixed z-9990 top-24 bottom-0 transition-all flex flex-col py-8 duration-300 ease-in right-0 left-0 min-w-sm bg-background backdrop-blur-lg",
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
         <div className="max-w-368 w-full h-full flex flex-col mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">

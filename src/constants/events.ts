@@ -4,6 +4,7 @@ type event = {
   year: Date | String;
   genre: String;
   location: String;
+  subtext: String;
 };
 
 type events = {
@@ -27,6 +28,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
 
     {
@@ -43,6 +45,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
     {
       title: "Vishal and Shekhar",
@@ -64,6 +67,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert [Fundraiser]",
       location: "Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
 
     {
@@ -83,6 +87,7 @@ export const Events: events = {
       year: "2023",
       genre: "Contemporary/ Folk Music Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
 
     {
@@ -98,6 +103,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
 
     {
@@ -119,6 +125,7 @@ export const Events: events = {
       year: "2023",
       genre: "Rock Concert",
       location: "KLFF, Ahmedabad, Gujarat",
+      subtext: "Video production x Orglife",
     },
 
     {
@@ -135,6 +142,7 @@ export const Events: events = {
       year: "2020",
       genre: "Rock Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
     {
       title: "Ritviz",
@@ -150,6 +158,7 @@ export const Events: events = {
       year: "2020",
       genre: "Electronic Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
     {
       title: "Houdini",
@@ -165,6 +174,7 @@ export const Events: events = {
       year: "2020",
       genre: "Electronic/ Techno Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
     {
       title: "Ana Lilia + Flymeon + Lucas Firtzer",
@@ -180,6 +190,7 @@ export const Events: events = {
       year: "2024",
       genre: "Electronic/ Techno Concert",
       location: "Bengaluru",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
     {
       title: "Divine",
@@ -194,19 +205,49 @@ export const Events: events = {
       year: "2019",
       genre: "Bollywood Music Concert",
       location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
   ],
 
   Festivals: [
     {
-      title: "Enchanted Expo",
+      title: "Jasmine Sandlas Live",
       images: [
-        ["/images/demo1.webp", "/images/demo1.webp"],
-        ["/images/demo1.webp"],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161661/Jasmine_Sandlas_Live1_qpuxmp.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161663/Jasmine_Sandlas_Live_2_rf1xll.png",
+        ],
+      ],
+      year: "2026",
+      genre: "Music Concert",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
+    },
+    {
+      title: "Sheri Circle Garba",
+      images: [
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161667/Sheri_Circle_Garba_1_ooi9jq.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161667/Sheri_Circle_Garba_2_rqe9tz.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161656/Sheri_Circle_Garba_3_me5xoq.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161655/Sheri_Circle_Garba_4_norpio.png",
+        ],
+        [
+          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161662/Sheri_Circle_Garba_5_gva1a4.png",
+        ],
       ],
       year: "2025",
-      genre: "Fantasy",
-      location: "Mehdi Nawaz Jung Hall: Ahmedabad",
+      genre: "Navratri Garba Fest",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Event Concept & Management x Why Not Entertainment",
     },
   ],
 };
