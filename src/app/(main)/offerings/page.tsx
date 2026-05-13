@@ -4,7 +4,9 @@ import {
   OFFERING_CARDS,
   OFFERING_DETAILS,
   PAGE_DETAILS_SUBTITLE,
+  PAGE_DETAILS_SUBTITLE2,
   PAGE_DETAILS_TITLE,
+  PAGE_DETAILS_TITLE2,
 } from "@/constants/offerings";
 import { OfferingCard } from "./_components/card";
 import { DetailsCard } from "./_components/details-card";
@@ -27,12 +29,12 @@ export default function OffetingsPage() {
       ))}
 
       <section>
-        <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
+        <Heading1 title={PAGE_DETAILS_TITLE2} subtitle={PAGE_DETAILS_SUBTITLE2} />
       </section>
-      <div className="space-y-8">
+      {/* <div className="space-y-8">
         <OfferingCard {...FINAL_OFFERING_SECTION[0]} />
         <DetailsCard {...FINAL_OFFERING_SECTION[0]} />
-      </div>
+      </div> */}
       <ContactForPartnership />
     </main>
   );

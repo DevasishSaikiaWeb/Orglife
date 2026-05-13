@@ -1,29 +1,29 @@
 export const BLOGS = [
   {
     title: "Objects in mirror are closer than they appear",
-    description: "Welcome to AI-powered Brand Identity.",
+    description: "A perspective on evolution of brand content over the years.",
     img: "/images/demo1.webp",
     category: ["AI in Branding"],
     urlSlug: "Objects in mirror are closer than they appear",
-    date: "january 01, 2026",
+    date: "May 01, 2026",
   },
   {
     title: "The Emotional Core Still Matters",
     description:
-      " The future belongs to brands that orchestrate intelligence with humanity.",
+      "AI needs the fuel of human judgement, for now atleast.",
     img: "/images/demo1.webp",
     category: ["AI & Emotions", "Modern Branding"],
     urlSlug: "The Emotional Core Still Matters",
-    date: "january 01, 2026",
+    date: "May 07, 2026",
   },
   {
     title:
-      "Not Just a Cadbury Ad - How AI Turned India’s Festive Storytelling into a Hyper-Personalized Brand Success",
-    description: "Case Study #1",
+      "Not Just a Cadbury Ad - How AI Turned India’s Festive Storytelling into a Hyper-Personalized Brand Success.",
+    description: "It’s time to leverage technology to connect with your audience in a way you need to.",
     img: "/images/demo1.webp",
     category: ["Cadbury", "AI-powered Brands"],
     urlSlug: "Not Just a Cadbury Ad - How AI Turned Indias",
-    date: "january 01, 2026",
+    date: "May 14, 2026",
   },
 ];
 

@@ -14,7 +14,7 @@ export function HeroSection() {
 
       <div className="mt-8" id="video-wrapper">
         <video
-          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1766751100/hero_tbpcuz.mp4"
+          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1778657006/WEBSITE_HOMEPAGE_1ST_VIDEO_ws4tek.mp4"
           autoPlay
           muted
           loop

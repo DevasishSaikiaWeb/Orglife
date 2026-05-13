@@ -10,7 +10,7 @@ type ProjectsProps = {
   visibleCards?: number;
 };
 
-export function ProjectsSection({ visibleCards = 4 }: ProjectsProps) {
+export function ProjectsSection({ visibleCards = 3 }: ProjectsProps) {
   return (
     <section>
       <Heading2
@@ -18,11 +18,12 @@ export function ProjectsSection({ visibleCards = 4 }: ProjectsProps) {
         subtitle={PROJECTS_SECTION_SUBTITLE}
         action={{
           href: "/work",
-          label: "Our Work",
+          label: "Work",
         }}
       />
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16">
+      {/* <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16"> */}
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         {PROJECTS.slice(0, visibleCards).map((project) => (
           <TextWithImageCard
             key={project.title}

@@ -22,7 +22,7 @@ export function TeamSection() {
       </div>
       <div className="mt-8">
         <ShowcaseColumnGrid
-          leftSectionHeading="We are orglife and we create for brands - creatively, innovatively and meaningfully."
+          leftSectionHeading="We are Orglife and we create for brands - creatively, innovatively and meaningfully."
           //   rightSection={[
           //     {
           //       heading: "Brand Foundation Design",
@@ -43,14 +43,14 @@ export function TeamSection() {
           rightFirstHeader="Brand Foundation Design"
           rightFirstDescription="We partner with young start-ups and legacy brands to study their needs and craft a strong identity that resonates with their audiences and markets. From the brand name and logo, research and audit to positioning and messaging, we have developed a special skillset to deliver awesome results."
           rightSecondHeader="Visual Content and Comm."
-          rightSecondDescription="We help brands amplify their voices to establish, maintain and grow connections and conversations with audiences and communities. And now, we have our own AI agents and architecture doing crazy stuff for us and our clients."
+          rightSecondDescription="Transforming clicks into conversations and followers into fans need efforts beyond trendy content. We help brands amplify their voices to establish, maintain and grow connections and conversations with audiences and communities – through literature, videos, animations and motion graphic content."
           rightThirdHeader="Brand Digital Assets"
-          rightThirdDescription="We help brands leverage technology to elevate their digital identity. From digital brand assets to AI tools and tech applications, we help brands create a niche for themselves. And our immersive AR/ VR applications for products, services and process flows create unique and highly interactive audience engagements."
+          rightThirdDescription="We help brands leverage technology to elevate their digital identity. From social media strategies to UI/UX and custom AI tools and tech applications, we help brands create a niche for themselves. And our immersive AR/VR applications for products, services and process flows create unique and highly interactive audience engagements."
         />
         <div className="mt-8 md:mt-16 flex justify-center">
           <Link href={"/offerings"}>
             <IconButton
-              label="Explore Our Services"
+              label="Explore Services"
               icon={<ArrowRightIcon />}
             />
           </Link>

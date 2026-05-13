@@ -5,6 +5,12 @@ type Project = {
   category: string[];
 };
 
+// Page details
+export const PAGE_DETAILS_TITLE = "Let’s team up for some magic.";
+export const PAGE_DETAILS_SUBTITLE =
+  "Orglife Studio has been a part of the journeys of many brands - with some, during their initial start-up stage while with others in their quest for expansion.";
+
+
 export const CURRENT_PROJECTS: Project[] = [
   {
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077592/Sswai_a0xmyw.mp4",
@@ -36,27 +42,58 @@ export const CURRENT_PROJECTS: Project[] = [
   },
 ];
 
+// export const PROJECTS: Project[] = [
+//   {
+//     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077583/WantaSanta_zvqexf.mp4",
+//     title: "Wantasanta",
+//     description:
+//       "We teamed up with the brand to create never-before magic in the field of immersive experience.",
+//     category: ["Amusement", "Event Management"],
+//   },
+//   {
+//     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077593/Group_Landmark_f34ymi.mp4",
+//     title: "Group Landmark",
+//     description:
+//       "Crafted creative concepts and visual content for impactful communications across multiple platforms.",
+//     category: ["Automobile"],
+//   },
+//   {
+//     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077582/MEA_umrxhk.mp4",
+//     title: "Ministry Of External Affairs",
+//     description:
+//       "Multiple projects ranging from design of a series of ebooks to Int’l event communications.",
+//     category: ["Government"],
+//   },
+//   {
+//     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077584/SiS_qy9rdp.mp4",
+//     title: "SIS Prep",
+//     description:
+//       "We brought its mascots to life - animated concepts that enhanced the brand’s visual identity immensely.",
+//     category: ["Education"],
+//   },
+// ];
+
 export const PROJECTS: Project[] = [
   {
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077583/WantaSanta_zvqexf.mp4",
-    title: "Wantasanta",
+    title: "AI FILMS",
     description:
-      "We teamed up with the brand to create never-before magic in the field of immersive experience.",
-    category: ["Amusement", "Event Management"],
+      "We’re now ready with our own recipe of workflows and AI agents, blending human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experience.",
+    category: ["Films and Cinematic concepts"],
   },
   {
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077593/Group_Landmark_f34ymi.mp4",
-    title: "Group Landmark",
+    title: "AI AD CAMPAIGNS",
     description:
-      "Crafted creative concepts and visual content for impactful communications across multiple platforms.",
-    category: ["Automobile"],
+      "We develop modern brand storytelling concepts that communicate across platforms and masses.",
+    category: ["Brand Campaigns/ Advertisement"],
   },
   {
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077582/MEA_umrxhk.mp4",
-    title: "Ministry Of External Affairs",
+    title: "AI BRAND PLATFORMS",
     description:
-      "Multiple projects ranging from design of a series of ebooks to Int’l event communications.",
-    category: ["Government"],
+      "Industry research, brand strategy, content and communication design, marketing campaigns – you name it and we have our tech solutions, AI agents and platforms ready for you.",
+    category: ["Technology solutions/ AI Applications"],
   },
   {
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077584/SiS_qy9rdp.mp4",

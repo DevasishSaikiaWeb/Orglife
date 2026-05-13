@@ -19,6 +19,10 @@ const NAV_ITEMS: NavItemType[] = [
     href: "/offerings",
   },
   {
+    label: "Products",
+    href: "/products",
+  },
+  {
     label: "Projects",
     href: "/projects",
   },
@@ -180,7 +184,7 @@ export function Header() {
             <p className="leading-relaxed text-muted-foreground">
               Copyright &copy; Orglife®
               <br />
-              An Impact-first Creative Partner
+              A Tech-forward Creative Organization
             </p>
             <p className="leading-relaxed text-muted-foreground">
               This website has been built following

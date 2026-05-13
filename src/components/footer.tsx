@@ -11,7 +11,7 @@ export function Footer() {
         <p className="leading-relaxed text-muted-foreground">
           Copyright &copy; Orglife®
           <br />
-          An Impact-first Creative Partner
+          A Tech-forward Creative Organization
         </p>
         <p className="leading-relaxed text-muted-foreground">
           This website has been built following

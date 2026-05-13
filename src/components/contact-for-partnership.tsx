@@ -10,9 +10,7 @@ export function ContactForPartnership() {
             Invest in tomorrow. Start today.
           </p>
           <p className="text-muted/90 mt-4 md:mt-8 text-[14px] md:text-[18px] text-balance md:leading-relaxed">
-            Our work tends to resonate most with people who are ready to think
-            thoughtfully about where they're headed. If you're interested in
-            building something meaningful, let’s grab a coffee and chat!
+            Our philosophy resonates most with people and brands that are ready to think unconventionally and explore beyond the brand-agency-consultancy framework. If you're interested in building something meaningful and interesting, let’s grab a coffee and chat!
           </p>
         </div>
         <div>

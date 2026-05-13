@@ -1,11 +1,11 @@
 // Page details
-export const PAGE_DETAILS_TITLE = "A powerpacked triad of services.";
+export const PAGE_DETAILS_TITLE = "A POWERPACKED TRIAD OF SERVICES.";
 export const PAGE_DETAILS_SUBTITLE =
-  "We’re set on a journey to explore the modern evolution of visual content. And our services cater to brands, organizations and.";
+  "We’re set on a journey to infuse disruption in the world of modern brand storytelling. And our services cater to brands, organizations and causes in ways that make them seen and heard.";
 
-export const PAGE_DETAILS_TITLE2 = "A powerpacked triad of services.";
+export const PAGE_DETAILS_TITLE2 = "Partner with us in creative exploration.";
 export const PAGE_DETAILS_SUBTITLE2 =
-  "Orglife Studio has been a part of the journeys of many brands - with some, during their initial start-up stage while with others in their quest for expansion.";
+  "We collaborate with brands and organizations, consulting and assisting them to restructure and strategize their operations with brand new perspectives. We help them achieve better efficiency and productivity through our data-powered research engines and a strong consortium of experienced industry experts.";
 // Offering cards
 export const OFFERING_CARDS = [
   {
@@ -37,11 +37,23 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
+        label: "Brand Personality",
+        isComingSoon: false,
+      },
+      {
+        label: "Brand Positioning",
+        isComingSoon: false,
+      },
+      {
+        label: "Tone of Voice and Verbal Identity",
+        isComingSoon: false,
+      },
+      {
         label: "Brand guidelines and manual",
         isComingSoon: false,
       },
       {
-        label: "Market and audience research",
+        label: "Industry, market and audience research",
         isComingSoon: false,
       },
       {
@@ -64,6 +76,10 @@ export const OFFERING_DETAILS = [
     list: [
       {
         label: "Brand content strategy",
+        isComingSoon: false,
+      },
+      {
+        label: "Content Blueprint and Funnels",
         isComingSoon: false,
       },
       {
@@ -103,6 +119,14 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
+        label: "AI brand and product photography",
+        isComingSoon: false,
+      },
+      {
+        label: "AI films, advertisements and communication campaigns",
+        isComingSoon: false,
+      },
+      {
         label: "Augmented Reality assets for immersive experiences",
         isComingSoon: false,
       },
@@ -126,23 +150,32 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "Innovation and tech integration",
+        label: "AI agent development and training",
         isComingSoon: false,
       },
       {
-        label: "Web tools and mobile applications",
+        label: "Brand AI architecture",
         isComingSoon: false,
       },
       {
-        label: "Ecommerce strategy",
+        label: "Custom brand AI and SaaS tools and applications",
         isComingSoon: false,
       },
       {
-        label: "Customised digital services",
+        label: "Innovation and tech integration – AR/ VR",
         isComingSoon: false,
       },
       {
-        label: "Digital advertising, SEO and Automation planning",
+        label: "Web tools",
+        isComingSoon: false,
+      },
+      {
+        label: "ecommerce platforms and applications",
+        isComingSoon: false,
+      },
+      {
+        label:
+          "Customised digital services – Digital advertising, SEO and automation planning ",
         isComingSoon: false,
       },
     ],
