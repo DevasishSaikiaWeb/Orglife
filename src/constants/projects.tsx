@@ -89,7 +89,7 @@ export const PROJECTS: Project[] = [
     category: ["Brand Campaigns/ Advertisement"],
   },
   {
-    img: "https://res.cloudinary.com/dpblcamaw/image/upload/v1781012613/Ai_platform_w69cui.png",
+    img: "https://res.cloudinary.com/dpblcamaw/image/upload/v1781079463/Ai_platform_w69cui.png",
     title: "AI BRAND PLATFORMS",
     description:
       "Industry research, brand strategy, content and communication design, marketing campaigns – you name it and we have our tech solutions, AI agents and platforms ready for you.",
