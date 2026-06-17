@@ -7,6 +7,8 @@ type OfferingCardProps = {
 };
 
 export function OfferingCard({ title, description, img }: OfferingCardProps) {
+  const isVideo = img.endsWith(".mp4");
+
   return (
     <section className="p-2 flex flex-col-reverse md:flex-row aspect-video gap-y-2 bg-foreground text-background">
       <div className="flex-1 p-2 py-4 md:p-8 flex flex-col justify-end">
@@ -15,14 +17,26 @@ export function OfferingCard({ title, description, img }: OfferingCardProps) {
         </p>
         {description && <p className="">{description}</p>}
       </div>
-      <div className="aspect-square">
-        <Image
-          alt={title}
-          className="size-full object-cover"
-          src={img}
-          height={1080}
-          width={1080}
-        />
+      <div className="aspect-square overflow-hidden">
+        {isVideo ? (
+          <video
+            className="size-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={img} type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            alt={title}
+            className="size-full object-cover"
+            src={img}
+            width={1080}
+            height={1080}
+          />
+        )}
       </div>
     </section>
   );

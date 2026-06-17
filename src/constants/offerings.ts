@@ -10,15 +10,15 @@ export const PAGE_DETAILS_SUBTITLE2 =
 export const OFFERING_CARDS = [
   {
     title: "Brand Foundation Design",
-    img: "/images/demo1.webp",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694673/SERVICES_Video_2_r8rr4g.mp4",
   },
   {
     title: "Visual Content and Communication",
-    img: "/images/work/demo.webp",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694685/SERVICES_Video_1.1_lqbocd.mp4",
   },
   {
     title: "Brand Digital Assets",
-    img: "/images/demo1.webp",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694689/SERVICES_Video_1_q8gbpa.mp4",
   },
 ];
 
@@ -190,7 +190,7 @@ export const FINAL_OFFERING_SECTION = [
       label: "Book a Free Consultation",
       href: "/offerings/brand-foundation-design",
     },
-    img: "/images/demo1.webp",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694689/SERVICES_Video_1_q8gbpa.mp4",
     list: [
       {
         label: "Brand identity design",
