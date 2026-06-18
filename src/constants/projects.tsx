@@ -104,7 +104,15 @@ export const PROJECTS: Project[] = [
   },
 ];
 
+//Portfolio Images & Video
 export const OTHER_PROJECTS = [
+  [
+    {
+      image:
+        "https://res.cloudinary.com/dpblcamaw/video/upload/v1781774286/Army_Ai_Video_ykpxsl.mp4",
+      title: "Army AI Video",
+    },
+  ],
   [
     {
       image:

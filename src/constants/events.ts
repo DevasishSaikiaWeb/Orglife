@@ -142,7 +142,7 @@ export const Events: events = {
       year: "2020",
       genre: "Rock Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
+      subtext: "Event Concept & Management",
     },
     {
       title: "Ritviz",
@@ -158,40 +158,40 @@ export const Events: events = {
       year: "2020",
       genre: "Electronic Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
+      subtext: "Event Concept & Management",
     },
-    {
-      title: "Houdini",
-      images: [
-        [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646473/1.32.jpg_qzqcmw.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646461/1.33.jpg_xufj1t.jpg",
-        ],
-        [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646455/1.31.jpg_cbxxxe.jpg",
-        ],
-      ],
-      year: "2020",
-      genre: "Electronic/ Techno Concert",
-      location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
-    },
-    {
-      title: "Ana Lilia + Flymeon + Lucas Firtzer",
-      images: [
-        [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.41.jpg_l2sxr7.jpg",
-        ],
-        [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.42.jpg_mjkpbj.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646794/1.43.jpg_xmj45d.jpg",
-        ],
-      ],
-      year: "2024",
-      genre: "Electronic/ Techno Concert",
-      location: "Bengaluru",
-      subtext: "Event Concept & Management x Why Not Entertainment",
-    },
+    // {
+    //   title: "Houdini",
+    //   images: [
+    //     [
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646473/1.32.jpg_qzqcmw.jpg",
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646461/1.33.jpg_xufj1t.jpg",
+    //     ],
+    //     [
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646455/1.31.jpg_cbxxxe.jpg",
+    //     ],
+    //   ],
+    //   year: "2020",
+    //   genre: "Electronic/ Techno Concert",
+    //   location: "Ahmedabad, Gujarat",
+    //   subtext: "Event Concept & Management",
+    // },
+    // {
+    //   title: "Ana Lilia + Flymeon + Lucas Firtzer",
+    //   images: [
+    //     [
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.41.jpg_l2sxr7.jpg",
+    //     ],
+    //     [
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.42.jpg_mjkpbj.jpg",
+    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646794/1.43.jpg_xmj45d.jpg",
+    //     ],
+    //   ],
+    //   year: "2024",
+    //   genre: "Electronic/ Techno Concert",
+    //   location: "Bengaluru",
+    //   subtext: "Event Concept & Management",
+    // },
     {
       title: "Divine",
       images: [
@@ -205,7 +205,7 @@ export const Events: events = {
       year: "2019",
       genre: "Bollywood Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
+      subtext: "Event Concept & Management",
     },
   ],
 
@@ -223,7 +223,7 @@ export const Events: events = {
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
+      subtext: "Event Concept & Management",
     },
     {
       title: "Sheri Circle Garba",
@@ -247,7 +247,7 @@ export const Events: events = {
       year: "2025",
       genre: "Navratri Garba Fest",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management x Why Not Entertainment",
+      subtext: "Event Concept & Management",
     },
   ],
 };

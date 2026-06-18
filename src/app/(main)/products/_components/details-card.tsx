@@ -33,7 +33,7 @@ export function DetailsCard({
 
       <div className="flex md:flex-row flex-col gap-8 mt-8">
         <div className="flex-1">
-          <p className="text-balance leading-relaxed">{description}</p>
+          <p className="leading-relaxed">{description}</p>
           <Button asChild className="mt-8">
             <Link href={action.href}>{action.label}</Link>
           </Button>
