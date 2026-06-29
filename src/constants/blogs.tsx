@@ -762,7 +762,8 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 5: When Strategy Meets Execution — The Commercial Result
+          
+          When Strategy Meets Execution — The Commercial Result
         </h3>
 
         <p>
