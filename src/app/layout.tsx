@@ -37,9 +37,27 @@ const clashDisplay = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Orglife",
+  metadataBase: new URL("https://orglife.co.in"),
+  title: {
+    default: "Orglife",
+    template: "%s | Orglife",
+  },
   description:
     "We create awesome brand stories and assets through storytelling and technology.",
+  openGraph: {
+    type: "website",
+    siteName: "Orglife",
+    title: "Orglife",
+    description:
+      "We create awesome brand stories and assets through storytelling and technology.",
+    url: "https://orglife.co.in",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orglife",
+    description:
+      "We create awesome brand stories and assets through storytelling and technology.",
+  },
 };
 
 export default function RootLayout({

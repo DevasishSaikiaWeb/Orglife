@@ -31,7 +31,7 @@ export function TextWithImageCard({
         type === "event"
           ? `/events/${title}`
           : type === "blog"
-            ? `/blogs/${title}`
+            ? `/blogs/${urlSlug ?? title}`
             : `/projects/${title}`
       }
       className="flex flex-col"
