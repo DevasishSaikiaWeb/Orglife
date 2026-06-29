@@ -36,7 +36,7 @@ export const DETAILED_BLOGS = {
     subtitle:
       "Your AI Writes Faster Than Your Team. So Why Does Your Brand Sound Like Everyone Else?",
     image: "/images/demo1.webp",
-    date: "May 01, 2026",
+    date: "June 23, 2026",
     category: ["AI in Branding"],
     author: "Orglife",
     featured: true,
@@ -57,7 +57,7 @@ export const DETAILED_BLOGS = {
       ],
       imageAlt:
         "Illustrated split screen showing identical AI-generated brand outputs vs. differentiated strategic brand identity",
-      publishDate: "2026-05-01",
+      publishDate: "2026-06-23",
     },
     content: (
       <div className="flex flex-col gap-4">
@@ -116,7 +116,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 2: Strategy Cannot Be Outsourced to an Algorithm
+          Strategy Cannot Be Outsourced to an Algorithm
         </h3>
 
         <p>
@@ -153,7 +153,7 @@ export const DETAILED_BLOGS = {
         </ul>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 3: Weaponizing AI for Hyper-Real Brand Execution
+          Weaponizing AI for Hyper-Real Brand Execution
         </h3>
 
         <p>
@@ -187,7 +187,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 4: Treating Brand Identity as Business Infrastructure
+          The Mandate for Enterprise Leadership
         </h3>
 
         <p>
@@ -214,7 +214,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 5: The Mandate for Enterprise Leadership
+          The Mandate for Enterprise Leadership
         </h3>
 
         <p>
@@ -309,7 +309,7 @@ export const DETAILED_BLOGS = {
     subtitle:
       "You Built a Fifty-Crore Enterprise. Why Does Your Brand Still Look Like a Three-Person Startup?",
     image: "/images/demo1.webp",
-    date: "June 01, 2026",
+    date: "June 26, 2026",
     category: ["Brand Strategy"],
     author: "Orglife",
     featured: true,
@@ -328,7 +328,7 @@ export const DETAILED_BLOGS = {
       ],
       imageAlt:
         "Founder standing in a large industrial plant while a tiny digital footprint is shown on a laptop screen beside them, illustrating the gap between physical scale and digital brand presence",
-      publishDate: "2026-06-01",
+      publishDate: "2026-06-26",
     },
     content: (
       <div className="flex flex-col gap-4">
@@ -393,7 +393,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 2: Valuation and The Generational Handover
+          Valuation and The Generational Handover
         </h3>
 
         <p>
@@ -420,7 +420,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 3: Building Commercial Brand Infrastructure
+          Building Commercial Brand Infrastructure
         </h3>
 
         <p>
@@ -438,7 +438,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 4: Three Strategic Interventions
+          The Mandate for Enterprise Leadership
         </h3>
 
         <p>
@@ -475,7 +475,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 5: The Cost of Remaining Invisible
+          The Cost of Remaining Invisible
         </h3>
 
         <p>
@@ -577,7 +577,7 @@ export const DETAILED_BLOGS = {
     subtitle:
       "A Love Letter to Every Award-Winning Campaign That Tanked Sales.",
     image: "/images/demo1.webp",
-    date: "July 01, 2026",
+    date: "June 29, 2026",
     category: ["Brand Strategy"],
     author: "Orglife",
     featured: true,
@@ -596,7 +596,7 @@ export const DETAILED_BLOGS = {
       ],
       imageAlt:
         "A beautifully designed brand identity displayed on packaging and collateral, untouched on a retail shelf, symbolising aesthetic success without commercial results",
-      publishDate: "2026-07-01",
+      publishDate: "2026-06-29",
     },
     content: (
       <div className="flex flex-col gap-4">
@@ -680,7 +680,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 2: How to Diagnose the Strategic Disconnect
+          How to Diagnose the Strategic Disconnect
         </h3>
 
         <p>
@@ -716,7 +716,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 3: The Commoditisation of Creative Execution
+          The Commoditisation of Creative Execution
         </h3>
 
         <p>
@@ -736,7 +736,7 @@ export const DETAILED_BLOGS = {
         </p>
 
         <h3 className="text-xl font-semibold mt-6">
-          Section 4: Moving From Execution to Brand Infrastructure
+          Moving From Execution to Brand Infrastructure
         </h3>
 
         <p>
