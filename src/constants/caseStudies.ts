@@ -247,8 +247,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
   {
-    slug: "mudu",
-    brand: "Mudu",
+    slug: "mudo",
+    brand: "Mudo",
     cardImage: "/assets/Projects/41.webp",
     cardDescription:
       "Playful branding and content for a food and beverage venture.",
@@ -257,7 +257,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Bringing playful energy to a food and beverage brand.",
     heroImage: "/assets/Projects/41.webp",
     whatTheySaid:
-      "Mudu wanted branding and content with personality — playful, appetising and easy to love.",
+      "Mudo wanted branding and content with personality — playful, appetising and easy to love.",
     opportunity:
       "We saw an opportunity to build a vibrant, characterful brand that stands out on shelves and in feeds alike.",
     delivered:

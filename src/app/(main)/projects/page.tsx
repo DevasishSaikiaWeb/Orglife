@@ -10,6 +10,7 @@ import {
 import { breadcrumbSchema, graph, webPageSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { CategorySection } from "./_components/category-section";
+import { LogoGrid } from "./_components/logo-grid";
 
 const CRUMBS = [
   { name: "Home", path: "/" },
@@ -51,6 +52,8 @@ export default function WorkPage() {
         {PORTFOLIO_CATEGORIES.map((category) => (
           <CategorySection key={category.slug} category={category} />
         ))}
+
+        <LogoGrid />
 
         <ContactForPartnership />
       </main>

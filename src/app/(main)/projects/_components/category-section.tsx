@@ -10,7 +10,12 @@ export function CategorySection({ category }: { category: PortfolioCategory }) {
         <h2 className="font-h3 [word-spacing:0.6rem] leading-[90%] flex-1 font-heading">
           {category.title}
         </h2>
-        <p className="flex-1 font-body lg:max-w-none max-md:mt-1.5">
+        {/* Keep `font-body` (original size); inline text-wrap overrides its
+            `text-balance` so lines fill to the right edge. */}
+        <p
+          className="flex-1 font-body lg:max-w-none max-md:mt-1.5"
+          style={{ textWrap: "wrap" }}
+        >
           {category.description}
         </p>
       </div>
