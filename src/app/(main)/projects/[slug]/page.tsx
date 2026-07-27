@@ -1,44 +1,103 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { PROJECT_DETAILS } from "@/constants/projectDetails";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ContactForPartnership } from "@/components/contact-for-partnership";
+import { JsonLd } from "@/components/json-ld";
+import {
+  type Project_Details,
+  PROJECT_DETAILS,
+} from "@/constants/projectDetails";
+import {
+  breadcrumbSchema,
+  creativeWorkSchema,
+  graph,
+  webPageSchema,
+} from "@/lib/schema";
+import { buildMetadata } from "@/lib/seo";
 import { PageDetails } from "./_components/page-details";
-import { useLenis } from "lenis/react";
 
-function page({ params }: any) {
-  const pathname = usePathname();
-  const lenis = useLenis(); // get Lenis instance
+type PageProps = { params: Promise<{ slug: string | string[] }> };
 
-  const [data, setData] = useState<any>(null);
-  const slugFromParams = params?.slug;
-  const slug = Array.isArray(slugFromParams)
-    ? slugFromParams[0]
-    : slugFromParams ??
-      (typeof pathname === "string"
-        ? pathname.split("/").filter(Boolean).pop()
-        : undefined);
+const PROJECT_KEYS = Object.keys(PROJECT_DETAILS) as Array<
+  keyof typeof PROJECT_DETAILS
+>;
 
-  console.log("check log == :", slug.replace(/\s+/g, "-").replace(/%20/g, " "));
-  console.log("keys", Object.keys(PROJECT_DETAILS));
-
-  useEffect(() => {
-    const filtered_project =
-      PROJECT_DETAILS?.[slug.replace(/\s+/g, "-").replace(/%20/g, " ")];
-    console.log("filtered data :", filtered_project);
-    setData(filtered_project);
-  }, [slug]);
-
-  useEffect(() => {
-    if (lenis) {
-      lenis.scrollTo(0, { immediate: true }); // scroll to top instantly
-    }
-  }, [pathname, lenis]);
-
-  return (
-    <main className="space-y-32 md:space-y-64 pt-32 sm:pt-64 max-w-368 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <PageDetails data={data} />
-    </main>
+/** Cards link to `/projects/<Title>`, so slugs may be URL-encoded titles. */
+function resolveProject(raw: string): Project_Details | undefined {
+  const target = decodeURIComponent(raw).replace(/-/g, " ").toLowerCase().trim();
+  const key = PROJECT_KEYS.find(
+    (candidate) => candidate.toLowerCase().trim() === target,
   );
+  return key ? (PROJECT_DETAILS[key] as Project_Details) : undefined;
 }
 
-export default page;
+async function resolveSlug(params: PageProps["params"]) {
+  const { slug } = await params;
+  return Array.isArray(slug) ? slug[0] : (slug ?? "");
+}
+
+export function generateStaticParams() {
+  return PROJECT_KEYS.map((key) => ({ slug: key }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const slug = await resolveSlug(params);
+  const project = resolveProject(slug);
+  if (!project) return { title: "Project not found" };
+
+  return buildMetadata({
+    title: `${project.title} — Project`,
+    description: project.subTitle,
+    path: `/projects/${encodeURIComponent(slug)}`,
+    section: "Portfolio",
+    keywords: [project.title, "project", "creative work", "case study"],
+  });
+}
+
+export default async function ProjectDetailPage({ params }: PageProps) {
+  const slug = await resolveSlug(params);
+  const project = resolveProject(slug);
+
+  if (!project) notFound();
+
+  const path = `/projects/${encodeURIComponent(slug)}`;
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Projects", path: "/projects" },
+    { name: project.title, path },
+  ];
+
+  return (
+    <>
+      <JsonLd
+        data={graph(
+          webPageSchema({
+            name: `${project.title} — Project`,
+            description: project.subTitle,
+            path,
+            primaryImage: project.main_image,
+          }),
+          breadcrumbSchema(crumbs),
+          creativeWorkSchema({
+            name: project.title,
+            description: project.subTitle,
+            path,
+            image: project.main_image,
+          }),
+        )}
+      />
+      <main
+        id="main-content"
+        className="space-y-32 md:space-y-64 pt-32 sm:pt-64 max-w-368 mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        <div>
+          <Breadcrumbs crumbs={crumbs} />
+          <PageDetails data={project} />
+        </div>
+        <ContactForPartnership />
+      </main>
+    </>
+  );
+}

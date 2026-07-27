@@ -23,7 +23,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "From defining the brand’s core story and visual identity to shaping collections, campaigns, digital presence and consumer experiences, our 360-degree approach ensures every touchpoint speaks one cohesive language.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740376/Sswai_Logo_Animation_kfnfla.mp4",
+      "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4",
     main_content: {
       paragraphs: [
         "We designed and developed a high-performance Shopify website for Sswai Lifestyle that brought the brand to life online. Powered by AI-driven model generation and product photography, our approach enabled visually rich presentations and editorial-style shoots at scale — ensuring consistency, speed and cost efficiency. The result was a seamless, conversion-focused e-commerce experience where storytelling, aesthetics and technology came together to elevate the brand’s digital storefront.",
@@ -33,10 +33,10 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740410/IMAGE_3_-_FULL_SCREEN_-_Mockup_of_laptop_bmtowj.jpg",
+          "/assets/Projects/2.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740422/Card_vdkw5a.jpg",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740436/IMAGE_5_-_HALF_SCREEN_-_Mockup_of_phone_x_Blank_template_gwgg50.mp4",
+          "/assets/Projects/3.webp",
+          "/assets/Projects/4.webp",
         ],
         content: [
           {
@@ -49,11 +49,11 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740526/Image_9_sswai_mascots_2_tv4raf.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4",
 
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740520/Image_8_AI_Model_images_slideshow_video_bd7rfs.mp4",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740515/Image_7_AI_Model_video_2_jznati.mp4",
+          "/assets/Projects/3.webp",
+          "/assets/Projects/4.webp",
         ],
         content: [
           {
@@ -66,7 +66,7 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740501/Image_6_tablet-ipad_screen_x_blog_h2quvu.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4",
       },
     ],
   },
@@ -76,7 +76,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "Through insight-led storytelling, cinematic visuals and purpose-driven narratives, we translate courage, sacrifice and service into compelling content across platforms for the Indian Army — strengthening public trust, national pride and long-term legacy building.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766739436/1indian_army_d2st3h.mp4",
+      "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4",
     main_content: {
       paragraphs: [
         "Our digital story archiving solutions systematically preserve historical data, missions and defining incidents, transforming them into accessible, future-ready narratives that safeguard the Army’s heritage while inspiring generations to come.",
@@ -86,9 +86,9 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767076974/oMAGE_2_r1luqp.jpg",
+          "/assets/Projects/5.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739579/IMAGE_3._TRAINING_WORKSHOP_hkoqrc.png",
+          "/assets/Projects/6.webp",
         ],
         content: [
           {
@@ -101,9 +101,9 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739583/IMAGE_4._PHOTOGRAPHY_PROJECT_c9f8rw.png",
+          "/assets/Projects/7.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739588/IMAGE_5._VIDEOGRAPHY_PROJECT_tmdylx.png",
+          "/assets/Projects/8.webp",
         ],
         content: [
           {
@@ -116,11 +116,11 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766739610/IMAGE_6_Sanyukt_vimochan_wihxzn.mp4",
+          "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4",
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739718/IMAGE_7._LIVE_EVENT_PHOTOGRAPHY_mhxorc.png",
+          "/assets/Projects/2.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766739740/IMAGE_8._LIVE_EVENT_VIDEOGRAPHY_xxuj7e.png",
+          "/assets/Projects/2.webp",
         ],
         content: [
           {
@@ -133,7 +133,7 @@ export const PROJECT_DETAILS = {
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767077377/IMAGE_9_Capt_yqqh6g.mp4",
+          "/assets/Projects/2.webp",
       },
     ],
   },
@@ -154,12 +154,12 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738860/2_3D_ANIMATION_SEQUENCE_OF_LOGO_rfuxnf.mp4",
+          "/assets/Projects/3.webp",
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738886/3_MASCOT_CHARACTER_MODELLING_IMAGE_pziyjb.mp4",
+          "/assets/Projects/4.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738876/4_Phone_CGI_Mockup_2_gzi073.mp4",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738902/5_SIS_Laptop_CGI_Mockup_zxtjaz.mp4",
+          "/assets/Projects/5.webp",
+          "/assets/Projects/6.webp",
         ],
       },
     ],
@@ -170,7 +170,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "We blend strategic thinking with evocative storytelling, design and content for Karnavati University and its constituent colleges to help them articulate their purpose, celebrate achievements and build meaningful connections with students, faculty, alumni, and the world — across every platform and touchpoint.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766729612/Image_1KU_r7e3sk.mp4",
+      "/assets/Projects/7.webp",
     main_content: {
       title: "Real Voices. Real Stories. Real Campaigns.",
       paragraphs: [
@@ -181,14 +181,14 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766730595/Image_2_Saloni_Mehta_iokydf.mp4",
+          "/assets/Projects/8.webp",
       },
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766730830/image_3_UIFM_z307sd.mp4",
+          "/assets/Projects/9.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766730865/IMAGE_4_-_HALF_SCREEN_-_Mockup_of_PHONE_x_REEL_YELLOW_e9itj9.mp4",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766731538/IMAGE_5_-_HALF_SCREEN_-_Mockup_of_PHONE_x_REEL_PARIS_F_WEEK_k504st.mp4",
+          "/assets/Projects/10.webp",
+          "/assets/Projects/11.webp",
         ],
         content: [
           {
@@ -201,11 +201,11 @@ export const PROJECT_DETAILS = {
       },
       {
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766732990/IMAGE_6_-_HALF_SCREEN_-_Mockup_of_PHONE_x_REEL_USCI_20MB_c66ws2.mp4",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766733052/IMAGE_7_-_HALF_SCREEN_-_Mockup_of_PHONE_x_REEL_KUAT_14MB_bvtk0c.mp4",
+          "/assets/Projects/12.webp",
+          "/assets/Projects/13.webp",
         ],
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766733108/Image_8_ADW_final_video90MB_tcjtp4.mp4",
+          "/assets/Projects/14.webp",
         content: [
           {
             title:
@@ -219,23 +219,24 @@ export const PROJECT_DETAILS = {
       },
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766733258/Image_9_Satyajit_Ray_HR90MB_ixgwc4.mp4",
+          "/assets/Projects/8.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733273/IMAGE_10_-_HALF_SCREEN_-_IMAGE_OF_BROCHURE_MOCKUP_3_mgqurk.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733420/Image_11_KU_crwqvf.jpg",
+          "/assets/Projects/10.webp",
+          "/assets/Projects/11.webp",
         ],
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766733469/iamge_12_ANI_DOI_zlxjzf.mp4",
+          "/assets/Projects/12.webp",
       },
 
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766733483/Image_13_ADW_Wireframe_yaxj5u.mp4",
+          "/assets/Projects/8.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733499/IMAGE_14-_FULL_SCREEN_-_TEDX_IMAGE_yujpiw.jpg",
+          "/assets/Projects/10.webp",
+          "/assets/Projects/11.webp",
         ],
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733493/IMAGE_15_-_FULL_SCREEN_-_KLFF_IMAGE_s8m5v8.jpg",
+          "/assets/Projects/12.webp",
         content: [
           {
             title:
@@ -248,12 +249,12 @@ export const PROJECT_DETAILS = {
       },
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733502/IMAGE_16_-_FULL_SCREEN_-_YP_IMAGE_nuzl9l.jpg",
+          "/assets/Projects/16.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733506/IMAGE_17-_FULL_SCREEN_-_KUGM_IMAGE_j2kakt.jpg",
+          "/assets/Projects/17.webp",
         ],
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766733509/IMAGE_18-_FULL_SCREEN_-_EDGE_IMAGE_lwv0cx.jpg",
+          "/assets/Projects/18.webp",
       },
     ],
   },
@@ -263,7 +264,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "We designed visuals and narratives that spoke diplomacy and national affairs in color and form. ",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740082/MEA_LOGO_ANIMATION_LOOP_c4qio7.mp4",
+      "/assets/Projects/19.webp",
     main_content: {
       title: "Adapting and innovating along with time.",
       paragraphs: [
@@ -274,12 +275,12 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766740216/2_MEA_Video_d5tgog.mp4",
+          "/assets/Projects/20.webp",
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767073167/Image_5_IDM_itthxf.jpg",
+          "/assets/Projects/21.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740246/Image_3_Laptop_ho3aae.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740266/Image_4_Phone_gejto5.jpg",
+          "/assets/Projects/22.webp",
+          "/assets/Projects/23.webp", 
         ],
         content: [
           {
@@ -292,7 +293,7 @@ export const PROJECT_DETAILS = {
       },
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766740280/Image_6_banner_kj8j2g.jpg",
+          "/assets/Projects/24.webp",
       },
     ],
   },
@@ -302,7 +303,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "We helped Group Landmark tell its story in multiple formats and across multiple global automobile brands that it represented. From creative communication strategies to everyday social content, we made sure every message reached its enthusiastic stakeholders across India.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766737584/Image_1_Logo_animation_t2bw89.mp4",
+      "/assets/Projects/25.webp",
     main_content: {
       title: "We transformed ideas to marketable content.",
       paragraphs: [
@@ -313,9 +314,9 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766737675/Image_2_Farmer_s_Market_by_Volkswagen_Ahmedabad_720p_25fps_H264-128kbit_AAC_aytpgk.mp4",
+          "/assets/Projects/26.webp",
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766737846/Image_3_Grishma_Final-_kq2ocx.mp4",
+          "/assets/Projects/27.webp",
         content: [
           {
             title:
@@ -328,10 +329,10 @@ export const PROJECT_DETAILS = {
       },
       {
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738303/Image_6_Festival_greetings_x_Halloween__2024_ikr9ts.mp4",
+          "/assets/Projects/30.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766737861/Image_4_awesome_phone_mockup_u02kqi.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766737901/Image_5_Phone_iwxvj3.jpg",
+          "/assets/Projects/28.webp",
+          "/assets/Projects/29.webp",
         ],
         content: [
           {
@@ -344,7 +345,7 @@ export const PROJECT_DETAILS = {
       },
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766738664/image_7_Festival_greetings_and_offers_x_Diwali_2024_unbfpx.mp4",
+          "/assets/Projects/31.webp",
       },
     ],
   },
@@ -353,7 +354,7 @@ export const PROJECT_DETAILS = {
     subTitle:
       "From realistic product visualizations to engaging animated video content, our services helped Verity showcase its gaming products and peripherals’ features, functionality and design innovation.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840611/Verity_Logo_pdydei.mp4",
+      "/assets/Projects/32.webp",
     main_content: {
       title:
         "Beyond the Surface: Photoreal 3D models that engaged and inspired",
@@ -365,24 +366,24 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767073439/IMAGE_2-_kggem3.mp4",
+          "/assets/Projects/33.webp",
 
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767073772/IMAGE_3_PRODUCT_VIDEO_de8mms.mp4",
+          "/assets/Projects/34.webp",
         ],
       },
       {
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767074658/Image_6_Hedphone_mp8sj5.mp4",
+          "/assets/Projects/35.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767074236/Verity_1_etvqb4.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1767074258/Verity_2_a0bgtw.jpg",
+          "/assets/Projects/36.webp",
+          "/assets/Projects/37.webp",
         ],
       },
       {
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1767074534/Image_7_phone_reel_jlwqex.mp4",
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840698/Image_8_Phone_Reel_ybuhad.mp4",
+          "/assets/Projects/38.webp",
+          "/assets/Projects/39.webp",
         ],
       },
     ],
@@ -391,7 +392,7 @@ export const PROJECT_DETAILS = {
     title: "Wantasanta",
     subTitle: "This is a sample subtitle for the work details page.",
     main_image:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840041/Wanta_Santa_L_ta52mr.mp4",
+      "/assets/Projects/40.webp",
     main_content: {
       title: "Racing Against Time When Every Hour Matters",
       paragraphs: [
@@ -403,18 +404,18 @@ export const PROJECT_DETAILS = {
     sections: [
       {
         main_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840340/IMAGE_2_-_EARTH_TO_MARS_91_s3bwxi.mp4",
+          "/assets/Projects/41.webp",
 
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840508/Image_3_Mangal_to_erth_92_cdgjtl.mp4",
+          "/assets/Projects/42.webp",
         ],
       },
       {
         second_image:
-          "https://res.cloudinary.com/dpblcamaw/video/upload/v1766840552/IMAGE_7_-_FULL_SCREEN_-_ELLI_THE_3D_CHARACTER_xjkuc2.mp4",
+          "/assets/Projects/43.webp",
         half_image: [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840527/Image_4_Winter_wonderland_ngprnf.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1766840539/Image_5_Astronaut_moy3bb.jpg",
+          "/assets/Projects/44.webp",
+          "/assets/Projects/45.webp",
         ],
       },
       ,

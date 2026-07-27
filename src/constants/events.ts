@@ -18,11 +18,11 @@ export const Events: events = {
       title: "Harsh Gujral",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989391/Harsh_Gujral_1_xfmcvv.png",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989363/Harsh_Gujral_2_wxeptm.png",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989364/Harsh_Gujral_3_phwngn.png",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_2_wxeptm.webp",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_3_phwngn.webp",
         ],
       ],
       year: "2023",
@@ -35,11 +35,11 @@ export const Events: events = {
       title: "Shruti Pathak",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989314/Shruti_Pathak_1_uyxeiv.png",
+          "/assets/Home_page/Concerts/webp/Shruti_Pathak_1_uyxeiv.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989303/Shruti_Pathak_2_igvzfv.png",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989332/Shruti_Pathak_3_s4aorn.png",
+          "/assets/Home_page/Concerts/webp/Shruti_Pathak_2_igvzfv.webp",
+          "/assets/Home_page/Concerts/webp/Shruti_Pathak_3_s4aorn.webp",
         ],
       ],
       year: "2023",
@@ -51,17 +51,17 @@ export const Events: events = {
       title: "Vishal and Shekhar",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989343/Vishal_Shekhar_1_modk6r.png",
+          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_1_modk6r.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989327/Vishal_Shekhar_2_phlxlm.png",
+          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_2_phlxlm.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989325/Vishal_Shekhar_3_g3jzn6.png",
+          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_3_g3jzn6.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989334/Vishal_Shekhar_4_cwkzoj.png",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989346/Vishal_Shekhar_5_o5egk1.png",
+          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_4_cwkzoj.webp",
+          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_5_o5egk1.webp",
         ],
       ],
       year: "2023",
@@ -74,14 +74,14 @@ export const Events: events = {
       title: "Maati Baani",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989381/Maati_Baani_1_fx3mf2.png",
+          "/assets/Home_page/Concerts/webp/Maati_Baani_1_fx3mf2.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989384/Maati_Baani_2_q7bmie.png",
+          "/assets/Home_page/Concerts/webp/Maati_Baani_2_q7bmie.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989344/Maati_Baani_3_yyr25o.png",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770989343/Maati_Baani_4_zjbox6.png",
+          "/assets/Home_page/Concerts/webp/Maati_Baani_3_yyr25o.webp",
+          "/assets/Home_page/Concerts/webp/Maati_Baani_4_zjbox6.webp",
         ],
       ],
       year: "2023",
@@ -94,10 +94,10 @@ export const Events: events = {
       title: "Gurleen Pannu",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770990320/Gurleen_Pannu_1_jfrbxa.png",
+          "/assets/Home_page/Concerts/webp/Gurleen_Pannu_1_jfrbxa.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770990298/Gurleen_Pannu_2_pcgn1f.png",
+          "/assets/Home_page/Concerts/webp/Gurleen_Pannu_2_pcgn1f.webp",
         ],
       ],
       year: "2023",
@@ -110,16 +110,16 @@ export const Events: events = {
       title: "Big Ban Theory",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991335/Big_Ban_Theory_1_zt0fsg.png",
+          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_1_zt0fsg.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991523/Big_Ban_Theory_2_tl2nqp.png",
+          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_2_tl2nqp.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991499/Big_Ban_Theory_3_qrrywx.png",
+          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_3_qrrywx.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770991276/Big_Ban_Theory_4_wje86t.png",
+          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_4_wje86t.webp",
         ],
       ],
       year: "2023",
@@ -132,11 +132,11 @@ export const Events: events = {
       title: "The Local Train",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770641949/1.11.jpg_glqrvm.jpg",
+          "/assets/Home_page/Concerts/webp/1.11.jpg_glqrvm.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770641912/1.jpg_kutphr.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770641910/1.13.jpg_tuhe8n.jpg",
+          "/assets/Home_page/Concerts/webp/1.12.jpg_rx5zdf.webp",
+          "/assets/Home_page/Concerts/webp/1.13.jpg_tuhe8n.webp",
         ],
       ],
       year: "2020",
@@ -148,11 +148,11 @@ export const Events: events = {
       title: "Ritviz",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645855/1.211.jpg_vsmyac.jpg",
+          "/assets/Home_page/Concerts/webp/1.22.jpg_olymwx.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645799/1.22.jpg_olymwx.jpg",
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770645824/1.23.jpg_cvkntj.jpg",
+          "/assets/Home_page/Concerts/webp/1.23.jpg_cvkntj.webp",
+          "/assets/Home_page/Concerts/webp/1.42.jpg_mjkpbj.webp",
         ],
       ],
       year: "2020",
@@ -164,11 +164,11 @@ export const Events: events = {
     //   title: "Houdini",
     //   images: [
     //     [
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646473/1.32.jpg_qzqcmw.jpg",
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646461/1.33.jpg_xufj1t.jpg",
+    //       "/assets/Home_page/Concerts/webp/Houdini_1_qzqcmw.webp",
+    //       "/assets/Home_page/Concerts/webp/Houdini_2_xufj1t.webp",
     //     ],
     //     [
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646455/1.31.jpg_cbxxxe.jpg",
+    //       "/assets/Home_page/Concerts/webp/Houdini_3_cbxxxe.webp",
     //     ],
     //   ],
     //   year: "2020",
@@ -180,11 +180,11 @@ export const Events: events = {
     //   title: "Ana Lilia + Flymeon + Lucas Firtzer",
     //   images: [
     //     [
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.41.jpg_l2sxr7.jpg",
+    //       "/assets/Home_page/Concerts/webp/Ana_Lilia_1_l2sxr7.webp",
     //     ],
     //     [
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646790/1.42.jpg_mjkpbj.jpg",
-    //       "https://res.cloudinary.com/dpblcamaw/image/upload/v1770646794/1.43.jpg_xmj45d.jpg",
+    //       "/assets/Home_page/Concerts/webp/Ana_Lilia_2_mjkpbj.webp",
+    //       "/assets/Home_page/Concerts/webp/Ana_Lilia_3_xmj45d.webp",
     //     ],
     //   ],
     //   year: "2024",
@@ -196,10 +196,10 @@ export const Events: events = {
       title: "Divine",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770647262/1.51.jpg_d5781p.jpg",
+          "/assets/Home_page/Concerts/webp/1.51.jpg_d5781p.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1770647239/1.52.jpg_tzqngh.jpg",
+          "/assets/Home_page/Concerts/webp/1.52.jpg_tzqngh.webp",
         ],
       ],
       year: "2019",
@@ -214,10 +214,10 @@ export const Events: events = {
       title: "Jasmine Sandlas Live",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161661/Jasmine_Sandlas_Live1_qpuxmp.png",
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161663/Jasmine_Sandlas_Live_2_rf1xll.png",
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
         ],
       ],
       year: "2026",
@@ -229,19 +229,19 @@ export const Events: events = {
       title: "Sheri Circle Garba",
       images: [
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161667/Sheri_Circle_Garba_1_ooi9jq.png",
+          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_1_ooi9jq.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161667/Sheri_Circle_Garba_2_rqe9tz.png",
+          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_2_rqe9tz.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161656/Sheri_Circle_Garba_3_me5xoq.png",
+          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_3_me5xoq.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161655/Sheri_Circle_Garba_4_norpio.png",
+          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_4_norpio.webp",
         ],
         [
-          "https://res.cloudinary.com/dpblcamaw/image/upload/v1771161662/Sheri_Circle_Garba_5_gva1a4.png",
+          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_5_gva1a4.webp",
         ],
       ],
       year: "2025",

@@ -17,8 +17,8 @@ export function ProjectsSection({ visibleCards = 3 }: ProjectsProps) {
         title={PROJECTS_SECTION_TITLE}
         subtitle={PROJECTS_SECTION_SUBTITLE}
         action={{
-          href: "/work",
-          label: "Work",
+          href: "/products",
+          label: "Products",
         }}
       />
 

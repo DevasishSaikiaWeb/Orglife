@@ -10,7 +10,10 @@ export function ContactForPartnership() {
             Invest in tomorrow. Start today.
           </p>
           <p className="text-muted/90 mt-4 md:mt-8 text-[14px] md:text-[18px] text-balance md:leading-relaxed">
-            Our philosophy resonates most with people and brands that are ready to think unconventionally and explore beyond the brand-agency-consultancy framework. If you're interested in building something meaningful and interesting, let’s grab a coffee and chat!
+            Our philosophy resonates most with people and brands that are ready
+            to think unconventionally and explore beyond the
+            brand-agency-consultancy framework. If you're interested in building
+            something meaningful and interesting, let’s grab a coffee and chat!
           </p>
         </div>
         <div>
@@ -32,9 +35,7 @@ export function ContactForPartnership() {
       </div>
       <div className="flex-1">
         <video
-          src={
-            "https://res.cloudinary.com/dpblcamaw/video/upload/v1767080037/WEBSITE_-_INVEST_IN_TOMO_vqznjn.mp4"
-          }
+          src={"https://res.cloudinary.com/dpblcamaw/video/upload/v1784795218/WEBSITE_-_INVEST_IN_TOMO_njohum.mp4"}
           className="object-cover min-h-full min-w-full"
           autoPlay
           loop

@@ -10,15 +10,15 @@ export const PAGE_DETAILS_SUBTITLE2 =
 export const OFFERING_CARDS = [
   {
     title: "Brand Foundation Design",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694673/SERVICES_Video_2_r8rr4g.mp4",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795134/Brand_Foundation_Design_vqxle4.mp4",
   },
   {
     title: "Visual Content and Communication",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694685/SERVICES_Video_1.1_lqbocd.mp4",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795135/Visual_Content_and_Communication_bxobk1.mp4",
   },
   {
     title: "Brand Digital Assets",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694689/SERVICES_Video_1_q8gbpa.mp4",
+    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795136/Brand_Digital_Assets_qactdz.mp4",
   },
 ];
 
@@ -29,7 +29,7 @@ export const OFFERING_DETAILS = [
     description: "Creating brand identities that resonate with audiences.",
     action: {
       label: "Book a Free Consultation",
-      href: "/offerings/brand-foundation-design",
+      href: "/contact",
     },
     list: [
       {
@@ -71,7 +71,7 @@ export const OFFERING_DETAILS = [
     description: "Let’s add the ‘aha!’ factor to your communication ideas.",
     action: {
       label: "Book a Free Consultation",
-      href: "/offerings/brand-foundation-design",
+      href: "/contact",
     },
     list: [
       {
@@ -142,7 +142,7 @@ export const OFFERING_DETAILS = [
     description: "Bold steps for strong digital footprints.",
     action: {
       label: "Book a Free Consultation",
-      href: "/offerings/brand-foundation-design",
+      href: "/contact",
     },
     list: [
       {
@@ -188,7 +188,7 @@ export const FINAL_OFFERING_SECTION = [
     description: "Creating brand identities that resonate with audiences.",
     action: {
       label: "Book a Free Consultation",
-      href: "/offerings/brand-foundation-design",
+      href: "/contact",
     },
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1781694689/SERVICES_Video_1_q8gbpa.mp4",
     list: [

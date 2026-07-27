@@ -14,11 +14,13 @@ export function HeroSection() {
 
       <div className="mt-8" id="video-wrapper">
         <video
-          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1778657006/WEBSITE_HOMEPAGE_1ST_VIDEO_ws4tek.mp4"
+          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4"
           autoPlay
           muted
           loop
-        ></video>
+          playsInline
+          aria-label="Introduction video showcasing our agency, services, portfolio, and team."
+        />
       </div>
       <div className="mt-8">
         <Heading3

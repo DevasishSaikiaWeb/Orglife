@@ -32,7 +32,9 @@ export function TextWithImageCard({
           ? `/events/${title}`
           : type === "blog"
             ? `/blogs/${urlSlug ?? title}`
-            : `/projects/${title}`
+            : type === "case-study"
+              ? `/case-studies/${urlSlug ?? title}`
+              : `/projects/${title}`
       }
       className="flex flex-col"
     >

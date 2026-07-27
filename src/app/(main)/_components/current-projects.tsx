@@ -19,8 +19,8 @@ export function CurrentProjectsSection({
         title={CURRENT_PROJECTS_SECTION_TITLE}
         subtitle={CURRENT_PROJECTS_SECTION_SUBTITLE}
         action={{
-          href: "/work",
-          label: "Work",
+          href: "/case-studies",
+          label: "Case Studies",
         }}
       />
 
@@ -30,6 +30,8 @@ export function CurrentProjectsSection({
         {CURRENT_PROJECTS.slice(0, visibleCards).map((project) => (
           <TextWithImageCard
             key={project.title}
+            type="case-study"
+            urlSlug={project.urlSlug ?? project.title}
             img={project.img}
             title={project.title}
             description={project.description}

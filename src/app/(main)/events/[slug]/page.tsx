@@ -19,8 +19,10 @@ function page({ params }: any) {
         : undefined));
 
   useEffect(() => {
-    const events = Events?.[slug.replace(/\s+/g, "-").replace(/%20/g, " ")];
-    setData(events);
+    const key = slug
+      .replace(/\s+/g, "-")
+      .replace(/%20/g, " ") as keyof typeof Events;
+    setData(Events?.[key]);
   }, [slug]);
 
   useEffect(() => {

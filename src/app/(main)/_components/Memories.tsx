@@ -12,9 +12,9 @@ function Memories() {
       <Heading2
         title={MEMORIES_SECTION_TITLE}
         subtitle={MEMORIES_SECTION_SUBTITLE}
-        action={{
-          label: "Our Events",
-        }}
+        // action={{
+        //   label: "Our Events",
+        // }}
       />
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16">

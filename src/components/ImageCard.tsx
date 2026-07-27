@@ -38,6 +38,7 @@ export function ImageCard({ img }: TextWithImageCardProps) {
           alt={img}
           height={450}
           width={450}
+          style={{ mixBlendMode: "plus-lighter" }}  
         />
       )}
     </div>

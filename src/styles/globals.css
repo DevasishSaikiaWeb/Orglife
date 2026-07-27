@@ -119,4 +119,42 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* WCAG 2.4.7 — always show a clear focus ring for keyboard users. */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-foreground;
+  }
+
+  /* Interactive elements must be reachable and obvious. */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-2 outline-offset-2 outline-foreground rounded-sm;
+  }
+
+  /* Media should never overflow its container (mobile CLS/overflow guard). */
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+}
+
+/* WCAG 2.3.3 — respect users who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

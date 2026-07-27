@@ -53,7 +53,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
       </div>
 
       <div>
-        {data.sections.map((section, sIndex) => (
+        {data.sections?.map((section, sIndex) => (
           <div key={sIndex} className="mt-16">
             {section?.main_image && (
               <>
@@ -81,7 +81,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
             {section?.half_image && (
               <div
                 className={`mt-8 grid  gap-8 ${
-                  section.half_image.length > 1 ? "grid-cols-2" : ""
+                  (section.half_image?.length ?? 0) > 1 ? "grid-cols-2" : ""
                 }`}
               >
                 {section?.half_image.map((imgSrc) => {
@@ -91,7 +91,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
                       width={800}
                       height={600}
                       className={
-                        section.half_image.length > 1
+                        (section.half_image?.length ?? 0) > 1
                           ? " aspect-square"
                           : "w-full"
                       }
@@ -106,7 +106,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
                       width={800}
                       height={600}
                       className={
-                        section.half_image.length > 1
+                        (section.half_image?.length ?? 0) > 1
                           ? "aspect-square"
                           : "w-full"
                       }
@@ -147,7 +147,7 @@ export function PageDetails({ data }: { data: Project_Details }) {
                     key={cIndex}
                     className="mb-12 w-1/2 max-sm:w-full ml-auto"
                   >
-                    <Heading4 title={content?.title} />
+                    <Heading4 title={content?.title ?? ""} />
 
                     {content?.paragraphs &&
                       content?.paragraphs?.map((para, pIndex) => (

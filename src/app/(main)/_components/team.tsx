@@ -11,13 +11,14 @@ export function TeamSection() {
       <Heading2 title={TEAM_SECTION_TITLE} subtitle={TEAM_SECTION_SUBTITLE} />
       <div className="mt-8">
         <video
-          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1766751161/Orglife_3_vyqvns.mp4"
+          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1784795213/WEBSITE_HOMEPAGE_2ST_VIDEO_xd6txn.mp4"
           width={1920}
           height={1080}
           autoPlay
           loop
           muted
           className="w-full h-auto rounded-lg"
+          aria-label="Video showcasing our team members and their work environment."
         />
       </div>
       <div className="mt-8">
