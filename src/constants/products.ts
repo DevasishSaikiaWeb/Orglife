@@ -1,5 +1,5 @@
 // Page details
-export const PAGE_DETAILS_TITLE = "INNOVATING FOR THE FUTURISTIC MINDS.";
+export const PAGE_DETAILS_TITLE = "INNOVATING FOR THE FUTURISTIC MINDS";
 export const PAGE_DETAILS_SUBTITLE =
   "Here’s where we have brought about a sophisticated synthesis of two decades of strategic creative expertise and innovative modern data intelligence. Welcome to our crazy world of platforms.";
 

@@ -4,8 +4,11 @@ import { Heading1 } from "@/components/heading";
 import { JsonLd } from "@/components/json-ld";
 import { TextWithImageCard } from "@/components/text-image-card";
 import { BLOGS } from "@/constants/blogs";
-import { BLOGS_SECTION_SUBTITLE, BLOGS_SECTION_TITLE } from "@/constants/home";
-import { SITE } from "@/constants/site";
+import {
+  BLOGS_SECTION_SUBTITLE,
+  BLOGS_SECTION_TITLE,
+} from "@/constants/home";
+import { SECTION_DOT, SITE } from "@/constants/site";
 import {
   blogPostingSchema,
   breadcrumbSchema,
@@ -83,6 +86,7 @@ export default function BlogsPage() {
           <Heading1
             title={BLOGS_SECTION_TITLE}
             subtitle={BLOGS_SECTION_SUBTITLE}
+            dot={SECTION_DOT}
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 gap-y-16">

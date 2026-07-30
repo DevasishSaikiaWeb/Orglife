@@ -1,9 +1,9 @@
 // Page details
-export const PAGE_DETAILS_TITLE = "A POWERPACKED TRIAD OF SERVICES.";
+export const PAGE_DETAILS_TITLE = "A POWERPACKED TRIAD OF SERVICES";
 export const PAGE_DETAILS_SUBTITLE =
   "We’re set on a journey to infuse disruption in the world of modern brand storytelling. And our services cater to brands, organizations and causes in ways that make them seen and heard.";
 
-export const PAGE_DETAILS_TITLE2 = "Partner with us in creative exploration.";
+export const PAGE_DETAILS_TITLE2 = "Partner with us in creative exploration";
 export const PAGE_DETAILS_SUBTITLE2 =
   "We collaborate with brands and organizations, consulting and assisting them to restructure and strategize their operations with brand new perspectives. We help them achieve better efficiency and productivity through our data-powered research engines and a strong consortium of experienced industry experts.";
 // Offering cards

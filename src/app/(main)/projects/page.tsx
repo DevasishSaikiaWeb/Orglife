@@ -7,6 +7,7 @@ import {
   PAGE_DETAILS_SUBTITLE,
   PAGE_DETAILS_TITLE,
 } from "@/constants/projects";
+import { SECTION_DOT } from "@/constants/site";
 import { breadcrumbSchema, graph, webPageSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { CategorySection } from "./_components/category-section";
@@ -46,7 +47,11 @@ export default function WorkPage() {
       >
         <section>
           <Breadcrumbs crumbs={CRUMBS} />
-          <Heading1 title={PAGE_DETAILS_TITLE} subtitle={PAGE_DETAILS_SUBTITLE} />
+          <Heading1
+            title={PAGE_DETAILS_TITLE}
+            subtitle={PAGE_DETAILS_SUBTITLE}
+            dot={SECTION_DOT}
+          />
         </section>
 
         {PORTFOLIO_CATEGORIES.map((category) => (

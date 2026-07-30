@@ -4,6 +4,7 @@ import {
   CURRENT_PROJECTS_SECTION_SUBTITLE,
   CURRENT_PROJECTS_SECTION_TITLE,
 } from "@/constants/home";
+import { SECTION_DOT } from "@/constants/site";
 import { CURRENT_PROJECTS } from "@/constants/projects";
 
 type CurrentProjectsProps = {
@@ -18,6 +19,7 @@ export function CurrentProjectsSection({
       <Heading2
         title={CURRENT_PROJECTS_SECTION_TITLE}
         subtitle={CURRENT_PROJECTS_SECTION_SUBTITLE}
+        dot={SECTION_DOT}
         action={{
           href: "/case-studies",
           label: "Case Studies",

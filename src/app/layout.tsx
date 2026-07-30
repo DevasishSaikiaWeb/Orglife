@@ -85,12 +85,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/logos/logoO.svg", type: "image/svg+xml" },
+      { url: "/images/logos/favicon.ico", sizes: "any" },
+      { url: "/images/logos/favicon.ico", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",
-    apple: [{ url: "/images/logos/logo.png", sizes: "180x180" }],
-    other: [{ rel: "mask-icon", url: "/images/logos/logoO.svg", color: SITE.themeColor }],
+    shortcut: "/images/logos/favicon.ico",
+    apple: [{ url: "/images/logos/favicon.ico", sizes: "180x180" }],
+    other: [{ rel: "mask-icon", url: "/images/logos/favicon.ico", color: SITE.themeColor }],
   },
   appleWebApp: {
     capable: true,

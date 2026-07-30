@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.dot-text{
+  color:#F46F0C;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

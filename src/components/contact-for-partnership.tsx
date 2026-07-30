@@ -7,7 +7,8 @@ export function ContactForPartnership() {
       <div className="flex-1 md:p-8 p-2 pt-4 flex flex-col justify-between">
         <div>
           <p className="uppercase [word-spacing:0.5rem] text-balance font-heading text-[2rem] leading-[90%] md:text-[4rem] md:leading-14 font-bold">
-            Invest in tomorrow. Start today.
+            Invest in tomorrow. Start today
+            <span className="dot-text">.</span>
           </p>
           <p className="text-muted/90 mt-4 md:mt-8 text-[14px] md:text-[18px] text-balance md:leading-relaxed">
             Our philosophy resonates most with people and brands that are ready

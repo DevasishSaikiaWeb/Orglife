@@ -4,6 +4,7 @@ import { Heading1 } from "@/components/heading";
 import { JsonLd } from "@/components/json-ld";
 import { TextWithImageCard } from "@/components/text-image-card";
 import { CASE_STUDIES } from "@/constants/caseStudies";
+import { SECTION_DOT } from "@/constants/site";
 import {
   breadcrumbSchema,
   graph,
@@ -12,7 +13,7 @@ import {
 } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
-const TITLE = "Exploring a new world of creative possibilities.";
+const TITLE = "Exploring a new world of creative possibilities";
 const DESCRIPTION =
   "This is where their needs met our special skills. Our archive of projects is more than a portfolio — it’s a reflection of the creative ideas we’ve brought to life.";
 
@@ -57,7 +58,7 @@ export default function CaseStudiesPage() {
       >
         <section>
           <Breadcrumbs crumbs={CRUMBS} />
-          <Heading1 title={TITLE} subtitle={DESCRIPTION} />
+          <Heading1 title={TITLE} subtitle={DESCRIPTION} dot={SECTION_DOT} />
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-16">
             {CASE_STUDIES.map((study) => (

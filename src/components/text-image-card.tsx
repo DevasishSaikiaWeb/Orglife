@@ -13,6 +13,11 @@ type TextWithImageCardProps = {
   type?: string;
   urlSlug?: string;
   date?: String;
+  /**
+   * Set false for display-only cards that have no destination page, so the card
+   * renders as plain content instead of a link.
+   */
+  linked?: boolean;
 };
 
 export function TextWithImageCard({
@@ -24,20 +29,10 @@ export function TextWithImageCard({
   type = "work",
   urlSlug,
   date,
+  linked = true,
 }: TextWithImageCardProps) {
-  return (
-    <Link
-      href={
-        type === "event"
-          ? `/events/${title}`
-          : type === "blog"
-            ? `/blogs/${urlSlug ?? title}`
-            : type === "case-study"
-              ? `/case-studies/${urlSlug ?? title}`
-              : `/projects/${title}`
-      }
-      className="flex flex-col"
-    >
+  const content = (
+    <>
       <div
         id="project-image-wrapper"
         className={cn(
@@ -83,6 +78,27 @@ export function TextWithImageCard({
           ))}
         </div>
       </div>
+    </>
+  );
+
+  if (!linked) {
+    return <div className="flex flex-col">{content}</div>;
+  }
+
+  return (
+    <Link
+      href={
+        type === "event"
+          ? `/events/${title}`
+          : type === "blog"
+            ? `/blogs/${urlSlug ?? title}`
+            : type === "case-study"
+              ? `/case-studies/${urlSlug ?? title}`
+              : `/projects/${title}`
+      }
+      className="flex flex-col"
+    >
+      {content}
     </Link>
   );
 }

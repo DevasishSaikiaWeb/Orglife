@@ -7,7 +7,7 @@ import {
   PAGE_DETAILS_SUBTITLE2,
   PAGE_DETAILS_TITLE2,
 } from "@/constants/offerings";
-import { SERVICES } from "@/constants/site";
+import { SECTION_DOT, SERVICES } from "@/constants/site";
 import {
   breadcrumbSchema,
   graph,
@@ -80,7 +80,11 @@ export default function OffetingsPage() {
       ))}
 
       <section>
-        <Heading1 title={PAGE_DETAILS_TITLE2} subtitle={PAGE_DETAILS_SUBTITLE2} />
+        <Heading1
+          title={PAGE_DETAILS_TITLE2}
+          subtitle={PAGE_DETAILS_SUBTITLE2}
+          dot={SECTION_DOT}
+        />
       </section>
       <ContactForPartnership />
     </main>

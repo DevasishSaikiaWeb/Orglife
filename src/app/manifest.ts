@@ -17,7 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["business", "design", "productivity", "photo"],
     icons: [
       {
-        src: "/images/logos/logoO.svg",
+        src: "/images/logos/logo.svg",
         sizes: "any",
         type: "image/svg+xml",
         purpose: "any",

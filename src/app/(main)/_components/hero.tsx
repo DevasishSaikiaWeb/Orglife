@@ -6,11 +6,16 @@ import {
   HERO_SECTION_SUBTITLE,
   HERO_SECTION_TITLE,
 } from "@/constants/home";
+import { SECTION_DOT } from "@/constants/site";
 
 export function HeroSection() {
   return (
     <section>
-      <Heading1 title={HERO_SECTION_TITLE} subtitle={HERO_SECTION_SUBTITLE} />
+      <Heading1
+        title={HERO_SECTION_TITLE}
+        subtitle={HERO_SECTION_SUBTITLE}
+        dot={SECTION_DOT}
+      />
 
       <div className="mt-8" id="video-wrapper">
         <video

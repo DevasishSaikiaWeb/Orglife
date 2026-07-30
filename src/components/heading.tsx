@@ -11,21 +11,32 @@ type HeadingProps = {
   title: string;
   subtitle?: string;
   action?: ActionType;
+  dot?: string;
 };
 
-export function Heading1({ title, subtitle }: Omit<HeadingProps, "action">) {
+export function Heading1({
+  title,
+  subtitle,
+  dot,
+}: Omit<HeadingProps, "action">) {
   return (
     <>
-      <h1 className="font-h1 [word-spacing:1.25rem] font-heading">{title}</h1>
+      <h1 className="font-h1 [word-spacing:1.25rem] font-heading">
+        {title}
+        {dot && <span className="dot-text">{dot}</span>}
+      </h1>
       <p className="font-body mt-2">{subtitle}</p>
     </>
   );
 }
 
-export function Heading2({ title, subtitle, action }: HeadingProps) {
+export function Heading2({ title, subtitle, action, dot }: HeadingProps) {
   return (
     <>
-      <h2 className="font-h1 [word-spacing:1.25rem] font-heading">{title}</h2>
+      <h2 className="font-h1 [word-spacing:1.25rem] font-heading">
+        {title}
+        {dot && <span className="dot-text">{dot}</span>}
+      </h2>
       {subtitle && (
         <p className="font-small-body max-w-4xl mt-1.5 text-muted-foreground">
           {subtitle}

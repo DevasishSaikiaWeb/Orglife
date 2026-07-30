@@ -3,12 +3,20 @@ import Link from "next/link";
 import { Heading2 } from "@/components/heading";
 import { ShowcaseColumnGrid } from "@/components/showcase-grid";
 import { IconButton } from "@/components/ui/icon-button";
-import { TEAM_SECTION_SUBTITLE, TEAM_SECTION_TITLE } from "@/constants/home";
+import {
+  TEAM_SECTION_SUBTITLE,
+  TEAM_SECTION_TITLE,
+} from "@/constants/home";
+import { SECTION_DOT } from "@/constants/site";
 
 export function TeamSection() {
   return (
     <section>
-      <Heading2 title={TEAM_SECTION_TITLE} subtitle={TEAM_SECTION_SUBTITLE} />
+      <Heading2
+        title={TEAM_SECTION_TITLE}
+        subtitle={TEAM_SECTION_SUBTITLE}
+        dot={SECTION_DOT}
+      />
       <div className="mt-8">
         <video
           src="https://res.cloudinary.com/dpblcamaw/video/upload/v1784795213/WEBSITE_HOMEPAGE_2ST_VIDEO_xd6txn.mp4"

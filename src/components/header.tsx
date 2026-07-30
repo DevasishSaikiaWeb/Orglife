@@ -216,7 +216,7 @@ export function Header() {
 export function Logo() {
   return (
     <Image
-      src="/images/logos/logoO.svg"
+      src="/images/logos/logo.svg"
       width={100}
       height={100}
       alt={`${SITE.name} logo`}

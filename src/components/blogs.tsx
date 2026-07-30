@@ -4,6 +4,7 @@ import {
   BLOGS_SECTION_SUBTITLE,
   BLOGS_SECTION_TITLE,
 } from "@/constants/home";
+import { SECTION_DOT } from "@/constants/site";
 import { Heading2 } from "./heading";
 import { TextWithImageCard } from "./text-image-card";
 
@@ -13,6 +14,7 @@ export function BlogsSection() {
       <Heading2
         title={BLOGS_SECTION_TITLE}
         subtitle={BLOGS_SECTION_SUBTITLE}
+        dot={SECTION_DOT}
         action={{
           href: "/blogs",
           label: BLOGS_SECTION_CTA_LABEL,

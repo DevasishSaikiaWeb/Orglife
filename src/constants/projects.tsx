@@ -8,7 +8,7 @@ type Project = {
 };
 
 // Page details
-export const PAGE_DETAILS_TITLE = "Let’s team up for some magic.";
+export const PAGE_DETAILS_TITLE = "Let’s team up for some magic";
 export const PAGE_DETAILS_SUBTITLE =
   "Orglife Studio has been a part of the journeys of many brands - with some, during their initial start-up stage while with others in their quest for expansion.";
 

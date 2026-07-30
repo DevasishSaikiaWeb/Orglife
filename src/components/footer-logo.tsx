@@ -12,14 +12,14 @@ export function Logo() {
     <>
       <div className="group">
         <Image
-          src="/images/logos/logoO.svg"
+          src="/images/logos/orange_footer_logo.svg"
           alt="Orglife Logo"
           className="w-full hidden group-hover:block"
           width={1000}
           height={800}
         />
         <Image
-          src="/images/logos/logoW.svg"
+          src="/images/logos/footer_logo_white_orglife.svg"
           alt="Orglife Logo"
           width={1000}
           height={800}

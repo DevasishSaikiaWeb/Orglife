@@ -4,6 +4,7 @@ import {
   MEMORIES_SECTION_SUBTITLE,
   MEMORIES_SECTION_TITLE,
 } from "@/constants/home";
+import { SECTION_DOT } from "@/constants/site";
 import { MemoriesData } from "@/constants/Memories";
 import React from "react";
 function Memories() {
@@ -12,6 +13,7 @@ function Memories() {
       <Heading2
         title={MEMORIES_SECTION_TITLE}
         subtitle={MEMORIES_SECTION_SUBTITLE}
+        dot={SECTION_DOT}
         // action={{
         //   label: "Our Events",
         // }}
