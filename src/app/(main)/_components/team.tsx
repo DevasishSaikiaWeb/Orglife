@@ -31,7 +31,7 @@ export function TeamSection() {
       </div>
       <div className="mt-8">
         <ShowcaseColumnGrid
-          leftSectionHeading="We are Orglife and we create for brands - creatively, innovatively and meaningfully."
+          leftSectionHeading="We engage hybrid models tailored to the operational and creative maturity of brands."
           //   rightSection={[
           //     {
           //       heading: "Brand Foundation Design",

@@ -21,7 +21,9 @@ export function Heading1({
 }: Omit<HeadingProps, "action">) {
   return (
     <>
-      <h1 className="font-h1 [word-spacing:1.25rem] font-heading">
+      {/* `whitespace-pre-line` honours explicit "\n" in a title so sections can
+          control their own line breaks; ordinary titles still wrap normally. */}
+      <h1 className="font-h1 [word-spacing:1.25rem] font-heading whitespace-pre-line">
         {title}
         {dot && <span className="dot-text">{dot}</span>}
       </h1>
@@ -33,7 +35,9 @@ export function Heading1({
 export function Heading2({ title, subtitle, action, dot }: HeadingProps) {
   return (
     <>
-      <h2 className="font-h1 [word-spacing:1.25rem] font-heading">
+      {/* `whitespace-pre-line` honours explicit "\n" in a title so sections can
+          control their own line breaks; ordinary titles still wrap normally. */}
+      <h2 className="font-h1 [word-spacing:1.25rem] font-heading whitespace-pre-line">
         {title}
         {dot && <span className="dot-text">{dot}</span>}
       </h2>

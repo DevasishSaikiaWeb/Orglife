@@ -3,7 +3,7 @@ export const PAGE_DETAILS_TITLE = "A POWERPACKED TRIAD OF SERVICES";
 export const PAGE_DETAILS_SUBTITLE =
   "We’re set on a journey to infuse disruption in the world of modern brand storytelling. And our services cater to brands, organizations and causes in ways that make them seen and heard.";
 
-export const PAGE_DETAILS_TITLE2 = "Partner with us in creative exploration";
+export const PAGE_DETAILS_TITLE2 = "Partner with us\nin creative exploration";
 export const PAGE_DETAILS_SUBTITLE2 =
   "We collaborate with brands and organizations, consulting and assisting them to restructure and strategize their operations with brand new perspectives. We help them achieve better efficiency and productivity through our data-powered research engines and a strong consortium of experienced industry experts.";
 // Offering cards
@@ -33,19 +33,11 @@ export const OFFERING_DETAILS = [
     },
     list: [
       {
+        label: "Brand discovery, profile and strategy",
+        isComingSoon: false,
+      },
+      {
         label: "Brand identity design",
-        isComingSoon: false,
-      },
-      {
-        label: "Brand Personality",
-        isComingSoon: false,
-      },
-      {
-        label: "Brand Positioning",
-        isComingSoon: false,
-      },
-      {
-        label: "Tone of Voice and Verbal Identity",
         isComingSoon: false,
       },
       {
@@ -64,6 +56,10 @@ export const OFFERING_DETAILS = [
         label: "Rebranding strategy",
         isComingSoon: false,
       },
+      {
+        label: "GTM strategy and planning",
+        isComingSoon: false,
+      },
     ],
   },
   {
@@ -75,19 +71,7 @@ export const OFFERING_DETAILS = [
     },
     list: [
       {
-        label: "Brand content strategy",
-        isComingSoon: false,
-      },
-      {
-        label: "Content Blueprint and Funnels",
-        isComingSoon: false,
-      },
-      {
-        label: "Multi-format brand literature content",
-        isComingSoon: false,
-      },
-      {
-        label: "Brand graphic content",
+        label: "Brand content strategy, blueprint and funnels",
         isComingSoon: false,
       },
       {
@@ -95,19 +79,11 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "Animated mascots and character design",
+        label: "Brand visual communication design",
         isComingSoon: false,
       },
       {
-        label: "3D product and character modelling and animation",
-        isComingSoon: false,
-      },
-      {
-        label: "2D/3D brand presentations",
-        isComingSoon: false,
-      },
-      {
-        label: "2D/3D product, service and process demonstration",
+        label: "3D/ AI animated mascots, characters and product design",
         isComingSoon: false,
       },
       {
@@ -115,11 +91,7 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "Gen AI animated assets for storytelling",
-        isComingSoon: false,
-      },
-      {
-        label: "AI brand and product photography",
+        label: "AI brand and product visual assets",
         isComingSoon: false,
       },
       {
@@ -127,12 +99,7 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "Augmented Reality assets for immersive experiences",
-        isComingSoon: false,
-      },
-      {
-        label:
-          "Virtual Reality environments and assets for immersive experiences",
+        label: "Extended Reality assets for immersive experiences",
         isComingSoon: false,
       },
     ],
@@ -150,11 +117,7 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "AI agent development and training",
-        isComingSoon: false,
-      },
-      {
-        label: "Brand AI architecture",
+        label: "Brand AI architecture and agent development",
         isComingSoon: false,
       },
       {
@@ -166,16 +129,12 @@ export const OFFERING_DETAILS = [
         isComingSoon: false,
       },
       {
-        label: "Web tools",
-        isComingSoon: false,
-      },
-      {
         label: "ecommerce platforms and applications",
         isComingSoon: false,
       },
       {
         label:
-          "Customised digital services – Digital advertising, SEO and automation planning ",
+          "Customised digital services – SEO and automation planning",
         isComingSoon: false,
       },
     ],

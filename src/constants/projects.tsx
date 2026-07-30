@@ -82,14 +82,14 @@ export const PROJECTS: Project[] = [
     img: "/assets/Products/webp/AI_FILMS_-_WEBSITE.webp",
     title: "AI FILMS",
     description:
-      "We’re now ready with our own recipe of workflows and AI agents, blending human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experience.",
+      "Our indigenous tech-stacks with their workflows and AI agents blend human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experiences.",
     category: ["Films and Cinematic concepts"],
   },
   {
     img: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
     title: "AI AD CAMPAIGNS",
     description:
-      "We develop modern brand storytelling concepts that communicate across platforms and masses.",
+      "We help brands outpace traditional production limitations with multi-format AI storytelling concepts to deliver distinct visual assets that command immediate market attention and establish undeniable brand authority.",
     category: ["Brand Campaigns/ Advertisement"],
   },
   {

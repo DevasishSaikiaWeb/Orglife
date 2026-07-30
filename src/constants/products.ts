@@ -72,7 +72,7 @@ export const PRODUCTS: Product[] = [
     title: "AI Films",
     img: "/assets/Products/webp/AI_FILMS_-_WEBSITE.webp",
     description:
-      "We’re now ready with our own recipe of workflows and AI agents, blending human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experience.",
+      "Our indigenous tech-stacks with their workflows and AI agents blend human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experiences.",
     action: {
       label: "Explore AI Films",
       href: "/products/ai-films",
@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
     title: "AI Ad Campaigns",
     img: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
     description:
-      "We develop modern brand storytelling concepts that communicate across platforms and masses.",
+      "We help brands outpace traditional production limitations with multi-format AI storytelling concepts to deliver distinct visual assets that command immediate market attention and establish undeniable brand authority.",
     action: {
       label: "Explore AI Ad Campaigns",
       href: "/products/ai-ad-campaigns",

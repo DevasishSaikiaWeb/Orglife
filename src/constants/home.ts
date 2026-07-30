@@ -1,5 +1,5 @@
 export const HERO_SECTION_TITLE =
-    "WE’RE A CREATIVE CONTENT AND AI-POWERED TECH STUDIO",
+    "WE’RE A CREATIVE AND TECH-POWERED BRAND STUDIO",
   HERO_SECTION_SUBTITLE =
     "We create awesome brand stories and assets through storytelling and new-age technology.";
 
@@ -7,15 +7,15 @@ export const ABOUT_SECTION_UPPER_TITLE =
     "Hello. We are pixel-perfect minds with 64-bit hearts.",
   ABOUT_SECTION_TITLE = "WE ARE ORGLIFE",
   ABOUT_SECTION_SUBTITLE =
-    "We are a new-age creative studio – a brand laboratory where we partner with brands to explore innovative ways to create impactful identities, content strategies and visual communications. And that’s just one part of the story. In this age of AI and virtual reality, our indigenously developed AI platforms take the brand game to a completely new level. A young and dynamic team, we love to blend creativity with technology and power up brand strategy in a way which is magical, in every sense.";
+    "We are a data-driven creative brand strategy and content and communication studio in Ahmedabad, Gujarat. We partner with brands and leverage advanced AI and proprietary tech stacks to create and deliver category-defining brand identities, content strategies and visual communications for them.";
 
 export const TEAM_SECTION_TITLE = "CREATIVE HEARTS, INSIGHTFUL MINDS",
   TEAM_SECTION_SUBTITLE =
-    "Our ideas and efforts work well for new start-ups as well as legacy brands, social and purpose-driven organizations and even visionary individuals.",
+    "We operate as an extension of your brand team, providing proactive strategic guidance and collaborative creative execution.",
   TEAM_CONTENT = {
     leftSection: {
       heading:
-        "We are Orglife and we create for brands - creatively, innovatively and meaningfully.",
+        "We engage hybrid models tailored to the operational and creative maturity of brands.",
     },
     rightSection: [
       {
@@ -41,7 +41,8 @@ export const CURRENT_PROJECTS_SECTION_TITLE =
   CURRENT_PROJECTS_SECTION_SUBTITLE =
     "This is where their needs met our special skills. Our archive of projects is more than a portfolio — it’s a reflection of the creative ideas we’ve brought to life.";
 
-export const PROJECTS_SECTION_TITLE = "EXPLORING CREATIVITY IN TECHNOLOGY, WITH AI",
+export const PROJECTS_SECTION_TITLE =
+    "EXPLORING CREATIVITY IN TECHNOLOGY,\nWITH AI",
   PROJECTS_SECTION_SUBTITLE =
     "From brand campaigns to captivating narratives, each project tells a story of strategic creative thinking that aims at generating attention and value for the audience. And we’re proud and excited about every project that we’re a part of.";
 

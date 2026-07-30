@@ -32,7 +32,7 @@ export const DETAILED_BLOGS = {
   "the-ai-identity-crisis": {
     id: 1,
     title:
-      "The AI Identity Crisis — Your AI Writes Faster Than Your Team. So Why Does Your Brand Sound Like Everyone Else?",
+      "The AI Identity Crisis",
     subtitle:
       "Your AI Writes Faster Than Your Team. So Why Does Your Brand Sound Like Everyone Else?",
     image: "/images/demo1.webp",
@@ -305,7 +305,7 @@ export const DETAILED_BLOGS = {
   "the-founder-face-problem": {
     id: 2,
     title:
-      "The Founder Face Problem — You Built a Fifty-Crore Enterprise. Why Does Your Brand Still Look Like a Three-Person Startup?",
+      "The Founder Face Problem",
     subtitle:
       "You Built a Fifty-Crore Enterprise. Why Does Your Brand Still Look Like a Three-Person Startup?",
     image: "/images/demo1.webp",
@@ -573,7 +573,7 @@ export const DETAILED_BLOGS = {
   "the-most-gorgeous-brand-nobody-bought-from": {
     id: 3,
     title:
-      "The Most Gorgeous Brand Nobody Bought From — A Love Letter to Every Award-Winning Campaign That Tanked Sales",
+      "The Most Gorgeous Brand Nobody Bought From",
     subtitle:
       "A Love Letter to Every Award-Winning Campaign That Tanked Sales.",
     image: "/images/demo1.webp",
