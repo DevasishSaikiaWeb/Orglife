@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     title: "Aigio",
     img: "/assets/Products/webp/Ai_platform.webp",
     description:
-      "This is more than a tool. It’s Branding, redefined. Aigio is a paradigm shift that replaces guesswork with high-fidelity insights.",
+      "Aigio is here to democratize enterprise-grade brand strategy for organizations of all sizes. This is more than a tool. It’s a paradigm shift that replaces guesswork with deep-researched brand discovery, high-fidelity insights and intelligent branding direction.",
     action: {
       label: "Explore Aigio",
       href: "/products/aigio",
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     title: "Micro Minds",
     img: "/assets/Products/webp/Micro_Mind.webp",
     description:
-      "It is a classy, holistic approach to awareness that doesn’t just share knowledge but builds the intellectual and emotional architecture for the next generation.",
+      "Microminds is a visually and logically advanced K-8 EdTech and cognitive assessment platform operating at the intersection of AI-generated entertainment and life-skills education. It is driven by AI-generated animated short films teaching life skills, paired with dynamic, real-time AI-driven quantitative and qualitative reasoning assessments.",
     action: {
       label: "Explore Micro Minds",
       href: "/products/micro-minds",

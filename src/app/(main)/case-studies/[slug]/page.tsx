@@ -15,6 +15,7 @@ import {
   webPageSchema,
 } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
+import Image from "next/image";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -150,9 +151,17 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           </div>
         </section>
 
+        <Image
+  src="/assets/Projects/Sswai_Logo.png"
+  alt="Sswai Logo"
+  className="w-full h-auto object-fill"
+  width={1080}
+  height={720}
+/>
+
         <section
           aria-label={`${study.brand} gallery`}
-          className="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:balance]"
+          className="columns-1 sm:columns-2 lg:columns-2 gap-4 [column-fill:balance]"
         >
           {study.gallery.map((item) => (
             <figure key={item.title} className="mb-4 break-inside-avoid">

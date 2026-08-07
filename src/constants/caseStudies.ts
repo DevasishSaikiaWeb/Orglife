@@ -87,9 +87,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     delivered:
       "From identity design concepts to ingenious brand communications, we shaped a cohesive, energetic brand presence across touchpoints.",
     gallery: [
-      { media: "/assets/Projects/11.webp", title: "Lookbook" },
-      { media: "/assets/Projects/12.webp", title: "Campaign" },
-      { media: "/assets/Projects/13.webp", title: "Social Creatives" },
+      { media: "/assets/Projects/Sswai_3.png", title: "Lookbook" },
+      { media: "/assets/Projects/Card_vdkw5a.png", title: "Campaign" },
+      // { media: "/assets/Projects/Sswai_Logo.png", title: "Social Creatives" },
     ],
   },
   {
