@@ -72,7 +72,7 @@ export const PRODUCTS: Product[] = [
     title: "AI Films",
     img: "/assets/Products/webp/AI_FILMS_-_WEBSITE.webp",
     description:
-      "Our indigenous tech-stacks with their workflows and AI agents blend human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experiences.",
+      "Our proprietary AI film architecture — a production engine built from the ground up and integrated with the world's leading AI platforms and LLMs powers a cinematic production capability that creates films, short-format series and animation content at global broadcast standards.",
     action: {
       label: "Explore AI Films",
       href: "/products/ai-films",
@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
     title: "AI Ad Campaigns",
     img: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
     description:
-      "We help brands outpace traditional production limitations with multi-format AI storytelling concepts to deliver distinct visual assets that command immediate market attention and establish undeniable brand authority.",
+      "What makes our brand films and ads different is not the tools. It is the creative intelligence layered between them — the proprietary frameworks, the directorial discipline, brand alignment and the creative rigour that ensures every film we produce is a brand asset, not just a generated video.",
     action: {
       label: "Explore AI Ad Campaigns",
       href: "/products/ai-ad-campaigns",
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     img: "/assets/Products/webp/360_BusSequence_4k.mp4",
     is360: true,
     description:
-      "From ultra-precise product models to detailed process flows to mascots, we design animated 2D and 3D content for brands that feel more like cinematic experiences than mere virtual content.",
+      "Product showcases. Brand worlds. Interactive experiences. Immersive training environments. Spatial campaign installations - all built from brief to final render with the same directorial discipline we bring to every film we make.",
     action: {
       label: "Explore Extended Reality",
       href: "/products/extended-reality",
@@ -105,7 +105,7 @@ export const PRODUCTS: Product[] = [
     img: "/assets/Products/webp/360_BusSequence_4k.mp4",
     is360: true,
     description:
-      "From ultra-precise product models to detailed process flows to mascots, we design animated 2D and 3D content for brands that feel more like cinematic experiences than mere virtual content.",
+      "We produce 3D animated content across the full spectrum of formats and applications — from hyper-real product visualisations and animated brand mascots to stylised character series, process demonstration films, and fully animated campaign content — using a production pipeline that combines proprietary creative frameworks with industry-leading 3D modelling, rigging, and rendering platforms.",
     action: {
       label: "Explore Animation",
       href: "/products/animation",

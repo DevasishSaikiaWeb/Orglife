@@ -92,8 +92,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
         <section>
           <Heading3
+            wide
             title={product.sectionHeading}
-            subtitle={product.sectionText}
+            subtitle={product.sectionText_1}
+            subtitle2={product.sectionText_2}
           />
         </section>
 
@@ -116,6 +118,16 @@ export default async function ProductDetailPage({ params }: PageProps) {
             </div>
           ))}
         </section>
+
+        {product.section2Text_1 && (
+          <section>
+            <Heading3
+              wide
+              subtitle={product.section2Text_1}
+              subtitle2={product.section2Text_2}
+            />
+          </section>
+        )}
 
         <ContactForPartnership />
       </main>

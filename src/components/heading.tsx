@@ -62,8 +62,22 @@ export function Heading2({ title, subtitle, action, dot }: HeadingProps) {
 export function Heading3({
   title,
   subtitle,
+  subtitle2,
   toptitle,
-}: Omit<HeadingProps, "action"> & { toptitle?: string }) {
+  wide,
+}: Omit<HeadingProps, "action" | "title"> & {
+  title?: string;
+  toptitle?: string;
+  subtitle2?: string;
+  /**
+   * Drop `font-body`'s 75% cap so the copy fills its column and lines up with
+   * the container's right edge. Set it on every block in a section, otherwise
+   * neighbouring paragraphs end at different points.
+   */
+  wide?: boolean;
+}) {
+  const bodyWidth = wide ? "lg:max-w-none" : "";
+
   return (
     <>
       {toptitle && <p>{toptitle}</p>}
@@ -73,13 +87,27 @@ export function Heading3({
           toptitle && "mt-4",
         )}
       >
-        <h3 className="font-heading [word-spacing:0.6rem] leading-[90%] flex-1 font-h3">
-          {title}
-        </h3>
+        {title ? (
+          <h3 className="font-heading [word-spacing:0.6rem] leading-[90%] flex-1 font-h3">
+            {title}
+          </h3>
+        ) : (
+          <div className="flex-1 max-md:hidden" aria-hidden="true" />
+        )}
         {subtitle && (
-          <p className="font-body flex-1 max-md:mt-1.5">{subtitle}</p>
+          <p className={cn("font-body flex-1 max-md:mt-1.5", bodyWidth)}>
+            {subtitle}
+          </p>
         )}
       </div>
+      {subtitle2 && (
+        <div className="flex md:flex-row flex-col gap-x-8 mt-4 md:mt-6">
+          {/* Empty left column so the paragraph stays under the first one
+              instead of repeating the heading. */}
+          <div className="flex-1 max-md:hidden" aria-hidden="true" />
+          <p className={cn("font-body flex-1", bodyWidth)}>{subtitle2}</p>
+        </div>
+      )}
     </>
   );
 }
