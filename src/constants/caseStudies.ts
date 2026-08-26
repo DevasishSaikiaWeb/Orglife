@@ -94,9 +94,9 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        thecase: "Video archiving of Divisional history",
+        thecase: "Photo & Video archiving of Divisional Data",
         theopportunity:
-          "Detailed cinematic documentation of various wars and Indian Army bravehearts through video films for archiving objectives.",
+          "Detailed cinematic documentation of current capabilities & historical achievements of Regiments through video films for archiving objectives.",
         whatwedelivered:
           "Data research, Development & Creative Foundation, visual planning, production and asset generation, post-production and packaging.",
         layout: "grid",
