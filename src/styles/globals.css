@@ -162,3 +162,58 @@
     scroll-behavior: auto !important;
   }
 }
+
+/*
+  Dual logo marquee — two rows travelling in opposite directions.
+
+  Each track renders its logo list twice, so shifting by exactly half the track
+  width lands on a pixel-identical frame and the loop is seamless. Everything is
+  CSS: no JS, no scroll listeners, no layout reads.
+*/
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-marquee {
+  /* Fade both edges so logos enter and leave instead of popping. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  overflow: hidden;
+}
+
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
+  align-items: center;
+  animation: logo-marquee var(--marquee-duration, 60s) linear infinite;
+  /* Keep the transform on its own layer — avoids repaint jitter on long tracks. */
+  will-change: transform;
+}
+
+/* Second row runs the other way, which is what sells the "dual" effect. */
+.logo-marquee-track--reverse {
+  animation-direction: reverse;
+}
+
+/* Hovering the section holds both rows so a logo can be read. */
+.logo-marquee:hover .logo-marquee-track {
+  animation-play-state: paused;
+}

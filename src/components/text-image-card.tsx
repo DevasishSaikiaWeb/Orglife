@@ -26,7 +26,7 @@ export function TextWithImageCard({
   description,
   squareImage = false,
   category,
-  type = "work",
+  type,
   urlSlug,
   date,
   linked = true,
@@ -81,23 +81,22 @@ export function TextWithImageCard({
     </>
   );
 
-  if (!linked) {
+  const href =
+    type === "event"
+      ? `/events/${title}`
+      : type === "blog"
+        ? `/blogs/${urlSlug ?? title}`
+        : type === "case-study"
+          ? `/case-studies/${urlSlug ?? title}`
+          : undefined;
+
+  // No `type` means no destination, so the card renders as plain content.
+  if (!linked || !href) {
     return <div className="flex flex-col">{content}</div>;
   }
 
   return (
-    <Link
-      href={
-        type === "event"
-          ? `/events/${title}`
-          : type === "blog"
-            ? `/blogs/${urlSlug ?? title}`
-            : type === "case-study"
-              ? `/case-studies/${urlSlug ?? title}`
-              : `/projects/${title}`
-      }
-      className="flex flex-col"
-    >
+    <Link href={href} className="flex flex-col">
       {content}
     </Link>
   );

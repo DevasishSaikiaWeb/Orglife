@@ -1,6 +1,7 @@
 import { BlogsSection } from "@/components/blogs";
 import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { JsonLd } from "@/components/json-ld";
+import { LogoGrid } from "@/components/logo-grid";
 import { FAQS, SERVICES, SITE } from "@/constants/site";
 import {
   faqSchema,
@@ -56,6 +57,7 @@ export default function HomePage() {
         <CurrentProjectsSection />
         <ProjectsSection />
         <Memories />
+        <LogoGrid variant="marquee" />
         <BlogsSection />
         <ContactForPartnership />
       </main>

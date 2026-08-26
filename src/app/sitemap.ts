@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BLOGS } from "@/constants/blogs";
-import { CASE_STUDIES } from "@/constants/caseStudies";
+import { CASE_STUDIES, caseStudyMedia } from "@/constants/caseStudies";
 import { PRODUCT_DETAILS } from "@/constants/productDetails";
 import { absoluteUrl } from "@/constants/site";
 
@@ -21,7 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/"), lastModified: now, priority: 1.0, changeFrequency: "weekly" },
     { url: absoluteUrl("/offerings"), lastModified: now, priority: 0.9, changeFrequency: "monthly" },
     { url: absoluteUrl("/products"), lastModified: now, priority: 0.9, changeFrequency: "monthly" },
-    { url: absoluteUrl("/projects"), lastModified: now, priority: 0.9, changeFrequency: "weekly" },
     { url: absoluteUrl("/case-studies"), lastModified: now, priority: 0.9, changeFrequency: "weekly" },
     { url: absoluteUrl("/blogs"), lastModified: now, priority: 0.8, changeFrequency: "weekly" },
     { url: absoluteUrl("/contact"), lastModified: now, priority: 0.7, changeFrequency: "yearly" },
@@ -45,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: imagesFor([
       study.heroImage,
       study.cardImage,
-      ...study.gallery.map((item) => item.media),
+      ...caseStudyMedia(study).map((item) => item.media),
     ]),
   }));
 

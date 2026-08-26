@@ -31,7 +31,7 @@ export function DetailsCard({
       {/* --- For old layout ---
       <Heading2 title={title} /> */}
 
-      <div className="flex md:flex-row flex-col gap-8 mt-8">
+      <div className="flex md:flex-row flex-col gap-8 mt-8 max-w-4xl">
         <div className="flex-1">
           <p className="leading-relaxed">{description}</p>
           <Button asChild className="mt-8">

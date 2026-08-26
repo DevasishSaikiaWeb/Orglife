@@ -53,7 +53,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     heroImage: "/assets/Products/webp/AI_FILMS_-_WEBSITE.webp",
     sectionHeading: "Cinema, reimagined.",
     sectionText_1:
-      "Our indigenously developed workflows fuse storytelling craft with generative AI to produce films that feel more like immersive experiences than mere virtual content — fast, flexible and boundlessly creative.",
+      "Our AI cinematic films vertical revolutionizes the process of modern film-making. Desperate for efficiency, every industry is currrently looking up to the generative technology boom. What we have realized is that this has led to a chaotic creator economy full of operators producing generic visuals built on stolen intellectual property. Our cinematic vertical aims to sever this compromise. We indulge in regionally authentic, culturally accurate cinematic AI production tailored specifically for the Indian subcontinent's advertising and film industries, backed by enterprise-level IP indemnification and indigenously designed workflows and pipelines.",
     sectionText_2:
       "",
     gallery: [
@@ -61,6 +61,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       "/assets/Projects/10.webp",
       "/assets/Projects/11.webp",
     ],
+    section2Text_1:"Today we allow creative directors and production houses to pitch legally safe impossible worlds. We allow regional producers to previz massive science fiction sequences without breaking their budgets. We are not tech disruptors trying to replace traditional filmmakers. We are the definitive generative production partner scaling your cinematic ambition globally."
   },
   "ai-ad-campaigns": {
     title: "AI Ad Campaigns",
@@ -69,7 +70,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     heroImage: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
     sectionHeading: "Stories that scale.",
     sectionText_1:
-      "From concept to campaign, we craft communications that adapt across platforms and audiences — combining data-driven targeting with creative narratives that make brands seen and heard.",
+      "We blend experienced visualizers and creative animators with technologists, and as a result the output shifts from algorithmic generation to intentional cinematic direction. This hybrid approach allows us to slash traditional visual effects production costs and accelerate slow storyboarding processes without sacrificing the photorealism and consistency required by corporate clients and brands. The technology simply acts as the camera, while human directorial vision remains the decisive factor.",
     sectionText_2:
       "",
     gallery: [
@@ -77,6 +78,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       "/assets/Projects/13.webp",
       "/assets/Projects/14.webp",
     ],
+    section2Text_1:"The era of using cheap artificial intelligence to cut corners is over. The middle market will soon collapse. In its place, two distinct categories will remain. The first category will be cheap automated tools used by local businesses for basic social media filler. The second category, where we are anchored now, will be premium cinematic AI production partners serving ambitious brands and serious film producers."
   },
   animation: {
     title: "AI Animation",
@@ -86,7 +88,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     heroIs360: true,
     sectionHeading: "Motion with meaning.",
     sectionText_1:
-      "Our animation pipeline spans 2D and 3D, mascots and models, process demonstrations and immersive 360°/VR experiences — bringing brands to life with detail and depth.",
+      "At Orglife, we have designed our own approach to animation design. We know that visuals must be anchored in predictive analytics and deep brand positioning before a single frame is sketched or rendered. They are engineered to solve complex messaging friction and communicate intricate value propositions. We utilize generative AI for rapid initial visual concepts which allows our brand strategists to test multiple visual positionings quickly and efficiently leading to rigorous attention to detail. This hybrid operational model ensures our clients receive category defining creative that performs predictably in the market.",
     sectionText_2:
       "",
     gallery: [
@@ -94,15 +96,16 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       "/assets/Projects/16.webp",
       "/assets/Projects/17.webp",
     ],
+    section2Text_1:"Visual communication must evolve past the subjective. The future of brand strategy belongs to those who integrate deep market research with exceptional creative execution. Orglife builds future forward brands that win through intelligent strategy and groundbreaking animation design. We do not just make your brand look innovative. We engineer your visual assets to dominate the market."
   },
   "extended-reality": {
-    title: "Extended Reality",
+    title: "Extended Reality - A Powerful Visual Dimension",
     intro:
       "Product showcases. Brand worlds. Interactive experiences. Immersive training environments. Spatial campaign installations - all built from brief to final render with the same directorial discipline we bring to every film we make.",
     heroImage: "/assets/Projects/9.webp",
     sectionHeading: "Motion with meaning.",
     sectionText_1:
-      "Our animation pipeline spans 2D and 3D, mascots and models, process demonstrations and immersive 360°/VR experiences — bringing brands to life with detail and depth.",
+      "Scrolling through a story is one thing. Experiencing it firest-hand is something else entirely, something your audience will not forget — because the human brain does not forget places and experiences the way it forgets pages. We design and produce 3D virtual reality environments and assets — brand worlds, product showrooms, spatial storytelling installations, and interactive XR experiences — for brands that want their audience to feel the brand from the inside rather than watch it on a flat screen.",
     sectionText_2:
       "",
     gallery: [
@@ -110,5 +113,6 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       "/assets/Projects/16.webp",
       "/assets/Projects/17.webp",
     ],
+    section2Text_1:"Our environments are built using proprietary spatial design frameworks layered with the world's leading real-time 3D engines and XR development platforms. Every space is architected around a brand strategy. Every interaction is choreographed. Every environment is delivered across headset, web, and spatial display formats — ready for the moment your audience steps in."
   },
 };

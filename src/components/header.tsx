@@ -18,7 +18,6 @@ const NAV_ITEMS: NavItemType[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/offerings" },
   { label: "Products", href: "/products" },
-  { label: "Projects", href: "/projects" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },

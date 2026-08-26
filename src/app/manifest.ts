@@ -52,12 +52,6 @@ export default function manifest(): MetadataRoute.Manifest {
         url: "/offerings",
       },
       {
-        name: "Projects",
-        short_name: "Projects",
-        description: "Browse the portfolio by category",
-        url: "/projects",
-      },
-      {
         name: "Case Studies",
         short_name: "Cases",
         description: "Read detailed brand case studies",

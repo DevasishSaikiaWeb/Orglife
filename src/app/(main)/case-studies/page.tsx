@@ -2,6 +2,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { Heading1 } from "@/components/heading";
 import { JsonLd } from "@/components/json-ld";
+import { LogoGrid } from "@/components/logo-grid";
 import { TextWithImageCard } from "@/components/text-image-card";
 import { CASE_STUDIES } from "@/constants/caseStudies";
 import { SECTION_DOT } from "@/constants/site";
@@ -74,6 +75,8 @@ export default function CaseStudiesPage() {
             ))}
           </div>
         </section>
+
+        <LogoGrid />
 
         <ContactForPartnership />
       </main>

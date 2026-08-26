@@ -5,7 +5,12 @@ import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { Heading1 } from "@/components/heading";
 import { JsonLd } from "@/components/json-ld";
 import { MediaTile } from "@/components/media-tile";
-import { CASE_STUDIES, getCaseStudy } from "@/constants/caseStudies";
+import { Carousel } from "@/components/carousel";
+import {
+  CASE_STUDIES,
+  caseStudyMedia,
+  getCaseStudy,
+} from "@/constants/caseStudies";
 import {
   breadcrumbSchema,
   creativeWorkSchema,
@@ -15,7 +20,7 @@ import {
   webPageSchema,
 } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
-import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -53,11 +58,17 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
     { name: study.brand, path },
   ];
 
-  const columns = [
-    { label: "What they said", text: study.whatTheySaid },
-    { label: "Opportunity we saw", text: study.opportunity },
-    { label: "What we delivered", text: study.delivered },
-  ];
+  // Every case renders the same three columns, numbered by position.
+  const cases = study.cases.map((entry, index) => ({
+    id: `CASE #${index + 1}`,
+    columns: [
+      { label: "THE CASE", text: entry.thecase },
+      { label: "THE OPPORTUNITY", text: entry.theopportunity },
+      { label: "WHAT WE DELIVERED", text: entry.whatwedelivered },
+    ],
+    layout: entry.layout ?? "carousel",
+    gallery: entry.gallery,
+  }));
 
   return (
     <>
@@ -72,19 +83,23 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           breadcrumbSchema(crumbs),
           creativeWorkSchema({
             name: `${study.brand} — Case Study`,
-            description: `${study.intro} ${study.delivered}`,
+            description: `${study.intro} ${study.cases
+              .map((entry) => entry.whatwedelivered)
+              .join(" ")}`,
             path,
             image: study.heroImage,
             keywords: [study.brand, ...study.industries],
           }),
           // The three narrative columns double as Q&A for AI search engines.
           faqSchema(
-            columns.map((column) => ({
-              question: `${study.brand}: ${column.label}?`,
-              answer: column.text,
-            })),
+            cases.flatMap((entry) =>
+              entry.columns.map((column) => ({
+                question: `${study.brand} ${entry.id}: ${column.label}?`,
+                answer: column.text,
+              })),
+            ),
           ),
-          mediaSchemas(study.gallery, `${study.brand} case study`),
+          mediaSchemas(caseStudyMedia(study), `${study.brand} case study`),
         )}
       />
       <main
@@ -109,72 +124,82 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           />
         </section>
 
-        <section className="flex md:flex-row flex-col gap-x-8 gap-y-12">
-          <div className="flex-1 space-y-8">
-            <div>
-              <h2 className="font-small-body text-muted-foreground">Brand</h2>
-              <p className="font-heading uppercase font-h4 font-semibold mt-1">
-                {study.brand}
-              </p>
-            </div>
-            <div>
-              <h2 className="font-small-body text-muted-foreground">
-                Industries
-              </h2>
-              <ul className="mt-2 flex flex-wrap gap-2">
-                {study.industries.map((industry) => (
-                  <li
-                    key={industry}
-                    className="font-small-body border border-muted-foreground/75 py-0.5 px-4 rounded-full"
-                  >
-                    {industry}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex-3 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {columns.map((column) => (
-              <div
-                key={column.label}
-                className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col"
-              >
-                <h2 className="uppercase font-heading font-h4 font-semibold">
-                  {column.label}
+        {cases.map((entry) => (
+          <section key={entry.id} aria-label={`${study.brand} — ${entry.id}`}>
+            <div className="flex md:flex-row flex-col gap-x-8 gap-y-12">
+              <div className="flex-1">
+                <h2 className="font-heading uppercase font-h4 font-semibold">
+                  {entry.id}
                 </h2>
-                <p className="font-small-body leading-relaxed mt-6 text-muted-foreground">
-                  {column.text}
-                </p>
               </div>
-            ))}
-          </div>
-        </section>
 
-        <Image
-  src="/assets/Projects/Sswai_Logo.png"
-  alt="Sswai Logo"
-  className="w-full h-auto object-fill"
-  width={1080}
-  height={720}
-/>
+              <div className="flex-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {entry.columns.map((column) => (
+                  <div
+                    key={column.label}
+                    className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col"
+                  >
+                    <h3 className="uppercase font-heading font-h4 font-semibold">
+                      {column.label}
+                    </h3>
+                    <p className="font-small-body leading-relaxed mt-6 text-muted-foreground">
+                      {column.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-        <section
-          aria-label={`${study.brand} gallery`}
-          className="columns-1 sm:columns-2 lg:columns-2 gap-4 [column-fill:balance]"
-        >
-          {study.gallery.map((item) => (
-            <figure key={item.title} className="mb-4 break-inside-avoid">
-              <MediaTile
-                src={item.media}
-                alt={`${study.brand} — ${item.title}`}
-                is360={item.is360}
-                fit="natural"
-              />
-              <figcaption className="sr-only">{item.title}</figcaption>
-            </figure>
-          ))}
-        </section>
+            {entry.gallery.length > 0 &&
+              (entry.layout === "grid" ? (
+                // Lead item full width, everything after it two-up beneath.
+                <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                  {entry.gallery.map((item, index) => {
+                    // Unset `span` keeps the common shape: big lead, rest two-up.
+                    const full = (item.span ?? (index === 0 ? "full" : "half")) === "full";
+                    return (
+                      <figure
+                        key={item.media}
+                        className={cn(
+                          "overflow-hidden bg-foreground/5",
+                          full ? "sm:col-span-2 aspect-video" : "aspect-[4/3]",
+                        )}
+                      >
+                        <MediaTile
+                          src={item.media}
+                          alt={`${study.brand} — ${item.title}`}
+                          is360={item.is360}
+                          sizes={
+                            full
+                              ? "(max-width: 768px) 100vw, 90vw"
+                              : "(max-width: 640px) 100vw, 45vw"
+                          }
+                        />
+                        <figcaption className="sr-only">{item.title}</figcaption>
+                      </figure>
+                    );
+                  })}
+                </div>
+              ) : (
+                <Carousel className="mt-12 md:mt-16">
+                  {entry.gallery.map((item) => (
+                    <figure
+                      key={item.media}
+                      className="shrink-0 w-full aspect-video overflow-hidden bg-foreground/5"
+                    >
+                      <MediaTile
+                        src={item.media}
+                        alt={`${study.brand} — ${item.title}`}
+                        is360={item.is360}
+                        sizes="(max-width: 768px) 100vw, 90vw"
+                      />
+                      <figcaption className="sr-only">{item.title}</figcaption>
+                    </figure>
+                  ))}
+                </Carousel>
+              ))}
+          </section>
+        ))}
 
         <ContactForPartnership />
       </main>
