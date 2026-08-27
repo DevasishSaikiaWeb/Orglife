@@ -24,6 +24,10 @@ import { cn } from "@/lib/utils";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
+function twoLineLabel(label: string): string {
+  return label.replace(/\s+(\S+)$/, "\n$1");
+}
+
 export function generateStaticParams() {
   return CASE_STUDIES.map((study) => ({ slug: study.slug }));
 }
@@ -139,8 +143,8 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                     key={column.label}
                     className="max-md:pt-8 md:pl-4 max-md:border-t md:border-l border-muted-foreground/75 flex flex-col"
                   >
-                    <h3 className="uppercase font-heading font-h4 font-semibold">
-                      {column.label}
+                    <h3 className="uppercase font-heading font-h4 font-semibold whitespace-pre-line">
+                      {twoLineLabel(column.label)}
                     </h3>
                     <p className="font-small-body leading-relaxed mt-6 text-muted-foreground">
                       {column.text}
