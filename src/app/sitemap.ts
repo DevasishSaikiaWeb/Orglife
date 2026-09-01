@@ -7,7 +7,8 @@ import { absoluteUrl } from "@/constants/site";
 // Regenerate the sitemap daily so lastModified stays meaningful.
 export const revalidate = 86400;
 
-const isImage = (src: string) => !/\.(mp4|webm|mov)$/i.test(src);
+const isImage = (src: string) =>
+  !/\.(mp4|webm|mov)$/i.test(src) && !/youtu\.be|youtube\.com/i.test(src);
 
 /** Google only accepts image URLs (not video) in the sitemap image extension. */
 function imagesFor(sources: string[]): string[] {

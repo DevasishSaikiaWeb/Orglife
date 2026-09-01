@@ -38,6 +38,17 @@ function isVideoFile(src: string): boolean {
   return /\.(mp4|webm|mov)$/i.test(src) || src.includes("/video/");
 }
 
+/**
+ * Pull the video id out of any YouTube link shape — youtu.be/ID,
+ * /watch?v=ID, /embed/ID, /shorts/ID. Returns null for everything else.
+ */
+function youtubeId(src: string): string | null {
+  const match = src.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/))([\w-]{11})/,
+  );
+  return match ? match[1] : null;
+}
+
 export function MediaTile({
   src,
   alt = "",
@@ -49,6 +60,36 @@ export function MediaTile({
   className,
 }: MediaTileProps) {
   const natural = fit === "natural";
+  const youtube = youtubeId(src);
+
+  if (youtube) {
+    // Autoplay is only permitted when muted — browsers block sound-on autoplay,
+    // which matches how the local <video> tiles above already behave.
+    // `loop` needs `playlist` set to the same id for a single video.
+    const params = new URLSearchParams({
+      autoplay: "1",
+      mute: "1",
+      loop: "1",
+      playlist: youtube,
+      playsinline: "1",
+      rel: "0",
+      modestbranding: "1",
+    });
+
+    return (
+      <div className={cn("relative size-full", natural && "aspect-video")}>
+        <iframe
+          // nocookie host: no tracking cookies until the viewer plays it.
+          src={`https://www.youtube-nocookie.com/embed/${youtube}?${params}`}
+          title={alt || "YouTube video"}
+          allow="autoplay; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+          loading={priority ? "eager" : "lazy"}
+          className={cn("absolute inset-0 size-full border-0", className)}
+        />
+      </div>
+    );
+  }
 
   if (is360) {
     // View360 fills its container, so it always needs a fixed-ratio box.

@@ -14,6 +14,8 @@ const CSP = [
   "img-src 'self' data: blob: https://res.cloudinary.com",
   "media-src 'self' blob: https://res.cloudinary.com",
   "connect-src 'self'",
+  // YouTube embeds (MediaTile). Without this, default-src 'self' blocks them.
+  "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
   "frame-ancestors 'self'",
   "base-uri 'self'",
   "form-action 'self'",
@@ -30,7 +32,7 @@ const securityHeaders = [
     key: "Permissions-Policy",
     // Keep gyroscope/accelerometer/xr enabled — the 360/VR viewer needs them.
     value:
-      "camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=(), accelerometer=(self), gyroscope=(self), xr-spatial-tracking=(self)",
+      'camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=(), accelerometer=(self), gyroscope=(self), xr-spatial-tracking=(self), autoplay=(self "https://www.youtube-nocookie.com")',
   },
   {
     key: "Strict-Transport-Security",
