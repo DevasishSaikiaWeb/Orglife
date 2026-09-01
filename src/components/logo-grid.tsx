@@ -1,22 +1,20 @@
+import fs from "node:fs";
+import path from "node:path";
 import Image from "next/image";
 
-const LOGO_COUNT = 28;
+function readLogos(dir: string): string[] {
+  const files = fs.readdirSync(path.join(process.cwd(), "public", dir));
+  return files
+    .filter((file) => /\.(webp|png|jpe?g|avif|svg)$/i.test(file))
+    // Numeric order, so 2.webp sorts before 10.webp.
+    .sort((a, b) => (Number.parseInt(a, 10) || 0) - (Number.parseInt(b, 10) || 0))
+    .map((file) => `${dir}/${file}`);
+}
 
-const LOGOS = Array.from(
-  { length: LOGO_COUNT },
-  (_, index) => `/assets/Logo/${index + 1}.webp`,
-);
-// public/assets/Logo/client-logo-marquee/1.png … 12.png
-const MARQUEE_LOGO_COUNT = 12;
+const LOGOS = readLogos("/assets/Logo");
+const MARQUEE_LOGOS = readLogos("/assets/Logo/client-logo-marquee");
 
-const MARQUEE_LOGOS = Array.from(
-  { length: MARQUEE_LOGO_COUNT },
-  (_, index) => `/assets/Logo/client-logo-marquee/${index + 1}.png`,
-);
-
-// Copies per half-track: six logos are narrower than a wide viewport, which
-// would leave a gap mid-loop, so each half repeats until it overflows.
-const MARQUEE_REPEAT = 3;
+const MARQUEE_REPEAT = Math.max(2, Math.ceil(14 / Math.max(1, MARQUEE_LOGOS.length)));
 
 type LogoGridProps = {
   variant?: "grid" | "marquee";
@@ -25,22 +23,16 @@ type LogoGridProps = {
 
 function MarqueeRow({
   logos,
-  offset,
-  reverse,
   duration,
 }: {
   logos: string[];
-  offset: number;
-  reverse?: boolean;
   duration: number;
 }) {
   const half = Array.from({ length: MARQUEE_REPEAT }, () => logos).flat();
 
   return (
     <ul
-      className={`logo-marquee-track gap-10 md:gap-16${
-        reverse ? " logo-marquee-track--reverse" : ""
-      }`}
+      className="logo-marquee-track gap-10 md:gap-16"
       style={{ "--marquee-duration": `${duration}s` } as React.CSSProperties}
     >
       {[...half, ...half].map((src, index) => {
@@ -53,7 +45,7 @@ function MarqueeRow({
           >
             <Image
               src={src}
-              alt={isClone ? "" : `Brand logo ${offset + index + 1}`}
+              alt={isClone ? "" : `Brand logo ${index + 1}`}
               aria-hidden={isClone}
               width={200}
               height={200}
@@ -71,10 +63,6 @@ function MarqueeRow({
 }
 
 export function LogoGrid({ variant = "grid", duration = 60 }: LogoGridProps) {
-  const half = Math.ceil(MARQUEE_LOGO_COUNT / 2);
-  const topRow = MARQUEE_LOGOS.slice(0, half);
-  const bottomRow = MARQUEE_LOGOS.slice(half);
-
   return (
     <section aria-label="Clientele">
       <div className="flex md:flex-row flex-col gap-x-8 gap-y-2">
@@ -92,14 +80,8 @@ export function LogoGrid({ variant = "grid", duration = 60 }: LogoGridProps) {
       </div>
 
       {variant === "marquee" ? (
-        <div className="logo-marquee mt-12 flex flex-col gap-10 md:gap-16">
-          <MarqueeRow logos={topRow} offset={0} duration={duration} />
-          <MarqueeRow
-            logos={bottomRow}
-            offset={half}
-            duration={duration}
-            reverse
-          />
+        <div className="logo-marquee mt-12">
+          <MarqueeRow logos={MARQUEE_LOGOS} duration={duration} />
         </div>
       ) : (
         <ul className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">

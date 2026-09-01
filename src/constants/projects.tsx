@@ -79,21 +79,21 @@ export const CURRENT_PROJECTS: Project[] = [
 
 export const PROJECTS: Project[] = [
   {
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655396/AI_Films_dtmc77.mp4",
+    img: "https://res.cloudinary.com/txchjkcd/video/upload/v1788254780/AI_Films.mp4",
     title: "AI FILMS",
     description:
       "Our indigenous tech-stacks with their workflows and AI agents blend human creativity and artificial intelligence - to create never-before magic in the field of immersive cinematic experiences.",
     category: ["Films and Cinematic concepts"],
   },
   {
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655398/AI_Ad_Campaigns_aibr85.mp4",
+    img: "https://res.cloudinary.com/txchjkcd/video/upload/v1788254782/AI_Ad_Campaigns.mp4",
     title: "AI AD CAMPAIGNS",
     description:
       "We help brands outpace traditional production limitations with multi-format AI storytelling concepts to deliver distinct visual assets that command immediate market attention and establish undeniable brand authority.",
     category: ["Brand Campaigns/ Advertisement"],
   },
   {
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655396/AIGIO_nycrut.mp4",
+    img: "https://res.cloudinary.com/txchjkcd/video/upload/v1788254782/AI_BRAND_PLATFORMS.mp4",
     title: "AI BRAND PLATFORMS",
     description:
       "Industry research, brand strategy, content and communication design, marketing campaigns – you name it and we have our tech solutions, AI agents and platforms ready for you.",

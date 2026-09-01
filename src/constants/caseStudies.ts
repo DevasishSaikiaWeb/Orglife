@@ -257,7 +257,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "/assets/Case studies/SSWAI/Web/Sswai Website Development.webp",
+              "https://res.cloudinary.com/dpblcamaw/video/upload/v1788259916/Sswai_Web_riodqg.mp4",
             title: "Divisional Archive",
             span: "full",
           },
@@ -690,6 +690,150 @@ export const CASE_STUDIES: CaseStudy[] = [
             media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788177685/Advertisement_concepts_2.mp4",
             title: "Cinematic Documentation",
             span: "full",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cerc",
+    brand: "Consumer Education And Research Centre",
+    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+    cardDescription:
+      "Harnessing the power of visual storytelling in spreading awareness among children.",
+    industries: ["Consumer Services", "Research/Advocacy"],
+    intro:
+      "Harnessing the power of visual storytelling in spreading awareness among children.",
+    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+    cases: [
+      {
+        thecase: "AI-powered Educational Videos",
+        theopportunity:
+          "Creation of a power-packed visual communication campaign of 100+ videos covering 5+ domains.",
+        whatwedelivered:
+          "AI-visual strategy, scripts and storyboards, character design, visual direction, AI-powered short film production.",
+        layout: "grid",
+        // TODO: swap for this case's real assets — 2 small images.
+        gallery: [
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270212/CERC_1.mp4",
+            title: "Divisional Archive",
+            span: "full",
+          },
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270213/CERC1.1.mp4",
+            title: "Cinematic Documentation",
+            span: "half",
+          },
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270211/CERC_1.2.mp4",
+            title: "Divisional Archive",
+            span: "half",
+          },
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270220/CERC_2.mp4",
+            title: "Cinematic Documentation",
+            span: "full",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "dunes-college",
+    brand: "Dunes College",
+    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
+    cardDescription:
+      "Laying the foundation of a new vision, a new brand in the field of modern education.",
+    industries: ["Educations"],
+    intro:
+      "Laying the foundation of a new vision, a new brand in the field of modern education.",
+    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
+    cases: [
+      {
+        thecase: "Brand foundation design",
+        theopportunity:
+          "Brand discovery followed by full-scale brand identity design.",
+        whatwedelivered:
+          "Deep-researched brand profile, brand identity system, visual assets and voice.",
+        layout: "grid",
+        // TODO: swap for this case's real assets — 2 small images.
+        gallery: [
+          {
+            media: "/assets/Case studies/Dunes/Web/DUNES 2.webp",
+            title: "Divisional Archive",
+            span: "full",
+          },
+        ],
+      },
+      {
+        thecase: "Print and digital design strategy",
+        theopportunity:
+          "Creative print and digital designs for the launch of the institution.",
+        whatwedelivered:
+          "Content and visual direction for brochures and magazines, outdoor and internal communication design.",
+        layout: "grid",
+        // TODO: swap for this case's real assets — 2 small images.
+        gallery: [
+          {
+            media: "/assets/Case studies/Dunes/Web/Dunes.webp",
+            title: "Divisional Archive",
+            span: "half",
+          },
+          {
+            media: "/assets/Case studies/Dunes/Web/DUNES 3.webp",
+            title: "Divisional Archive",
+            span: "half",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "verity",
+    brand: "Verity",
+    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
+    cardDescription:
+      "Building a virtual world with the three dimensions.",
+    industries: ["Consumer Durables"],
+    intro:
+      "Building a virtual world with the three dimensions.",
+    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
+    cases: [
+      {
+        thecase: "3D product designs and SOPs",
+        theopportunity:
+          "To develop advanced 3D designs and animated functions and features for the entire range of products.",
+        whatwedelivered:
+          "High-precision product 3D models.",
+        layout: "grid",
+        // TODO: swap for this case's real assets — 2 small images.
+        gallery: [
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
+            title: "Divisional Archive",
+            span: "full",
+          },
+        ],
+      },
+      {
+        thecase: "3D ad videos and visual assets",
+        theopportunity:
+          "To develop ad films with advanced 3D designs for the complete range of electronic products and peripherals.",
+        whatwedelivered:
+          "High-precision product 3D model advertisements with animated demonstration of features, for promotions and cataloguing.",
+        layout: "grid",
+        // TODO: swap for this case's real assets — 2 small images.
+        gallery: [
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/3.mp4",
+            title: "Divisional Archive",
+            span: "half",
+          },
+          {
+            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/4.mp4",
+            title: "Divisional Archive",
+            span: "half",
           },
         ],
       },

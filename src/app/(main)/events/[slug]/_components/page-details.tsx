@@ -12,7 +12,7 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
   return (
     <section>
       <Heading1
-        title={title === "Concerts" ? "Concerts and Shows" : "Festivals"}
+        title={title === "Concerts" ? "Concerts and Shows" : "Events"}
       />
       <section className="mt-16 grid grid-cols-1 space-y-32">
         {data.map((event: any) => {

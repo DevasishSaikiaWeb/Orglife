@@ -9,11 +9,59 @@ type event = {
 
 type events = {
   Concerts: event[];
-  Festivals: event[];
+  Events: event[];
 };
 
 export const Events: events = {
   Concerts: [
+    {
+      title: "Char Diwari",
+      images: [
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp",
+        ],
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_2_wxeptm.webp",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_3_phwngn.webp",
+        ],
+      ],
+      year: "2026",
+      genre: "Stand-up Comedy Show",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Video production",
+    },
+    {
+      title: "Jasmin Sandlas",
+      images: [
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp",
+        ],
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_2_wxeptm.webp",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_3_phwngn.webp",
+        ],
+      ],
+      year: "2023",
+      genre: "Stand-up Comedy Show",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Video production",
+    },
+    {
+      title: "Madhur Sharma",
+      images: [
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp",
+        ],
+        [
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_2_wxeptm.webp",
+          "/assets/Home_page/Concerts/webp/Harsh_Gujral_3_phwngn.webp",
+        ],
+      ],
+      year: "2023",
+      genre: "Stand-up Comedy Show",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Video production",
+    },
     {
       title: "Harsh Gujral",
       images: [
@@ -28,7 +76,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
 
     {
@@ -45,7 +93,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
     {
       title: "Vishal and Shekhar",
@@ -67,7 +115,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert [Fundraiser]",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
 
     {
@@ -87,7 +135,7 @@ export const Events: events = {
       year: "2023",
       genre: "Contemporary/ Folk Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
 
     {
@@ -103,7 +151,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
 
     {
@@ -125,7 +173,7 @@ export const Events: events = {
       year: "2023",
       genre: "Rock Concert",
       location: "KLFF, Ahmedabad, Gujarat",
-      subtext: "Video production x Orglife",
+      subtext: "Video production",
     },
 
     {
@@ -142,7 +190,7 @@ export const Events: events = {
       year: "2020",
       genre: "Rock Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management",
+      subtext: "Event Content Management",
     },
     {
       title: "Ritviz",
@@ -158,7 +206,7 @@ export const Events: events = {
       year: "2020",
       genre: "Electronic Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management",
+      subtext: "Event Content Management",
     },
     // {
     //   title: "Houdini",
@@ -174,7 +222,7 @@ export const Events: events = {
     //   year: "2020",
     //   genre: "Electronic/ Techno Concert",
     //   location: "Ahmedabad, Gujarat",
-    //   subtext: "Event Concept & Management",
+    //   subtext: "Event Content Management",
     // },
     // {
     //   title: "Ana Lilia + Flymeon + Lucas Firtzer",
@@ -190,7 +238,7 @@ export const Events: events = {
     //   year: "2024",
     //   genre: "Electronic/ Techno Concert",
     //   location: "Bengaluru",
-    //   subtext: "Event Concept & Management",
+    //   subtext: "Event Content Management",
     // },
     {
       title: "Divine",
@@ -205,13 +253,13 @@ export const Events: events = {
       year: "2019",
       genre: "Bollywood Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management",
+      subtext: "Event Content Management",
     },
   ],
 
-  Festivals: [
+  Events: [
     {
-      title: "Jasmine Sandlas Live",
+      title: "Ahmedabad Design Week",
       images: [
         [
           "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
@@ -223,31 +271,76 @@ export const Events: events = {
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management",
+      subtext: "Event Content Management",
     },
     {
-      title: "Sheri Circle Garba",
+      title: "KUGM",
       images: [
         [
-          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_1_ooi9jq.webp",
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
         ],
         [
-          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_2_rqe9tz.webp",
-        ],
-        [
-          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_3_me5xoq.webp",
-        ],
-        [
-          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_4_norpio.webp",
-        ],
-        [
-          "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_5_gva1a4.webp",
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
         ],
       ],
-      year: "2025",
-      genre: "Navratri Garba Fest",
+      year: "2026",
+      genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Concept & Management",
+      subtext: "Event Content Management",
     },
+    {
+      title: "TEDx",
+      images: [
+        [
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
+        ],
+        [
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
+        ],
+      ],
+      year: "2026",
+      genre: "Music Concert",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Event Content Management",
+    },
+    {
+      title: "KLFF",
+      images: [
+        [
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
+        ],
+        [
+          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
+        ],
+      ],
+      year: "2026",
+      genre: "Music Concert",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Event Content Management",
+    },
+    // {
+    //   title: "Sheri Circle Garba",
+    //   images: [
+    //     [
+    //       "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_1_ooi9jq.webp",
+    //     ],
+    //     [
+    //       "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_2_rqe9tz.webp",
+    //     ],
+    //     [
+    //       "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_3_me5xoq.webp",
+    //     ],
+    //     [
+    //       "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_4_norpio.webp",
+    //     ],
+    //     [
+    //       "/assets/Home_page/Festivals/webp/Sheri_Circle_Garba_5_gva1a4.webp",
+    //     ],
+    //   ],
+    //   year: "2025",
+    //   genre: "Navratri Garba Fest",
+    //   location: "Ahmedabad, Gujarat",
+    //   subtext: "Event Content Management",
+    // },
   ],
 };

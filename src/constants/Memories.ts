@@ -14,7 +14,7 @@ export const MemoriesData: Memories[] = [
   },
   {
     img: "/assets/Home_page/CREATING MEMORIES THROUGH LIVE EXPERIENCES/webp/Festivals.webp",
-    title: "Festivals",
+    title: "Events",
     description:
       "We’ve been involved in the curation of multiple grand festival events over the years and as we speak, we are planning some more too.",
   },
