@@ -742,7 +742,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "dunes-college",
     brand: "Dunes College",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
+    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788332442/Dunes.mp4",
     cardDescription:
       "Laying the foundation of a new vision, a new brand in the field of modern education.",
     industries: ["Educations"],
@@ -792,7 +792,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "verity",
     brand: "Verity",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
+    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788332442/Verity.mp4",
     cardDescription:
       "Building a virtual world with the three dimensions.",
     industries: ["Consumer Durables"],

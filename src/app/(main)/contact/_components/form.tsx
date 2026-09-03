@@ -10,33 +10,6 @@ const services = [
   "Digital Asset Strategy",
 ];
 
-const subServices: Record<string, string[]> = {
-  "Brand Foundation Design": [
-    "Brand Identity Design",
-    "Brand Narrative Strategy",
-    "Brand Guidelines and Manual",
-    "Rebranding Strategy",
-  ],
-  "Content & Communication Design": [
-    "Brand Content Architecture",
-    "Brand Literature, Stories and Narratives",
-    "Visual Content Strategy",
-    "Digital and Social Media Content",
-  ],
-  "Animation Concept Development": [
-    "Animated Mascot and Character Design",
-    "Animated Visual Assets and Storytelling",
-    "3D Product Modelling and Process Demonstrations",
-    "AR/VR Assets for Immersive Experience",
-  ],
-  "Digital Asset Strategy": [
-    "UI/UX Design and Development",
-    "Web Tools and Mobile Applications",
-    "Innovation and Tech Integration",
-    "Customized Digital Services",
-  ],
-};
-
 function toggle(list: string[], value: string): string[] {
   return list.includes(value)
     ? list.filter((v) => v !== value)
@@ -51,22 +24,12 @@ function Form() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [selectedService, setSelectedService] = useState<string[]>([]);
-  const [selectedSubService, setSelectedSubService] = useState<string[]>([]);
 
   const [status, setStatus] = useState<Status>("idle");
   const [feedback, setFeedback] = useState("");
 
   function selectService(service: string) {
-    setSelectedService((prev) => {
-      const next = toggle(prev, service);
-      // Drop sub-services that belong to a now-deselected service.
-      if (!next.includes(service)) {
-        setSelectedSubService((subs) =>
-          subs.filter((s) => !subServices[service]?.includes(s)),
-        );
-      }
-      return next;
-    });
+    setSelectedService((prev) => toggle(prev, service));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -84,7 +47,6 @@ function Form() {
           email,
           phone,
           services: selectedService,
-          subServices: selectedSubService,
           subject,
           message,
         }),
@@ -107,7 +69,6 @@ function Form() {
       setSubject("");
       setMessage("");
       setSelectedService([]);
-      setSelectedSubService([]);
     } catch {
       setStatus("error");
       setFeedback("Network error. Please check your connection and try again.");
@@ -168,32 +129,6 @@ function Form() {
           ))}
         </div>
       </div>
-
-      {selectedService.length > 0 && (
-        <div>
-          <p className="font-small-body">Select subservices (optional)</p>
-          <div className="flex flex-wrap gap-4 mt-2">
-            {selectedService.flatMap((service) =>
-              (subServices[service] ?? []).map((subService) => (
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedSubService((prev) => toggle(prev, subService))
-                  }
-                  key={subService}
-                  className={`cursor-pointer flex items-center gap-2 px-4 py-2 border-white/60 border-1 w-fit rounded-full ${
-                    selectedSubService.includes(subService)
-                      ? "bg-[#fff8de] text-black"
-                      : ""
-                  }`}
-                >
-                  {subService}
-                </button>
-              )),
-            )}
-          </div>
-        </div>
-      )}
 
       <input
         type="text"

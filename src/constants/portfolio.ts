@@ -95,7 +95,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
       },
       {
         media: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
-        title: "AI Ad Campaigns",
+        title: "AI Campaigns",
         tag: "Brand Storytelling",
       },
       {

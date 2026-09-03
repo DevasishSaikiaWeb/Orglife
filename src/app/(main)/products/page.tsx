@@ -22,7 +22,7 @@ const CRUMBS = [
 export const metadata = buildMetadata({
   title: "Products — AI Platforms, Films & Campaigns",
   description:
-    "Explore Orglife's products: Aigio brand intelligence, Micro Minds, AI Films, AI Ad Campaigns and AI Animation — where creative strategy meets AI-powered execution.",
+    "Explore Orglife's products: Aigio brand intelligence, Micro Minds, AI Films, AI Campaigns and AI Animation — where creative strategy meets AI-powered execution.",
   path: "/products",
   section: "Products",
   keywords: [

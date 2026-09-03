@@ -79,13 +79,13 @@ export const PRODUCTS: Product[] = [
     },
   },
   {
-    title: "AI Ad Campaigns",
+    title: "AI Campaigns",
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655398/AI_Ad_Campaigns_aibr85.mp4",
     description:
       "What makes our brand films and ads different is not the tools. It is the creative intelligence layered between them — the proprietary frameworks, the directorial discipline, brand alignment and the creative rigour that ensures every film we produce is a brand asset, not just a generated video.",
     action: {
-      label: "Explore AI Ad Campaigns",
-      href: "/products/ai-ad-campaigns",
+      label: "Explore AI Campaigns",
+      href: "/products/ai-campaigns",
     },
   },
   {

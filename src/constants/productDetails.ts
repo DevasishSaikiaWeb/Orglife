@@ -63,8 +63,8 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     ],
     section2Text_1:"Today we allow creative directors and production houses to pitch legally safe impossible worlds. We allow regional producers to previz massive science fiction sequences without breaking their budgets. We are not tech disruptors trying to replace traditional filmmakers. We are the definitive generative production partner scaling your cinematic ambition globally."
   },
-  "ai-ad-campaigns": {
-    title: "AI Ad Campaigns",
+  "ai-campaigns": {
+    title: "AI Campaigns",
     intro:
       "What makes our brand films and ads different is not the tools. It is the creative intelligence layered between them — the proprietary frameworks, the directorial discipline, brand alignment and the creative rigour that ensures every film we produce is a brand asset, not just a generated video.",
     heroImage: "/assets/Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp",
