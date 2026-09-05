@@ -27,7 +27,7 @@ export const Events: events = {
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production",
     },
     {
       title: "Jasmin Sandlas",
@@ -43,7 +43,7 @@ export const Events: events = {
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production & Event Branding",
     },
     {
       title: "Madhur Sharma",
@@ -55,7 +55,7 @@ export const Events: events = {
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production",
     },
     {
       title: "Harsh Gujral",
@@ -71,7 +71,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Visual Production",
     },
 
     {
@@ -88,7 +88,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production",
     },
     {
       title: "Vishal and Shekhar",
@@ -110,7 +110,7 @@ export const Events: events = {
       year: "2023",
       genre: "Music Concert [Fundraiser]",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production",
     },
 
     {
@@ -130,7 +130,7 @@ export const Events: events = {
       year: "2023",
       genre: "Contemporary/ Folk Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production & Event Branding",
     },
 
     {
@@ -146,7 +146,7 @@ export const Events: events = {
       year: "2023",
       genre: "Stand-up Comedy Show",
       location: "Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Visual Production",
     },
 
     {
@@ -168,7 +168,7 @@ export const Events: events = {
       year: "2023",
       genre: "Rock Concert",
       location: "KLFF, Ahmedabad, Gujarat",
-      subtext: "Video production",
+      subtext: "Production & Post Production",
     },
 
     {
@@ -185,7 +185,7 @@ export const Events: events = {
       year: "2020",
       genre: "Rock Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Content Management",
+      subtext: "Production & Post Production",
     },
     {
       title: "Ritviz",
@@ -201,7 +201,7 @@ export const Events: events = {
       year: "2020",
       genre: "Electronic Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Content Management",
+      subtext: "Production & Post Production",
     },
     {
       title: "Divine",
@@ -216,7 +216,7 @@ export const Events: events = {
       year: "2019",
       genre: "Bollywood Music Concert",
       location: "Ahmedabad, Gujarat",
-      subtext: "Event Content Management",
+      subtext: "Production & Post Production",
     },
   ],
 

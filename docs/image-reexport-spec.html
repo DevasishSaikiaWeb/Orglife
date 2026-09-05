@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Orglife Re-Export Spec</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Single visual world on purpose: this mirrors orglife.co.in, which is
+     dark-only (colorScheme: dark). Every colour is painted explicitly. */
+  :root {
+    --ground:#0a0a0a; --surface:#141312; --raised:#1b1a18;
+    --line:#2a2825; --line-soft:#201f1d;
+    --text:#fafafa; --muted:#8c8781; --dim:#5f5b56;
+    --accent:#F46F0C; --accent-dim:#7a3c0c;
+    --sans:'Space Grotesk',Helvetica,Arial,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--ground); color:var(--text);
+    font-family:var(--sans); font-size:15px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:1080px; margin:0 auto; padding:48px 24px 96px; }
+  .eyebrow {
+    font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 14px;
+  }
+  h1 {
+    font-size:clamp(30px,4.4vw,46px); line-height:1.04; margin:0 0 16px;
+    font-weight:700; letter-spacing:-.02em; text-wrap:balance;
+  }
+  h1 .dot { color:var(--accent); }
+  .lede { font-size:17px; color:var(--muted); max-width:64ch; margin:0; }
+  .lede b { color:var(--text); font-weight:500; }
+
+  .tally { display:flex; flex-wrap:wrap; gap:1px; margin:36px 0 44px; background:var(--line-soft); border:1px solid var(--line); }
+  .tally div { flex:1 1 150px; background:var(--surface); padding:18px 20px; }
+  .tally .n { font-family:var(--mono); font-size:26px; font-weight:500; letter-spacing:-.02em; }
+  .tally .n.hot { color:var(--accent); }
+  .tally .k { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim); margin-top:2px; }
+
+  .why { border-left:2px solid var(--accent); padding:2px 0 2px 22px; margin:0 0 40px; }
+  .why h2 { font-size:13px; letter-spacing:.16em; text-transform:uppercase; margin:0 0 12px; font-weight:700; }
+  .why p { margin:0 0 12px; color:var(--muted); max-width:66ch; }
+  .why p:last-child { margin-bottom:0; }
+  .why b { color:var(--text); font-weight:500; }
+  pre {
+    font-family:var(--mono); font-size:12.5px; line-height:1.85; margin:16px 0;
+    background:var(--raised); border:1px solid var(--line); padding:16px 18px;
+    overflow-x:auto; color:var(--muted);
+  }
+  pre b { color:var(--accent); font-weight:500; }
+
+  h2.sec {
+    font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700;
+    margin:0 0 4px; padding-bottom:14px; border-bottom:1px solid var(--line);
+  }
+  .sec-note { color:var(--dim); font-size:13px; margin:14px 0 24px; max-width:66ch; }
+
+  .scroller { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th {
+    text-align:left; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--dim); font-weight:500; padding:0 14px 8px 0; white-space:nowrap;
+    border-bottom:1px solid var(--line-soft);
+  }
+  td { padding:9px 14px 9px 0; border-bottom:1px solid var(--line-soft); vertical-align:middle; }
+  tr:last-child td { border-bottom:none; }
+  .num { font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap; font-size:13px; }
+  .target { color:var(--accent); }
+  .path { font-family:var(--mono); font-size:12.5px; color:var(--muted); word-break:break-word; min-width:22ch; }
+  .accent { color:var(--accent); }
+
+  .bar-cell { white-space:nowrap; width:150px; }
+  .bar { display:inline-block; width:88px; height:6px; background:var(--line); vertical-align:middle; }
+  .bar-fill { display:block; height:100%; background:var(--accent); }
+  .pct { font-family:var(--mono); font-size:11.5px; color:var(--dim); margin-left:9px; vertical-align:middle; }
+
+  .group { margin:0 0 40px; }
+  .group-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 18px; padding:0 0 12px; }
+  .group-head h3 { font-size:17px; margin:0; font-weight:500; letter-spacing:-.01em; }
+  .group-meta { margin:0; font-size:12.5px; color:var(--dim); font-family:var(--mono); }
+  .group-meta b { color:var(--text); font-weight:500; }
+
+  .slot-table { margin-bottom:52px; }
+  details { border-top:1px solid var(--line); margin-top:8px; padding-top:18px; }
+  summary { cursor:pointer; font-size:13px; color:var(--muted); }
+  summary:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+  details[open] summary { margin-bottom:16px; color:var(--text); }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--dim); font-size:12.5px; }
+</style>
+
+
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">orglife.co.in &middot; image audit</p>
+  <h1>Every image was exported at 1&times; its layout size<span class="dot">.</span></h1>
+  <p class="lede">That is the whole cause of the blur. Next.js never upscales &mdash; it serves the source width and the browser stretches it. On any retina screen the layout asks for twice the pixels these files contain. <b>61 of 106 images</b> need re-exporting at the widths below.</p>
+
+  <div class="tally">
+    <div><div class="n hot">61</div><div class="k">Need re-export</div></div>
+    <div><div class="n">45</div><div class="k">Already correct</div></div>
+    <div><div class="n">5</div><div class="k">Export presets</div></div>
+    <div><div class="n">2&times;</div><div class="k">Target density</div></div>
+  </div>
+
+  <div class="why">
+    <h2>How we know</h2>
+    <p>The optimizer was asked for progressively larger renditions of one 692&nbsp;px source. It caps at the source width and stops &mdash; there are no more pixels to give:</p>
+    <pre>source = 692 &times; 519
+
+  asked w=640    &rarr;  got 640 &times; 480
+  asked w=1080   &rarr;  got <b>692 &times; 519</b>
+  asked w=1920   &rarr;  got <b>692 &times; 519</b>
+  asked w=2560   &rarr;  got <b>692 &times; 519</b>   &larr; capped at source</pre>
+    <p>The layout container is <b>1408&nbsp;px</b> of content (<span class="num">max-w-368</span> minus <span class="num">lg:px-8</span>). A half-width gallery cell is therefore <b>(1408&nbsp;&minus;&nbsp;24)&nbsp;/&nbsp;2 = 692&nbsp;px</b> and a three-column card is <b>(1408&nbsp;&minus;&nbsp;64)&nbsp;/&nbsp;3 = 448&nbsp;px</b>. Those are exactly the dimensions the files were saved at &mdash; 692&times;519 and 448&times;504. Pixel-perfect on a 1&times; monitor, soft on every retina display.</p>
+    <p>Opening a file directly looks sharp because it displays at its native size. Nothing is being stretched.</p>
+  </div>
+
+  <h2 class="sec">Export presets</h2>
+  <p class="sec-note">Widths only &mdash; keep each image&rsquo;s own aspect ratio. Height follows from the crop the layout already uses.</p>
+  <div class="scroller slot-table">
+    <table>
+      <thead><tr><th>Where it appears</th><th>Renders at</th><th>Export at</th></tr></thead>
+      <tbody>
+        <tr><td>Full-bleed hero (16:9)</td><td class='num'>1408px</td><td class='num target'>2816px</td></tr>
+        <tr><td>Case gallery, span:full</td><td class='num'>1408px</td><td class='num target'>2816px</td></tr>
+        <tr><td>Case gallery, span:half</td><td class='num'>692px</td><td class='num target'>1384px</td></tr>
+        <tr><td>Product gallery tile</td><td class='num'>453px</td><td class='num target'>906px</td></tr>
+        <tr><td>3-column card</td><td class='num'>448px</td><td class='num target'>896px</td></tr>
+        <tr><td>Blog card (3-col)</td><td class='num'>448px</td><td class='num target'>896px</td></tr>
+        <tr><td>Clientele grid logo</td><td class='num'>256px</td><td class='num target'>512px</td></tr>
+        <tr><td>Marquee logo</td><td class='num'>128px</td><td class='num target'>256px</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="sec">Files to re-export</h2>
+  <p class="sec-note">Grouped by export target, worst shortfall first. The bar shows how many of the required pixels the file actually contains.</p>
+    <section class="group">
+      <header class="group-head">
+        <h3>Case gallery, span:full</h3>
+        <p class="group-meta">Renders at <b>1408px</b> wide &middot; export at <b class="accent">2816px</b> &middot; 15 files</p>
+      </header>
+      <div class="scroller">
+      <table>
+        <thead><tr><th>Current</th><th>Target width</th><th>Pixels you have</th><th>File</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Brand identity design Rebranding 1.1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Brand identity design Rebranding 1.2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Brand identity design Rebranding 1.3.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Brand identity design Rebranding 1.4.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Indian army/WEB/Indian Army Ai Video 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Indian army/WEB/Indian Army Ai Video.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Indian army/WEB/Indian Army Training Workshops 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Indian army/WEB/Indian_Army_Training_Workshops_2-1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Karnavati University/Visual Content Strategy.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Landmark and Volkswagen/Web/Visual content and communication 2.1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:25%"></span></span><span class="pct">25%</span></td>
+          <td class="path">Case studies/Landmark and Volkswagen/Web/Visual content and communication 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">1408&thinsp;&times;&thinsp;790</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Brand identity design Rebranding 1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">1408&thinsp;&times;&thinsp;790</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Indian army/WEB/Indian Army Training Workshops.webp</td>
+        </tr>
+        <tr>
+          <td class="num">1408&thinsp;&times;&thinsp;790</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Ministry of External Affairs/Web/MEA Overseas Indian Branding.webp</td>
+        </tr>
+        <tr>
+          <td class="num">1920&thinsp;&times;&thinsp;1080</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:68%"></span></span><span class="pct">68%</span></td>
+          <td class="path">Case studies/Dunes/Web/DUNES 2.webp</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="group">
+      <header class="group-head">
+        <h3>Full-bleed hero (16:9)</h3>
+        <p class="group-meta">Renders at <b>1408px</b> wide &middot; export at <b class="accent">2816px</b> &middot; 5 files</p>
+      </header>
+      <div class="scroller">
+      <table>
+        <thead><tr><th>Current</th><th>Target width</th><th>Pixels you have</th><th>File</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:16%"></span></span><span class="pct">16%</span></td>
+          <td class="path">Products/webp/AI_AD_CAMPAIGNS_-_WEBSITE.webp</td>
+        </tr>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:16%"></span></span><span class="pct">16%</span></td>
+          <td class="path">Products/webp/AI_FILMS_-_WEBSITE.webp</td>
+        </tr>
+        <tr>
+          <td class="num">894&thinsp;&times;&thinsp;1009</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:32%"></span></span><span class="pct">32%</span></td>
+          <td class="path">Products/webp/Ai_platform.webp</td>
+        </tr>
+        <tr>
+          <td class="num">894&thinsp;&times;&thinsp;1009</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:32%"></span></span><span class="pct">32%</span></td>
+          <td class="path">Products/webp/Micro_Mind.webp</td>
+        </tr>
+        <tr>
+          <td class="num">1672&thinsp;&times;&thinsp;941</td>
+          <td class="num target">2816px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:59%"></span></span><span class="pct">59%</span></td>
+          <td class="path">Projects/9.webp</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="group">
+      <header class="group-head">
+        <h3>Case gallery, span:half</h3>
+        <p class="group-meta">Renders at <b>692px</b> wide &middot; export at <b class="accent">1384px</b> &middot; 20 files</p>
+      </header>
+      <div class="scroller">
+      <table>
+        <thead><tr><th>Current</th><th>Target width</th><th>Pixels you have</th><th>File</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Actuate/WEB/3D product design and visual assets1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Actuate/WEB/3D product design and visual assets2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Indian army/WEB/PHOTOGRAPHY PROJECT 1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Indian army/WEB/VIDEOGRAPHY PROJECT 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Landmark and Volkswagen/Web/Social media and campaign management 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Landmark and Volkswagen/Web/Social media and campaign management.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Ministry of External Affairs/Web/Ministry of External Affairs E-Book 1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Ministry of External Affairs/Web/Ministry of External Affairs E-Book 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Mudo/AI visual assets for display1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Mudo/AI visual assets for display2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/SSWAI Visting Card.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/Social Media 1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/Social Media.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/Sswai Packaging.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/Sswai Visual Branding 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/SSWAI/Web/Sswai Visual Branding.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Sterling/Brand campaign design 1.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Sterling/Brand campaign design 2.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Wanta Santa/Web/Astronaut.webp</td>
+        </tr>
+        <tr>
+          <td class="num">692&thinsp;&times;&thinsp;519</td>
+          <td class="num target">1384px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Wanta Santa/Web/Winter_wonderland.webp</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="group">
+      <header class="group-head">
+        <h3>3-column card</h3>
+        <p class="group-meta">Renders at <b>448px</b> wide &middot; export at <b class="accent">896px</b> &middot; 5 files</p>
+      </header>
+      <div class="scroller">
+      <table>
+        <thead><tr><th>Current</th><th>Target width</th><th>Pixels you have</th><th>File</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">896px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Actuate/WEB/Actuate.webp</td>
+        </tr>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">896px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Dunes/Web/Dunes_logo.webp</td>
+        </tr>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">896px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Landmark and Volkswagen/Web/Landmark.webp</td>
+        </tr>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">896px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Sterling/Sterling.webp</td>
+        </tr>
+        <tr>
+          <td class="num">448&thinsp;&times;&thinsp;504</td>
+          <td class="num target">896px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:50%"></span></span><span class="pct">50%</span></td>
+          <td class="path">Case studies/Verity/Verity.webp</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="group">
+      <header class="group-head">
+        <h3>Marquee logo</h3>
+        <p class="group-meta">Renders at <b>128px</b> wide &middot; export at <b class="accent">256px</b> &middot; 16 files</p>
+      </header>
+      <div class="scroller">
+      <table>
+        <thead><tr><th>Current</th><th>Target width</th><th>Pixels you have</th><th>File</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;66</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/1.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;176</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/10.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;156</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/11.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;134</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/12.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;196</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/13.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;200</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/14.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;66</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/15.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;229</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/16.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;175</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/2.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;175</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/3.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;75</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/4.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;50</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/5.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;123</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/6.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;188</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/7.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;180</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/8.png</td>
+        </tr>
+        <tr>
+          <td class="num">200&thinsp;&times;&thinsp;137</td>
+          <td class="num target">256px</td>
+          <td class="bar-cell"><span class="bar"><span class="bar-fill" style="width:78%"></span></span><span class="pct">78%</span></td>
+          <td class="path">Logo/client-logo-marquee/9.png</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+  <details>
+    <summary>45 images are already correct &mdash; use these as the reference</summary>
+    <div class="scroller">
+      <table>
+        <thead><tr><th>Size</th><th>File</th></tr></thead>
+        <tbody>
+        <tr><td class='num'>5632&thinsp;&times;&thinsp;3160</td><td class='path'>Case studies/Actuate/WEB/Brand website.webp</td></tr>
+        <tr><td class='num'>1384&thinsp;&times;&thinsp;1038</td><td class='path'>Case studies/Dunes/Web/DUNES3.webp</td></tr>
+        <tr><td class='num'>1384&thinsp;&times;&thinsp;1038</td><td class='path'>Case studies/Dunes/Web/Dunes.webp</td></tr>
+        <tr><td class='num'>1376&thinsp;&times;&thinsp;1548</td><td class='path'>Home_page/Ishani_Dave.webp</td></tr>
+        <tr><td class='num'>1376&thinsp;&times;&thinsp;1548</td><td class='path'>Home_page/Jasmine_Sandlas.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/1.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/10.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/11.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/12.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/13.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/14.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/15.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/16.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/17.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/18.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/19.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/2.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/20.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/21.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/22.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/23.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/24.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/25.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/3.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/4.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/5.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/6.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/7.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/8.webp</td></tr>
+        <tr><td class='num'>785&thinsp;&times;&thinsp;747</td><td class='path'>Logo/9.webp</td></tr>
+        <tr><td class='num'>2752&thinsp;&times;&thinsp;1536</td><td class='path'>Projects/10.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/11.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/12.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/13.webp</td></tr>
+        <tr><td class='num'>1376&thinsp;&times;&thinsp;768</td><td class='path'>Projects/14.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/15.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/16.webp</td></tr>
+        <tr><td class='num'>4500&thinsp;&times;&thinsp;3000</td><td class='path'>Projects/17.webp</td></tr>
+        <tr><td class='num'>1448&thinsp;&times;&thinsp;1086</td><td class='path'>Projects/2.webp</td></tr>
+        <tr><td class='num'>1536&thinsp;&times;&thinsp;1024</td><td class='path'>Projects/3.webp</td></tr>
+        <tr><td class='num'>1672&thinsp;&times;&thinsp;941</td><td class='path'>Projects/4.webp</td></tr>
+        <tr><td class='num'>1448&thinsp;&times;&thinsp;1086</td><td class='path'>Projects/5.webp</td></tr>
+        <tr><td class='num'>1672&thinsp;&times;&thinsp;941</td><td class='path'>Projects/6.webp</td></tr>
+        <tr><td class='num'>4500&thinsp;&times;&thinsp;3000</td><td class='path'>Projects/7.webp</td></tr>
+        <tr><td class='num'>1920&thinsp;&times;&thinsp;1073</td><td class='path'>images/demo1.webp</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <footer>
+    Measured against the built layout, not estimated. Videos are excluded &mdash; only still images are audited.
+    Raising JPEG/WebP quality will not help: the shortfall is missing pixels, not compression.
+  </footer>
+</div>
+
+</body>
+</html>

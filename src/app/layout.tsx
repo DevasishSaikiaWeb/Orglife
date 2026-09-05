@@ -5,6 +5,7 @@ import "../styles/typography.css";
 import localFont from "next/font/local";
 import { JsonLd } from "@/components/json-ld";
 import { LenisProvider } from "@/components/lenis";
+import { MediaProtection } from "@/components/media-protection";
 import { BASE_KEYWORDS, SITE } from "@/constants/site";
 import {
   faqSchema,
@@ -147,6 +148,7 @@ export default function RootLayout({
           Skip to main content
         </a>
 
+        <MediaProtection />
         <LenisProvider>{children}</LenisProvider>
       </body>
     </html>

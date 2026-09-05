@@ -1,6 +1,7 @@
 import { Heading1, Heading3 } from "@/components/heading";
 import {
-  ABOUT_SECTION_SUBTITLE,
+  ABOUT_SECTION_SUBTITLE_1,
+  ABOUT_SECTION_SUBTITLE_2,
   ABOUT_SECTION_TITLE,
   ABOUT_SECTION_UPPER_TITLE,
   HERO_SECTION_SUBTITLE,
@@ -31,7 +32,8 @@ export function HeroSection() {
       <div className="mt-8">
         <Heading3
           title={ABOUT_SECTION_TITLE}
-          subtitle={ABOUT_SECTION_SUBTITLE}
+          subtitle={ABOUT_SECTION_SUBTITLE_1}
+          subtitle2={ABOUT_SECTION_SUBTITLE_2}
           toptitle={ABOUT_SECTION_UPPER_TITLE}
         />
       </div>

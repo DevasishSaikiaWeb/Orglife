@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
+import { marqueeTiming } from "@/lib/marquee";
 
 function readLogos(dir: string): string[] {
   const files = fs.readdirSync(path.join(process.cwd(), "public", dir));
@@ -11,24 +12,26 @@ function readLogos(dir: string): string[] {
     .map((file) => `${dir}/${file}`);
 }
 
-const LOGOS = readLogos("/assets/Logo");
-const MARQUEE_LOGOS = readLogos("/assets/Logo/client-logo-marquee");
-
-const MARQUEE_REPEAT = Math.max(2, Math.ceil(14 / Math.max(1, MARQUEE_LOGOS.length)));
+const GRID_DIR = "/assets/Logo";
+const MARQUEE_DIR = "/assets/Logo/client-logo-marquee";
 
 type LogoGridProps = {
+  /** "grid" is the static clientele wall; "marquee" is the scrolling row. */
   variant?: "grid" | "marquee";
+  /** Seconds for one loop. Defaults to a constant-speed value from the logo count. */
   duration?: number;
 };
 
 function MarqueeRow({
   logos,
+  repeat,
   duration,
 }: {
   logos: string[];
+  repeat: number;
   duration: number;
 }) {
-  const half = Array.from({ length: MARQUEE_REPEAT }, () => logos).flat();
+  const half = Array.from({ length: repeat }, () => logos).flat();
 
   return (
     <ul
@@ -62,7 +65,9 @@ function MarqueeRow({
   );
 }
 
-export function LogoGrid({ variant = "grid", duration = 60 }: LogoGridProps) {
+export function LogoGrid({ variant = "grid", duration }: LogoGridProps) {
+  const logos = readLogos(variant === "marquee" ? MARQUEE_DIR : GRID_DIR);
+  const timing = marqueeTiming(logos.length);
   return (
     <section aria-label="Clientele">
       <div className="flex md:flex-row flex-col gap-x-8 gap-y-2">
@@ -80,12 +85,16 @@ export function LogoGrid({ variant = "grid", duration = 60 }: LogoGridProps) {
       </div>
 
       {variant === "marquee" ? (
-        <div className="logo-marquee mt-12">
-          <MarqueeRow logos={MARQUEE_LOGOS} duration={duration} />
+        <div className="logo-marquee mt-20">
+          <MarqueeRow
+            logos={logos}
+            repeat={timing.repeat}
+            duration={duration ?? timing.duration}
+          />
         </div>
       ) : (
         <ul className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-          {LOGOS.map((src, index) => (
+          {logos.map((src, index) => (
             <li
               key={src}
               className="group flex aspect-square items-center justify-center overflow-hidden"

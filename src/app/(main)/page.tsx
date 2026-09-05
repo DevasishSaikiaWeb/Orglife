@@ -14,7 +14,9 @@ import { buildMetadata } from "@/lib/seo";
 import { CurrentProjectsSection } from "./_components/current-projects";
 import { HeroSection } from "./_components/hero";
 import Memories from "./_components/Memories";
+import { PlatformsSection } from "./_components/platforms";
 import { ProjectsSection } from "./_components/projects";
+import { StatsSection } from "./_components/stats";
 import { TeamSection } from "./_components/team";
 
 export const metadata = buildMetadata({
@@ -57,7 +59,9 @@ export default function HomePage() {
         <CurrentProjectsSection />
         <ProjectsSection />
         <Memories />
+        <StatsSection />
         <LogoGrid variant="marquee" />
+        <PlatformsSection />
         <BlogsSection />
         <ContactForPartnership />
       </main>

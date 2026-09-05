@@ -1,17 +1,54 @@
 export const HERO_SECTION_TITLE =
-    "WE’RE A CREATIVE AND TECH-POWERED BRAND STUDIO",
+    "A modern, AI-augmented creative brand strategy studio",
   HERO_SECTION_SUBTITLE =
-    "We create awesome brand stories and assets through storytelling and new-age technology.";
+    "We bring to the world deep-research brand foundation design and profiling, AI brand ads and films, and strategic content consulting, providing high-efficiency functional value through proprietary tech stacks and emotional value through brand modernization.";
 
 export const ABOUT_SECTION_UPPER_TITLE =
     "Hello. We are pixel-perfect minds with 64-bit hearts.",
   ABOUT_SECTION_TITLE = "WE ARE ORGLIFE",
-  ABOUT_SECTION_SUBTITLE =
-    "We are a data-driven creative brand strategy and content and communication studio in Ahmedabad, Gujarat. We partner with brands and leverage advanced AI and proprietary tech stacks to create and deliver category-defining brand identities, content strategies and visual communications for them.";
+  ABOUT_SECTION_SUBTITLE_1 =
+    "We are a data-driven creative brand strategy and content and communication studio in Ahmedabad, Gujarat. We partner with brands and leverage advanced AI and proprietary tech stacks to create and deliver category-defining brand identities, content strategies and visual communications for them.",
+  ABOUT_SECTION_SUBTITLE_2 =
+    "We act as a hyper agile digital transformation engine, turning deep researched brand foundations into measurable market dominance without the traditional agency lag.";
+
+export const STATS_SECTION_TITLE = "STATS",
+  STATS_SECTION_SUBTITLE =
+    "Delivering speed and scale through AI integration — from brand campaigns to captivating narratives to advance digital assets, our numbers tell a story of strategic creative thinking that aims at generating value beyond attention.",
+  /** `suffix` is rendered in brand orange so the figure itself stays dominant. */
+  STATS = [
+    { value: "12", suffix: "", label: "Data-backed brand profiles generated" },
+    { value: "40", suffix: "+", label: "Gen-AI ad films deployed" },
+    { value: "85", suffix: "%", label: "Faster turnaround than legacy agencies" },
+    { value: "10", suffix: "+", label: "Custom AI tools and bots active" },
+  ];
+
+export const PLATFORMS_SECTION_TITLE = "PLATFORMS",
+  PLATFORMS_SECTION_SUBTITLE =
+    "We engage a string of structured, algorithmic approaches with globally dominant platforms and LLMs to modernize your content and communication needs.",
+  /**
+   * Order matches the files in public/assets/Logo/platforms — 1.png is the
+   * first name below, 2.png the second, and so on. These are currently
+   * placeholder images copied from the clientele marquee; replacing a file
+   * in place keeps the pairing intact. Used as the logos' alt text.
+   */
+  PLATFORMS = [
+    "Google Gemini",
+    "ChatGPT",
+    "Claude",
+    "Higgsfield",
+    "Veo",
+    "Seedance",
+    "Kling",
+    "Wan",
+    "Sora",
+    "Runway",
+    "Seedream",
+    "Hailuo",
+  ];
 
 export const TEAM_SECTION_TITLE = "CREATIVE HEARTS, INSIGHTFUL MINDS",
   TEAM_SECTION_SUBTITLE =
-    "We operate as an extension of your brand team, providing proactive strategic guidance and collaborative creative execution.",
+    "We bridge the gap between traditional operations and modern digital demands. Our proprietary AI creative technology stack help us extract the core mechanics of your brand and builds a data-backed profiling matrix. This replaces human bias with rigorous research, enabling accurate brand profiling and digitial identity development, extending to premium gen-AI visual storytelling at unprecedented speeds.",
   TEAM_CONTENT = {
     leftSection: {
       heading:
@@ -44,7 +81,7 @@ export const CURRENT_PROJECTS_SECTION_TITLE =
 export const PROJECTS_SECTION_TITLE =
     "EXPLORING CREATIVITY IN TECHNOLOGY,\nWITH AI",
   PROJECTS_SECTION_SUBTITLE =
-    "From brand campaigns to captivating narratives, each project tells a story of strategic creative thinking that aims at generating attention and value for the audience. And we’re proud and excited about every project that we’re a part of.";
+    "We operate differently from traditional studios and agencies. Our infrastructure is built on advanced AI workflows that compress weeks of strategic modeling into precise, executable assets. And to support our intent and philosophy, we have developed our own tech-assets and architecture to serve brands in many innovative ways befitting the evolving nature of the markets.";
 
 export const MEMORIES_SECTION_TITLE =
     "CREATING MEMORIES THROUGH LIVE EXPERIENCES",

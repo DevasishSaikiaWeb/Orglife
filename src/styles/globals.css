@@ -146,6 +146,14 @@
   svg {
     max-width: 100%;
   }
+
+  img,
+  video,
+  canvas {
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
 }
 
 /* WCAG 2.3.3 — respect users who ask for less motion. */

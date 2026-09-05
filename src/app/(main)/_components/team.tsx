@@ -31,7 +31,7 @@ export function TeamSection() {
       </div>
       <div className="mt-8">
         <ShowcaseColumnGrid
-          leftSectionHeading="We engage hybrid models tailored to the operational and creative maturity of brands."
+          leftSectionHeading="Modern business acumen deserves more than guesswork. Let us modernize your market presence."
           //   rightSection={[
           //     {
           //       heading: "Brand Foundation Design",

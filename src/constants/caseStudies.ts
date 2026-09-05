@@ -140,7 +140,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "ministry-of-external-affairs",
     brand: "Ministry of External Affairs",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178855/MEA.mp4",
+    cardImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178855/MEA.mp4",
     cardDescription:
       "Projects ranging from a series of ebooks to international event communications.",
     industries: ["Government"],
@@ -264,11 +265,11 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        thecase: "Brand foundation design",
+        thecase: "Social media and campaign management",
         theopportunity:
-          "Brand discovery followed by a full-scale impactful brand strategy.",
+          "Content themes, calendar curation, social media management and digital ad campaigns.",
         whatwedelivered:
-          "Deep-researched brand profile, brand identity system, visual assets and voice.",
+          "Creative real and AI visual content design, management of Sswai's social accounts and pages across all organic and paid verticals.",
         layout: "grid",
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
@@ -367,7 +368,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "wanta-santa",
     brand: "Wanta Santa",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178860/WantASanta.mp4",
+    cardImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178860/WantASanta.mp4",
     cardDescription: "Never-before magic in the field of immersive experience.",
     industries: ["Amusement", "Event Management"],
     intro: "An universe of virtual worlds and magical experiences.",
@@ -389,6 +391,17 @@ export const CASE_STUDIES: CaseStudy[] = [
             title: "Divisional Archive",
             span: "full",
           },
+          {
+            media:
+              "/assets/Case studies/Wanta Santa/Web/Winter_wonderland.webp",
+            title: "Cinematic Documentation",
+            span: "half",
+          },
+          {
+            media: "/assets/Case studies/Wanta Santa/Web/Astronaut.webp",
+            title: "Cinematic Documentation",
+            span: "half",
+          },
         ],
       },
       {
@@ -407,15 +420,10 @@ export const CASE_STUDIES: CaseStudy[] = [
             span: "full",
           },
           {
-            media:
-              "/assets/Case studies/Wanta Santa/Web/Winter_wonderland.webp",
-            title: "Cinematic Documentation",
-            span: "half",
-          },
-          {
-            media: "/assets/Case studies/Wanta Santa/Web/Astronaut.webp",
-            title: "Cinematic Documentation",
-            span: "half",
+            media: "/assets/Products/webp/360_BusSequence_4k.mp4",
+            is360: true,
+            title: "360 Immersive Experience",
+            span: "full",
           },
         ],
       },
@@ -424,7 +432,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "landmark-and-volkswagen",
     brand: "Group Landmark",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178861/Landmark.mp4",
+    cardImage: "/assets/Case studies/Landmark and Volkswagen/Web/Landmark.webp",
     cardDescription:
       "Creative concepts and visual content for impactful communications across multiple platforms.",
     industries: ["Automobile"],
@@ -519,12 +527,13 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "actuate-hydraulics",
     brand: "Actuate Hyadraulics",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178878/Actuate.mp4",
+    cardImage: "/assets/Case studies/Actuate/WEB/Actuate.webp",
     cardDescription:
       "World-class hydraulics. Finally, a world-class brand to match.",
     industries: ["Manufacturing", "Industrial"],
     intro: "World-class hydraulics. Finally, a world-class brand to match.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788175395/Actuate_Logo_Animation.mp4",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788175395/Actuate_Logo_Animation.mp4",
     cases: [
       {
         thecase: "Brand identity design/ Rebranding",
@@ -535,11 +544,31 @@ export const CASE_STUDIES: CaseStudy[] = [
         layout: "grid",
         // TODO: swap for this case's real assets — 1 full image + 2 small images.
         gallery: [
-          { media: "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.webp", title: "Training Modules" },
-          { media: "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.1.webp", title: "Field Sessions" },
-          { media: "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.2.webp", title: "Assessments" },
-          { media: "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.3.webp", title: "Field Sessions" },
-          { media: "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.4.webp", title: "Assessments" },
+          {
+            media:
+              "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.webp",
+            title: "Training Modules",
+          },
+          {
+            media:
+              "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.1.webp",
+            title: "Field Sessions",
+          },
+          {
+            media:
+              "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.2.webp",
+            title: "Assessments",
+          },
+          {
+            media:
+              "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.3.webp",
+            title: "Field Sessions",
+          },
+          {
+            media:
+              "/assets/Case studies/Actuate/WEB/Brand identity design Rebranding 1.4.webp",
+            title: "Assessments",
+          },
         ],
       },
       {
@@ -552,12 +581,14 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "/assets/Case studies/Actuate/WEB/3D product design and visual assets1.webp",
+            media:
+              "/assets/Case studies/Actuate/WEB/3D product design and visual assets1.webp",
             title: "Divisional Archive",
             span: "half",
           },
           {
-            media: "/assets/Case studies/Actuate/WEB/3D product design and visual assets2.webp",
+            media:
+              "/assets/Case studies/Actuate/WEB/3D product design and visual assets2.webp",
             title: "Cinematic Documentation",
             span: "half",
           },
@@ -571,7 +602,10 @@ export const CASE_STUDIES: CaseStudy[] = [
           "We designed the complete digital presence — delivering a modern, technically optimised website alongside original copy and curated visuals for every page.",
         layout: "grid",
         gallery: [
-          { media: "/assets/Case studies/Actuate/WEB/Brand website.webp", title: "Training Modules" },
+          {
+            media: "/assets/Case studies/Actuate/WEB/Brand website.webp",
+            title: "Training Modules",
+          },
         ],
       },
     ],
@@ -579,11 +613,13 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "mudo",
     brand: "Mudo",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178857/Mudo.mp4",
+    cardImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178857/Mudo.mp4",
     cardDescription: "Nobody ever noticed an earplug. Until this one.",
     industries: ["Healthcare / Wellness", "Lifestyle"],
     intro: "Nobody ever noticed an earplug. Until this one.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788176620/Mudo_Logo_Animation.mp4",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788176620/Mudo_Logo_Animation.mp4",
     cases: [
       {
         thecase: "3D product design",
@@ -595,10 +631,11 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
             title: "Divisional Archive",
             span: "full",
-          }
+          },
         ],
       },
       {
@@ -611,28 +648,31 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "/assets/Case studies/Mudo/AI visual assets for display1.webp",
+            media:
+              "/assets/Case studies/Mudo/AI visual assets for display1.webp",
             title: "Divisional Archive",
             span: "half",
           },
           {
-            media: "/assets/Case studies/Mudo/AI visual assets for display2.webp",
+            media:
+              "/assets/Case studies/Mudo/AI visual assets for display2.webp",
             title: "Cinematic Documentation",
             span: "half",
           },
         ],
       },
       {
-        thecase: "Brand foundation design",
+        thecase: "Brand website",
         theopportunity:
-          "Brand discovery followed by a full-scale impactful brand strategy.",
+          "To design and develop the brand's official website along with its ecommerce strategy.",
         whatwedelivered:
-          "Deep-researched brand profile, brand identity system, visual assets and voice.",
+          "We delivered a modern and minimalist, technically optimised website alongside its copy and curated product visuals.",
         layout: "grid",
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788177180/Mudo_website.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177180/Mudo_website.mp4",
             title: "Divisional Archive",
             span: "full",
           },
@@ -643,13 +683,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "sterling",
     brand: "Sterling",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788178863/Sterling.mp4",
+    cardImage: "/assets/Case studies/Sterling/Sterling.webp",
     cardDescription:
       "Helping the brand create patient experience, through visual communications.",
-    industries: ["Hospitality", "Lifestyle"],
+    industries: ["Healthcare"],
     intro:
-      "Crafting warm, aspirational communications for a hospitality brand.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788177309/Sterling_Logo_Animation.mp4",
+      "One brand. Every facility. Creating communication that goes beyond just care.",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788177309/Sterling_Logo_Animation.mp4",
     cases: [
       {
         thecase: "Brand campaign design",
@@ -682,12 +723,14 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788177693/Advertisement_concepts_1.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177693/Advertisement_concepts_1.mp4",
             title: "Divisional Archive",
             span: "full",
           },
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788177685/Advertisement_concepts_2.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177685/Advertisement_concepts_2.mp4",
             title: "Cinematic Documentation",
             span: "full",
           },
@@ -697,14 +740,16 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "cerc",
-    brand: "Consumer Education And Research Centre",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+    brand: "CERC",
+    cardImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
     cardDescription:
       "Harnessing the power of visual storytelling in spreading awareness among children.",
     industries: ["Consumer Services", "Research/Advocacy"],
     intro:
       "Harnessing the power of visual storytelling in spreading awareness among children.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
     cases: [
       {
         thecase: "AI-powered Educational Videos",
@@ -716,22 +761,26 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270212/CERC_1.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270212/CERC_1.mp4",
             title: "Divisional Archive",
             span: "full",
           },
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270213/CERC1.1.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270213/CERC1.1.mp4",
             title: "Cinematic Documentation",
             span: "half",
           },
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270211/CERC_1.2.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270211/CERC_1.2.mp4",
             title: "Divisional Archive",
             span: "half",
           },
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788270220/CERC_2.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270220/CERC_2.mp4",
             title: "Cinematic Documentation",
             span: "full",
           },
@@ -742,13 +791,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "dunes-college",
     brand: "Dunes College",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788332442/Dunes.mp4",
+    cardImage: "/assets/Case studies/Dunes/Web/Dunes_logo.webp",
     cardDescription:
       "Laying the foundation of a new vision, a new brand in the field of modern education.",
     industries: ["Educations"],
     intro:
       "Laying the foundation of a new vision, a new brand in the field of modern education.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
     cases: [
       {
         thecase: "Brand foundation design",
@@ -781,7 +831,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             span: "half",
           },
           {
-            media: "/assets/Case studies/Dunes/Web/DUNES 3.webp",
+            media: "/assets/Case studies/Dunes/Web/DUNES3.webp",
             title: "Divisional Archive",
             span: "half",
           },
@@ -792,25 +842,24 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "verity",
     brand: "Verity",
-    cardImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788332442/Verity.mp4",
-    cardDescription:
-      "Building a virtual world with the three dimensions.",
+    cardImage: "/assets/Case studies/Verity/Verity.webp",
+    cardDescription: "Building a virtual world with the three dimensions.",
     industries: ["Consumer Durables"],
-    intro:
-      "Building a virtual world with the three dimensions.",
-    heroImage: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
+    intro: "Building a virtual world with the three dimensions.",
+    heroImage:
+      "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
     cases: [
       {
         thecase: "3D product designs and SOPs",
         theopportunity:
           "To develop advanced 3D designs and animated functions and features for the entire range of products.",
-        whatwedelivered:
-          "High-precision product 3D models.",
+        whatwedelivered: "High-precision product 3D models.",
         layout: "grid",
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
             title: "Divisional Archive",
             span: "full",
           },
@@ -826,12 +875,14 @@ export const CASE_STUDIES: CaseStudy[] = [
         // TODO: swap for this case's real assets — 2 small images.
         gallery: [
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/3.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/3.mp4",
             title: "Divisional Archive",
             span: "half",
           },
           {
-            media: "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/4.mp4",
+            media:
+              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/4.mp4",
             title: "Divisional Archive",
             span: "half",
           },
