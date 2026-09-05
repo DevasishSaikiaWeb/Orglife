@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { Heading1, Heading3 } from "@/components/heading";
+import { MediaGrid } from "@/components/media-grid";
 import { JsonLd } from "@/components/json-ld";
 import { PRODUCT_DETAILS } from "@/constants/productDetails";
 import {
@@ -68,10 +68,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             path,
             image: product.heroImage,
           }),
-          mediaSchemas(
-            product.gallery.map((src) => ({ media: src, title: product.title })),
-            product.title,
-          ),
+          mediaSchemas(product.gallery, product.title),
         )}
       />
       <main
@@ -99,25 +96,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
           />
         </section>
 
-        <section
-          aria-label={`${product.title} gallery`}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-        >
-          {product.gallery.map((img, index) => (
-            <div key={img} className="aspect-square overflow-hidden">
-              <Image
-                className="size-full object-cover"
-                src={img}
-                alt={`${product.title} — visual ${index + 1}`}
-                width={720}
-                height={720}
-                sizes="(max-width: 768px) 100vw, 33vw"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          ))}
-        </section>
+        {product.gallery.length > 0 && (
+          <section aria-label={`${product.title} gallery`}>
+            <MediaGrid items={product.gallery} altPrefix={product.title} />
+          </section>
+        )}
 
         {product.section2Text_1 && (
           <section>

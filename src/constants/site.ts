@@ -1,16 +1,11 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "https://orglife.co.in";
 
-/**
- * Trailing period rendered as a separate span so it can be accented in brand
- * orange (`.dot-text`). Keep section titles free of the final "." and pass this
- * as the `dot` prop on Heading1/Heading2 instead.
- */
 export const SECTION_DOT = ".";
 
 export const SITE = {
-  name: "Orglife",
-  legalName: "Orglife",
+  name: "Orglife Industries Private Limited",
+  legalName: "Orglife Industries Private Limited",
   shortName: "Orglife",
   url: SITE_URL,
   locale: "en_IN",

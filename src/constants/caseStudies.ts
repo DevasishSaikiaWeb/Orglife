@@ -1,7 +1,5 @@
-import type { PortfolioItem } from "./portfolio";
-export type CaseStudyMedia = PortfolioItem & {
-  span?: "full" | "half";
-};
+import type { GalleryMedia } from "./portfolio";
+export type CaseStudyMedia = GalleryMedia;
 
 export type CaseStudyCase = {
   thecase: string;
@@ -831,7 +829,7 @@ export const CASE_STUDIES: CaseStudy[] = [
             span: "half",
           },
           {
-            media: "/assets/Case studies/Dunes/Web/DUNES3.webp",
+            media: "/assets/Case studies/Dunes/Web/Dunes3.webp",
             title: "Divisional Archive",
             span: "half",
           },

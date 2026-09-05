@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     title: "Micro Minds",
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655398/Micro_Minds_y0evxo.mp4",
     description:
-      "Microminds is a visually and logically advanced K-8 EdTech and cognitive assessment platform operating at the intersection of AI-generated entertainment and life-skills education. It is driven by AI-generated animated short films teaching life skills, paired with dynamic, real-time AI-driven quantitative and qualitative reasoning assessments.",
+      "An evolved K-8 EdTech and cognitive assessment platform operating at the intersection of AI-generated entertainment and life-skills education, Microminds is driven by culturally localized, AI-generated animated short films on various foundational learning domains, paired with dynamic, real-time AI-driven quantitative and qualitative reasoning assessments.",
     action: {
       label: "Explore Micro Minds",
       href: "/products/micro-minds",
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1787655396/Extended_Reality_qmgjox.mp4",
     is360: false,
     description:
-      "Product showcases. Brand worlds. Interactive experiences. Immersive training environments. Spatial campaign installations - all built from brief to final render with the same directorial discipline we bring to every film we make.",
+      "Product showcases, brand worlds, interactive experiences, immersive training environments, spatial campaign installations - all built from brief to final render with the same directorial discipline we bring to every film we make.",
     action: {
       label: "Explore Extended Reality",
       href: "/products/extended-reality",

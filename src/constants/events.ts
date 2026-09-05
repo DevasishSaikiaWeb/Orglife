@@ -17,12 +17,8 @@ export const Events: events = {
     {
       title: "Char Diwari",
       images: [
-        [
-          "/assets/Home_page/Concerts/Char_diwari.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/Char_diwari2.webp",
-        ],
+        ["/assets/Home_page/Concerts/Char_diwari.webp"],
+        ["/assets/Home_page/Concerts/Char_diwari2.webp"],
       ],
       year: "2026",
       genre: "Music Concert",
@@ -32,9 +28,7 @@ export const Events: events = {
     {
       title: "Jasmin Sandlas",
       images: [
-        [
-          "/assets/Home_page/Concerts/Jasmine_Sandlas1.webp",
-        ],
+        ["/assets/Home_page/Concerts/Jasmine_Sandlas1.webp"],
         [
           "/assets/Home_page/Concerts/Jasmine_Sandlas2.webp",
           "/assets/Home_page/Concerts/Jasmine_Sandlas3.webp",
@@ -47,11 +41,7 @@ export const Events: events = {
     },
     {
       title: "Madhur Sharma",
-      images: [
-        [
-          "/assets/Home_page/Concerts/Madhur_Sharma.webp",
-        ],
-      ],
+      images: [["/assets/Home_page/Concerts/Madhur_Sharma.webp"]],
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
@@ -60,9 +50,7 @@ export const Events: events = {
     {
       title: "Harsh Gujral",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Harsh_Gujral_1_xfmcvv.webp"],
         [
           "/assets/Home_page/Concerts/webp/Harsh_Gujral_2_wxeptm.webp",
           "/assets/Home_page/Concerts/webp/Harsh_Gujral_3_phwngn.webp",
@@ -77,9 +65,7 @@ export const Events: events = {
     {
       title: "Shruti Pathak",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Shruti_Pathak_1_uyxeiv.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Shruti_Pathak_1_uyxeiv.webp"],
         [
           "/assets/Home_page/Concerts/webp/Shruti_Pathak_2_igvzfv.webp",
           "/assets/Home_page/Concerts/webp/Shruti_Pathak_3_s4aorn.webp",
@@ -93,15 +79,9 @@ export const Events: events = {
     {
       title: "Vishal and Shekhar",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_1_modk6r.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_2_phlxlm.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Vishal_Shekhar_3_g3jzn6.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Vishal_Shekhar_1_modk6r.webp"],
+        ["/assets/Home_page/Concerts/webp/Vishal_Shekhar_2_phlxlm.webp"],
+        ["/assets/Home_page/Concerts/webp/Vishal_Shekhar_3_g3jzn6.webp"],
         [
           "/assets/Home_page/Concerts/webp/Vishal_Shekhar_4_cwkzoj.webp",
           "/assets/Home_page/Concerts/webp/Vishal_Shekhar_5_o5egk1.webp",
@@ -116,12 +96,8 @@ export const Events: events = {
     {
       title: "Maati Baani",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Maati_Baani_1_fx3mf2.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Maati_Baani_2_q7bmie.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Maati_Baani_1_fx3mf2.webp"],
+        ["/assets/Home_page/Concerts/webp/Maati_Baani_2_q7bmie.webp"],
         [
           "/assets/Home_page/Concerts/webp/Maati_Baani_3_yyr25o.webp",
           "/assets/Home_page/Concerts/webp/Maati_Baani_4_zjbox6.webp",
@@ -136,12 +112,8 @@ export const Events: events = {
     {
       title: "Gurleen Pannu",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Gurleen_Pannu_1_jfrbxa.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Gurleen_Pannu_2_pcgn1f.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Gurleen_Pannu_1_jfrbxa.webp"],
+        ["/assets/Home_page/Concerts/webp/Gurleen_Pannu_2_pcgn1f.webp"],
       ],
       year: "2023",
       genre: "Stand-up Comedy Show",
@@ -152,18 +124,10 @@ export const Events: events = {
     {
       title: "Big Ban Theory",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_1_zt0fsg.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_2_tl2nqp.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_3_qrrywx.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/Big_Ban_Theory_4_wje86t.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/Big_Ban_Theory_1_zt0fsg.webp"],
+        ["/assets/Home_page/Concerts/webp/Big_Ban_Theory_2_tl2nqp.webp"],
+        ["/assets/Home_page/Concerts/webp/Big_Ban_Theory_3_qrrywx.webp"],
+        ["/assets/Home_page/Concerts/webp/Big_Ban_Theory_4_wje86t.webp"],
       ],
       year: "2023",
       genre: "Rock Concert",
@@ -174,9 +138,7 @@ export const Events: events = {
     {
       title: "The Local Train",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/1.11.jpg_glqrvm.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/1.11.jpg_glqrvm.webp"],
         [
           "/assets/Home_page/Concerts/webp/1.12.jpg_rx5zdf.webp",
           "/assets/Home_page/Concerts/webp/1.13.jpg_tuhe8n.webp",
@@ -190,9 +152,7 @@ export const Events: events = {
     {
       title: "Ritviz",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/1.22.jpg_olymwx.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/1.22.jpg_olymwx.webp"],
         [
           "/assets/Home_page/Concerts/webp/1.23.jpg_cvkntj.webp",
           "/assets/Home_page/Concerts/webp/1.42.jpg_mjkpbj.webp",
@@ -206,12 +166,8 @@ export const Events: events = {
     {
       title: "Divine",
       images: [
-        [
-          "/assets/Home_page/Concerts/webp/1.51.jpg_d5781p.webp",
-        ],
-        [
-          "/assets/Home_page/Concerts/webp/1.52.jpg_tzqngh.webp",
-        ],
+        ["/assets/Home_page/Concerts/webp/1.51.jpg_d5781p.webp"],
+        ["/assets/Home_page/Concerts/webp/1.52.jpg_tzqngh.webp"],
       ],
       year: "2019",
       genre: "Bollywood Music Concert",
@@ -224,15 +180,20 @@ export const Events: events = {
     {
       title: "Ahmedabad Design Week",
       images: [
+        ["/assets/Home_page/Festivals/ADW/Army_chief_MM_Naravane.webp"],
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
+          "/assets/Home_page/Festivals/ADW/ADW1.webp",
+
+          "/assets/Home_page/Festivals/ADW/Lieutenant_General_B.S._Jaswal.webp",
         ],
+        ["/assets/Home_page/Festivals/ADW/Prahlad_Kakar.webp"],
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
+          "/assets/Home_page/Festivals/ADW/Masahiro_Hara.webp",
+          "/assets/Home_page/Festivals/ADW/Piyush_Mishra.webp",
         ],
       ],
       year: "2026",
-      genre: "Music Concert",
+      genre: "",
       location: "Ahmedabad, Gujarat",
       subtext: "Event Content Management",
     },
@@ -240,44 +201,45 @@ export const Events: events = {
       title: "KUGM",
       images: [
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
+          "/assets/Home_page/Festivals/KUGM/Aditya_Gadhvi.webp",
+          "/assets/Home_page/Festivals/KUGM/Hardik_Dave.webp",
         ],
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
+          "/assets/Home_page/Festivals/KUGM/Ishani_Dave.webp",
+          "/assets/Home_page/Festivals/KUGM/Jahnvi_Shrimankar.webp",
         ],
       ],
       year: "2026",
-      genre: "Music Concert",
+      genre: "",
       location: "Ahmedabad, Gujarat",
       subtext: "Event Content Management",
     },
     {
       title: "TEDx",
       images: [
-        [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
-        ],
-        [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
-        ],
+        ["/assets/Home_page/Festivals/TEDx/Akshat_Gupta.webp"],
+        ["/assets/Home_page/Festivals/TEDx/Pratik_Gandhi.webp"],
       ],
       year: "2026",
-      genre: "Music Concert",
+      genre: "",
       location: "Ahmedabad, Gujarat",
       subtext: "Event Content Management",
     },
     {
       title: "KLFF",
       images: [
+        ["/assets/Home_page/Festivals/KLFF/Anjum_Rajabali.webp"],
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live1_qpuxmp.webp",
+          "/assets/Home_page/Festivals/KLFF/Pavan_Malhotra.webp",
+          "/assets/Home_page/Festivals/KLFF/Rajit_Kapur.webp",
         ],
         [
-          "/assets/Home_page/Festivals/webp/Jasmine_Sandlas_Live_2_rf1xll.webp",
+          "/assets/Home_page/Festivals/KLFF/RJ_Devaki.webp",
+          "/assets/Home_page/Festivals/KLFF/Swastika_Mukherjee.webp",
         ],
       ],
       year: "2026",
-      genre: "Music Concert",
+      genre: "",
       location: "Ahmedabad, Gujarat",
       subtext: "Event Content Management",
     },

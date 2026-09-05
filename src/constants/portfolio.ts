@@ -8,6 +8,19 @@ export type PortfolioItem = {
   is360?: boolean;
 };
 
+/**
+ * A gallery item with optional control over how wide it sits in a media grid.
+ * Shared by case studies and product pages so both galleries behave the same.
+ */
+export type GalleryMedia = PortfolioItem & {
+  /**
+   * "full" spans the whole row (16:9), "half" sits two-up (4:3).
+   * Defaults to "full" for the first item and "half" for the rest, which gives
+   * the common "1 big + 2 small" block with no `span` needed anywhere.
+   */
+  span?: "full" | "half";
+};
+
 export type PortfolioCategory = {
   slug: string;
   title: string;

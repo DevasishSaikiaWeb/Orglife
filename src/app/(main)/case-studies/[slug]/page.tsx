@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { Heading1 } from "@/components/heading";
 import { JsonLd } from "@/components/json-ld";
+import { MediaGrid } from "@/components/media-grid";
 import { MediaTile } from "@/components/media-tile";
 import { Carousel } from "@/components/carousel";
 import {
@@ -156,34 +157,11 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
 
             {entry.gallery.length > 0 &&
               (entry.layout === "grid" ? (
-                // Lead item full width, everything after it two-up beneath.
-                <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                  {entry.gallery.map((item, index) => {
-                    // Unset `span` keeps the common shape: big lead, rest two-up.
-                    const full = (item.span ?? (index === 0 ? "full" : "half")) === "full";
-                    return (
-                      <figure
-                        key={item.media}
-                        className={cn(
-                          "overflow-hidden bg-foreground/5",
-                          full ? "sm:col-span-2 aspect-video" : "aspect-[4/3]",
-                        )}
-                      >
-                        <MediaTile
-                          src={item.media}
-                          alt={`${study.brand} — ${item.title}`}
-                          is360={item.is360}
-                          sizes={
-                            full
-                              ? "(max-width: 768px) 100vw, 90vw"
-                              : "(max-width: 640px) 100vw, 45vw"
-                          }
-                        />
-                        <figcaption className="sr-only">{item.title}</figcaption>
-                      </figure>
-                    );
-                  })}
-                </div>
+                <MediaGrid
+                  items={entry.gallery}
+                  altPrefix={study.brand}
+                  className="mt-12 md:mt-16"
+                />
               ) : (
                 <Carousel className="mt-12 md:mt-16">
                   {entry.gallery.map((item) => (
