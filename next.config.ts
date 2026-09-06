@@ -8,12 +8,15 @@ import type { NextConfig } from "next";
 const CSP = [
   "default-src 'self'",
   // Next.js injects inline bootstrap scripts; 'unsafe-inline' is required.
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  // googletagmanager.com serves gtag.js (see components/analytics.tsx).
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com data:",
-  "img-src 'self' data: blob: https://res.cloudinary.com",
+  // GA still falls back to pixel beacons in some browsers.
+  "img-src 'self' data: blob: https://res.cloudinary.com https://www.google-analytics.com https://www.googletagmanager.com",
   "media-src 'self' blob: https://res.cloudinary.com",
-  "connect-src 'self'",
+  // GA4 posts its events here; without this the tag loads but reports nothing.
+  "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
   // YouTube embeds (MediaTile). Without this, default-src 'self' blocks them.
   "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
   "frame-ancestors 'self'",

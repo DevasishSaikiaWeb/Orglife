@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/typography.css";
 import localFont from "next/font/local";
+import { Analytics } from "@/components/analytics";
 import { JsonLd } from "@/components/json-ld";
 import { LenisProvider } from "@/components/lenis";
 import { MediaProtection } from "@/components/media-protection";
@@ -144,6 +145,7 @@ export default function RootLayout({
           Skip to main content
         </a>
 
+        <Analytics />
         <MediaProtection />
         <LenisProvider>{children}</LenisProvider>
       </body>
