@@ -13,14 +13,16 @@ export function Logo() {
       <div className="group">
         <Image
           src="/images/logos/orange_footer_logo.svg"
-          alt="Orglife Logo"
+          // Hover variant of the mark below — announcing it twice would be noise.
+          alt=""
+          aria-hidden="true"
           className="w-full hidden group-hover:block"
           width={1000}
           height={800}
         />
         <Image
           src="/images/logos/footer_logo_white_orglife.svg"
-          alt="Orglife Logo"
+          alt="Orglife Industries Private Limited"
           width={1000}
           height={800}
           className="w-full group-hover:hidden"

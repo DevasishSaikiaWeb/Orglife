@@ -18,7 +18,7 @@ export const SITE = {
   themeColor: "#0a0a0a",
   backgroundColor: "#0a0a0a",
   logo: "/images/logos/logo.svg",
-  logoPng: "/images/logos/logo.png",
+  logoPng: "/images/logos/icon-512.png",
   ogImage: "/opengraph-image",
   founded: "2016",
   email: "contact@orglife.co.in",
@@ -43,8 +43,6 @@ export const SITE = {
   // Search-console / webmaster verification. Replace with real tokens.
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "",
-    bing: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "",
-    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION ?? "",
   },
 } as const;
 

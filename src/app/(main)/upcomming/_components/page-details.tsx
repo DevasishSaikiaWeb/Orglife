@@ -26,11 +26,12 @@ export function PageDetails() {
                 autoPlay
                 loop
                 muted
+                playsInline
               />
             ) : (
               <Image
                 src={data.image}
-                alt="Work Details"
+                alt={data.title ? `${data.title} — project visual` : ""}
                 width={800}
                 height={600}
                 className="w-full mt-8"

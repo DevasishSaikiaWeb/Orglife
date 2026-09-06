@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -106,16 +107,11 @@ export function MediaTile({
 
   if (isVideoFile(src)) {
     return (
-      <video
+      <ViewportVideo
         src={src}
         poster={poster}
-        autoPlay
-        muted
-        loop
-        playsInline
-        // Above-the-fold video loads immediately; the rest defers until needed.
-        preload={priority ? "auto" : "metadata"}
-        aria-label={alt || undefined}
+        priority={priority}
+        ariaLabel={alt}
         className={cn(
           natural ? "w-full h-auto" : "size-full object-cover",
           className,
@@ -140,6 +136,92 @@ export function MediaTile({
         natural ? "w-full h-auto" : "size-full object-cover",
         className,
       )}
+    />
+  );
+}
+
+/**
+ * Autoplaying video that only runs while it is on screen.
+ *
+ * A media-heavy page can hold a dozen of these; letting them all decode at once
+ * burns battery and main-thread time for frames nobody is looking at. The
+ * observer pauses each one as it leaves the viewport and resumes it on return,
+ * and never force-plays for viewers who asked for reduced motion.
+ */
+function ViewportVideo({
+  src,
+  poster,
+  priority,
+  ariaLabel,
+  className,
+}: {
+  src: string;
+  poster?: string;
+  priority: boolean;
+  ariaLabel?: string;
+  className?: string;
+}) {
+  const ref = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Once the viewer stops a video themselves — pausing it, or closing the
+    // iOS fullscreen player — we stay out of the way. Without this the
+    // observer resumes playback the next time the tile scrolls into view,
+    // which on iOS re-opens fullscreen and feels like the page fighting back.
+    let stoppedByViewer = false;
+    let pausedByObserver = false;
+
+    const onPause = () => {
+      if (!pausedByObserver) stoppedByViewer = true;
+      pausedByObserver = false;
+    };
+    const onExitFullscreen = () => {
+      stoppedByViewer = true;
+    };
+
+    el.addEventListener("pause", onPause);
+    el.addEventListener("webkitendfullscreen", onExitFullscreen);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (!reduced && !stoppedByViewer) void el.play().catch(() => {});
+        } else if (!el.paused) {
+          pausedByObserver = true;
+          el.pause();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      el.removeEventListener("pause", onPause);
+      el.removeEventListener("webkitendfullscreen", onExitFullscreen);
+    };
+  }, []);
+
+  return (
+    <video
+      ref={ref}
+      src={src}
+      poster={poster}
+      autoPlay
+      muted
+      loop
+      playsInline
+      disablePictureInPicture
+      // Legacy WebKit inline attribute — harmless elsewhere.
+      {...{ "webkit-playsinline": "true" }}
+      // Above-the-fold video loads immediately; the rest defers until needed.
+      preload={priority ? "auto" : "metadata"}
+      aria-label={ariaLabel || undefined}
+      className={className}
     />
   );
 }

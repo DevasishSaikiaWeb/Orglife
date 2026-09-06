@@ -61,7 +61,7 @@ export function TextWithImageCard({
       </div>
       <div className="h-full flex flex-col justify-between">
         <div>
-          <p className=" font-body mt-4 text-pretty lg:max-w-full">{title}</p>
+          <h3 className=" font-body mt-4 text-pretty lg:max-w-full">{title}</h3>
           <p className="font-xs-body mt-2 text-muted-foreground">{date}</p>
           <p className="font-small-body mt-2 text-muted-foreground text-wrap">
             {description}

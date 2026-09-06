@@ -1,4 +1,5 @@
-import { BlogsSection } from "@/components/blogs";
+// Hidden for now — re-enable together with <BlogsSection /> below.
+// import { BlogsSection } from "@/components/blogs";
 import { ContactForPartnership } from "@/components/contact-for-partnership";
 import { JsonLd } from "@/components/json-ld";
 import { LogoGrid } from "@/components/logo-grid";
@@ -62,7 +63,8 @@ export default function HomePage() {
         <StatsSection />
         <LogoGrid variant="marquee" />
         <PlatformsSection />
-        <BlogsSection />
+        {/* Hidden for now — uncomment to show the blogs section again. */}
+        {/* <BlogsSection /> */}
         <ContactForPartnership />
       </main>
     </>

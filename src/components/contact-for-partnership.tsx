@@ -41,6 +41,7 @@ export function ContactForPartnership() {
           autoPlay
           loop
           muted
+          playsInline
         />
       </div>
     </section>

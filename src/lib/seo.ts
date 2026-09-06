@@ -17,6 +17,11 @@ type BuildMetadataArgs = {
   section?: string;
   tags?: string[];
   noIndex?: boolean;
+  /**
+   * Set on routes that ship their own `opengraph-image.tsx`, so the file
+   * convention injects the per-item card instead of the site-wide default.
+   */
+  routeImage?: boolean;
 };
 
 /**
@@ -37,16 +42,24 @@ export function buildMetadata({
   section,
   tags,
   noIndex = false,
+  routeImage = false,
 }: BuildMetadataArgs): Metadata {
   const url = absoluteUrl(path);
   const alt = imageAlt ?? `${title} — ${SITE.name}`;
-  // Only set images explicitly when the page supplies one. Leaving this
-  // undefined lets Next's file-based convention inject the route's own
-  // generated `opengraph-image` / `twitter-image` instead of a generic card.
-  const ogImage = image ? absoluteUrl(image) : undefined;
+  // Metadata files are not inherited by nested route segments, so the listing
+  // pages were shipping with no `og:image` at all — shared links rendered
+  // without a preview. Default to the site-wide generated card; routes that
+  // have their own `opengraph-image.tsx` opt out with `routeImage`.
+  const ogImage = image
+    ? absoluteUrl(image)
+    : routeImage
+      ? undefined
+      : absoluteUrl(SITE.ogImage);
 
   return {
-    title,
+    // The root layout applies a "%s | <brand>" template. A title that already
+    // names the brand would get it twice, so those opt out of the template.
+    title: title.includes(SITE.name) ? { absolute: title } : title,
     description,
     keywords: Array.from(new Set([...keywords, ...BASE_KEYWORDS])),
     authors: (authors ?? [SITE.name]).map((name) => ({

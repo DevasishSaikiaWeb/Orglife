@@ -18,15 +18,23 @@ export function Heading1({
   title,
   subtitle,
   dot,
-}: Omit<HeadingProps, "action">) {
+  as: Tag = "h1",
+}: Omit<HeadingProps, "action"> & {
+  /**
+   * Element to render. Only the tag changes — the classes are identical — so a
+   * second display heading on a page can be a semantically correct `h2`
+   * without altering a single pixel.
+   */
+  as?: "h1" | "h2";
+}) {
   return (
     <>
       {/* `whitespace-pre-line` honours explicit "\n" in a title so sections can
           control their own line breaks; ordinary titles still wrap normally. */}
-      <h1 className="font-h1 [word-spacing:1.25rem] font-heading whitespace-pre-line">
+      <Tag className="font-h1 [word-spacing:1.25rem] font-heading whitespace-pre-line">
         {title}
         {dot && <span className="dot-text">{dot}</span>}
-      </h1>
+      </Tag>
       <p className="font-body mt-2">{subtitle}</p>
     </>
   );

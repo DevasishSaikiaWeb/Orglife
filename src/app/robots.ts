@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { absoluteUrl, SITE } from "@/constants/site";
 
 export default function robots(): MetadataRoute.Robots {
-  const disallow = ["/api/", "/private/", "/_next/static/chunks/"];
+const disallow = ["/api/"];
 
   return {
     rules: [

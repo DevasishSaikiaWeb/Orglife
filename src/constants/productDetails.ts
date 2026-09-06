@@ -47,13 +47,13 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       {
         media:
           "https://res.cloudinary.com/txchjkcd/image/upload/v1788616025/1half.webp",
-        title: "Visual 1",
+        title: "1half",
         span: "half",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/image/upload/v1788616024/2half.webp",
-        title: "Visual 2",
+        title: "2half",
         span: "half",
       },
     ],
@@ -74,25 +74,25 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617811/Jain.mp4",
-        title: "Visual 1",
+        title: "Jain",
         span: "half",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617811/Shauryam_-_MAJ_THAPA.mp4",
-        title: "Visual 2",
+        title: "Shauryam Maj THAPA",
         span: "half",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617815/Sahajanand_Swami_Trailer_1.mp4",
-        title: "Visual 3",
+        title: "Sahajanand Swami Trailer 1",
         span: "half",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617812/Ravishankar_Vyas.mp4",
-        title: "Visual 4",
+        title: "Ravishankar Vyas",
         span: "half",
       },
     ],
@@ -115,37 +115,37 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788616046/2_Gujarat_Tourism.mp4",
-        title: "Visual 1",
+        title: "2 Gujarat Tourism",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788616036/Swaminarayan_podcast.mp4",
-        title: "Visual 2",
+        title: "Swaminarayan podcast",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788616040/CERC_2d_style.mp4",
-        title: "Visual 3",
+        title: "CERC 2d style",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788616053/CERC.mp4",
-        title: "Visual 4",
+        title: "CERC",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617868/Safaai_Saarthi.mp4",
-        title: "Visual 5",
+        title: "Safaai Saarthi",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788617866/Sterling_For_Web.mp4",
-        title: "Visual 6",
+        title: "Sterling For Web",
         span: "full",
       },
     ],
@@ -167,19 +167,19 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788618837/Earth_Day.mp4",
-        title: "Visual 1",
+        title: "Earth Day",
         span: "full",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
-        title: "Visual 2",
+        title: "3D brand environment walkthrough",
         span: "half",
       },
       {
         media:
           "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
-        title: "Visual 3",
+        title: "3D product design Mudo",
         span: "half",
       },
     ],
@@ -199,7 +199,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     gallery: [
       {
         media: "https://youtu.be/plihikd_thA",
-        title: "Visual 1",
+        title: "Immersive XR environment walkthrough",
         span: "full",
       },
     ],

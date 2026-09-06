@@ -52,7 +52,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "https://youtu.be/_l_EcRhd-D4",
-            title: "Divisional Archive",
+            title: "Sanyukt Vimochan HADR exercise film",
             span: "full",
           },
         ],
@@ -122,13 +122,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Indian army/WEB/PHOTOGRAPHY PROJECT 1.webp",
-            title: "Divisional Archive",
+            title: "PHOTOGRAPHY PROJECT 1",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/Indian army/WEB/VIDEOGRAPHY PROJECT 2.webp",
-            title: "Cinematic Documentation",
+            title: "VIDEOGRAPHY PROJECT 2",
             span: "half",
           },
         ],
@@ -160,13 +160,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Ministry of External Affairs/Web/Ministry of External Affairs E-Book 1.webp",
-            title: "Divisional Archive",
+            title: "Ministry of External Affairs E Book 1",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/Ministry of External Affairs/Web/Ministry of External Affairs E-Book 2.webp",
-            title: "Cinematic Documentation",
+            title: "Ministry of External Affairs E Book 2",
             span: "half",
           },
         ],
@@ -184,7 +184,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Ministry of External Affairs/Web/MEA Overseas Indian Branding.webp",
-            title: "Divisional Archive",
+            title: "MEA Overseas Indian Branding",
             span: "full",
           },
         ],
@@ -213,12 +213,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/SSWAI/Web/SSWAI Visting Card.webp",
-            title: "Divisional Archive",
+            title: "SSWAI Visiting Card",
             span: "half",
           },
           {
             media: "/assets/Case studies/SSWAI/Web/Sswai Packaging.webp",
-            title: "Cinematic Documentation",
+            title: "SSWAI Packaging",
             span: "half",
           },
         ],
@@ -234,13 +234,13 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/SSWAI/Web/Sswai Visual Branding.webp",
-            title: "Divisional Archive",
+            title: "SSWAI Visual Branding",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/SSWAI/Web/Sswai Visual Branding 2.webp",
-            title: "Cinematic Documentation",
+            title: "SSWAI Visual Branding 2",
             span: "half",
           },
         ],
@@ -257,7 +257,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/dpblcamaw/video/upload/v1788259916/Sswai_Web_riodqg.mp4",
-            title: "Divisional Archive",
+            title: "SSWAI Web",
             span: "full",
           },
         ],
@@ -273,12 +273,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/SSWAI/Web/Social Media.webp",
-            title: "Divisional Archive",
+            title: "Social Media",
             span: "half",
           },
           {
             media: "/assets/Case studies/SSWAI/Web/Social Media 1.webp",
-            title: "Cinematic Documentation",
+            title: "Social Media 1",
             span: "half",
           },
         ],
@@ -386,18 +386,18 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/dpblcamaw/video/upload/v1788169067/ARTH_TO_MARS_bqwzh4.mp4",
-            title: "Divisional Archive",
+            title: "ARTH TO MARS",
             span: "full",
           },
           {
             media:
               "/assets/Case studies/Wanta Santa/Web/Winter_wonderland.webp",
-            title: "Cinematic Documentation",
+            title: "Winter wonderland",
             span: "half",
           },
           {
             media: "/assets/Case studies/Wanta Santa/Web/Astronaut.webp",
-            title: "Cinematic Documentation",
+            title: "Astronaut",
             span: "half",
           },
         ],
@@ -414,7 +414,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/dpblcamaw/video/upload/v1788169405/Winter_Wonderland_jajl6f.mp4",
-            title: "Divisional Archive",
+            title: "Winter Wonderland",
             span: "full",
           },
           {
@@ -476,13 +476,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Landmark and Volkswagen/Web/Social media and campaign management.webp",
-            title: "Divisional Archive",
+            title: "Social media and campaign management",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/Landmark and Volkswagen/Web/Social media and campaign management 2.webp",
-            title: "Cinematic Documentation",
+            title: "Social media and campaign management 2",
             span: "half",
           },
         ],
@@ -515,7 +515,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788175233/Volkswagen_Taigun_-_Gujarat_launc.mp4",
-            title: "Divisional Archive",
+            title: "Volkswagen Taigun Gujarat launch",
             span: "full",
           },
         ],
@@ -581,13 +581,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Actuate/WEB/3D product design and visual assets1.webp",
-            title: "Divisional Archive",
+            title: "3D product design and visual assets1",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/Actuate/WEB/3D product design and visual assets2.webp",
-            title: "Cinematic Documentation",
+            title: "3D product design and visual assets2",
             span: "half",
           },
         ],
@@ -631,7 +631,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
-            title: "Divisional Archive",
+            title: "3D product design Mudo",
             span: "full",
           },
         ],
@@ -648,13 +648,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "/assets/Case studies/Mudo/AI visual assets for display1.webp",
-            title: "Divisional Archive",
+            title: "AI visual assets for display1",
             span: "half",
           },
           {
             media:
               "/assets/Case studies/Mudo/AI visual assets for display2.webp",
-            title: "Cinematic Documentation",
+            title: "AI visual assets for display2",
             span: "half",
           },
         ],
@@ -671,7 +671,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788177180/Mudo_website.mp4",
-            title: "Divisional Archive",
+            title: "Mudo website",
             span: "full",
           },
         ],
@@ -701,12 +701,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/Sterling/Brand campaign design 1.webp",
-            title: "Divisional Archive",
+            title: "Brand campaign design 1",
             span: "half",
           },
           {
             media: "/assets/Case studies/Sterling/Brand campaign design 2.webp",
-            title: "Cinematic Documentation",
+            title: "Brand campaign design 2",
             span: "half",
           },
         ],
@@ -723,13 +723,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788177693/Advertisement_concepts_1.mp4",
-            title: "Divisional Archive",
+            title: "Advertisement concepts 1",
             span: "full",
           },
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788177685/Advertisement_concepts_2.mp4",
-            title: "Cinematic Documentation",
+            title: "Advertisement concepts 2",
             span: "full",
           },
         ],
@@ -761,25 +761,25 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788270212/CERC_1.mp4",
-            title: "Divisional Archive",
+            title: "CERC 1",
             span: "full",
           },
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788270213/CERC1.1.mp4",
-            title: "Cinematic Documentation",
+            title: "CERC1.1",
             span: "half",
           },
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788270211/CERC_1.2.mp4",
-            title: "Divisional Archive",
+            title: "CERC 1.2",
             span: "half",
           },
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788270220/CERC_2.mp4",
-            title: "Cinematic Documentation",
+            title: "CERC 2",
             span: "full",
           },
         ],
@@ -809,7 +809,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/Dunes/Web/DUNES 2.webp",
-            title: "Divisional Archive",
+            title: "DUNES 2",
             span: "full",
           },
         ],
@@ -825,12 +825,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media: "/assets/Case studies/Dunes/Web/Dunes.webp",
-            title: "Divisional Archive",
+            title: "Dunes",
             span: "half",
           },
           {
             media: "/assets/Case studies/Dunes/Web/Dunes3.webp",
-            title: "Divisional Archive",
+            title: "Dunes3",
             span: "half",
           },
         ],
@@ -858,7 +858,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
-            title: "Divisional Archive",
+            title: "3D product design and SOP animation",
             span: "full",
           },
         ],
@@ -875,13 +875,13 @@ export const CASE_STUDIES: CaseStudy[] = [
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/3.mp4",
-            title: "Divisional Archive",
+            title: "3D product advertisement film",
             span: "half",
           },
           {
             media:
               "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/4.mp4",
-            title: "Divisional Archive",
+            title: "3D feature demonstration film",
             span: "half",
           },
         ],

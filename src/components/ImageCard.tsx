@@ -35,7 +35,8 @@ export function ImageCard({ img }: TextWithImageCardProps) {
         <Image
           className="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110"
           src={img}
-          alt={img}
+          alt=""
+          aria-hidden="true"
           height={450}
           width={450}
           style={{ mixBlendMode: "plus-lighter" }}  

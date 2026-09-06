@@ -19,7 +19,8 @@ const NAV_ITEMS: NavItemType[] = [
   { label: "Services", href: "/offerings" },
   { label: "Products", href: "/products" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Blogs", href: "/blogs" },
+  // Hidden for now — uncomment to bring Blogs back into the navigation.
+  // { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
 ];
 

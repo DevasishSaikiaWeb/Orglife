@@ -1,19 +1,27 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 
-/**
- * `/events/[slug]` is currently an orphan route — there is no events index,
- * it isn't in the navigation and it isn't listed in the sitemap. Keeping it
- * out of the index prevents thin/duplicate pages from being crawled.
- * Remove this file (and add the route to sitemap.ts) once events ship.
- */
-export const metadata: Metadata = {
-  robots: { index: false, follow: true },
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ slug: string }>;
 };
 
-export default function EventsSlugLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+export async function generateMetadata({
+  params,
+}: LayoutProps): Promise<Metadata> {
+  const { slug } = await params;
+  const name = decodeURIComponent(slug).replace(/[-_]+/g, " ");
+
+  return buildMetadata({
+    title: name,
+    description: `${name} — live experiences curated and produced by Orglife.`,
+    path: `/events/${slug}`,
+    section: "Events",
+    noIndex: true,
+  });
+}
+
+export default function EventsSlugLayout({ children }: LayoutProps) {
   return children;
 }

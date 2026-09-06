@@ -34,6 +34,8 @@ export async function generateMetadata({
     description: product.intro,
     path: `/products/${slug}`,
     section: "Products",
+    // This route generates its own OG card.
+    routeImage: true,
     keywords: [product.title, "Orglife product", "AI creative product"],
   });
 }

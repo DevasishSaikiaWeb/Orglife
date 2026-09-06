@@ -100,10 +100,6 @@ export const metadata: Metadata = {
   },
   verification: {
     ...(SITE.verification.google ? { google: SITE.verification.google } : {}),
-    ...(SITE.verification.yandex ? { yandex: SITE.verification.yandex } : {}),
-    ...(SITE.verification.bing
-      ? { other: { "msvalidate.01": SITE.verification.bing } }
-      : {}),
   },
 };
 

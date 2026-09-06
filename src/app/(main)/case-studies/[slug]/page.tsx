@@ -46,6 +46,7 @@ export async function generateMetadata({
     path: `/case-studies/${slug}`,
     type: "article",
     section: "Case Studies",
+    routeImage: true,
     keywords: [study.brand, ...study.industries, "case study", "brand work"],
   });
 }

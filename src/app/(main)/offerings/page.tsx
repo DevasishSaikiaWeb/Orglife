@@ -81,6 +81,7 @@ export default function OffetingsPage() {
 
       <section>
         <Heading1
+          as="h2"
           title={PAGE_DETAILS_TITLE2}
           subtitle={PAGE_DETAILS_SUBTITLE2}
           dot={SECTION_DOT}

@@ -31,11 +31,12 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                           autoPlay
                           loop
                           muted
+                          playsInline
                         />
                       ) : (
                         <Image
                           src={img}
-                          alt={`Section Image ${img}`}
+                          alt={`${event?.title ?? title} — event photography`}
                           width={1200}
                           height={1200}
                           className="w-full h-full"
@@ -55,11 +56,12 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                           autoPlay
                           loop
                           muted
+                          playsInline
                         />
                       ) : (
                         <Image
                           src={img}
-                          alt={`Section Image ${img}`}
+                          alt={`${event?.title ?? title} — event photography`}
                           width={1400}
                           height={1400}
                           className="w-full"

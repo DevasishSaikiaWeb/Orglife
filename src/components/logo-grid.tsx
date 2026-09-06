@@ -48,7 +48,7 @@ function MarqueeRow({
           >
             <Image
               src={src}
-              alt={isClone ? "" : `Brand logo ${index + 1}`}
+              alt=""
               aria-hidden={isClone}
               width={200}
               height={200}
@@ -101,7 +101,8 @@ export function LogoGrid({ variant = "grid", duration }: LogoGridProps) {
             >
               <Image
                 src={src}
-                alt={`Brand logo ${index + 1}`}
+                alt=""
+                aria-hidden="true"
                 width={450}
                 height={450}
                 loading="lazy"

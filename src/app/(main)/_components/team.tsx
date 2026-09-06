@@ -25,6 +25,7 @@ export function TeamSection() {
           autoPlay
           loop
           muted
+          playsInline
           className="w-full h-auto rounded-lg"
           aria-label="Video showcasing our team members and their work environment."
         />
