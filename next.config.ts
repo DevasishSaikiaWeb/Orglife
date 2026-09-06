@@ -18,7 +18,8 @@ const CSP = [
   // GA4 posts its events here; without this the tag loads but reports nothing.
   "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
   // YouTube embeds (MediaTile). Without this, default-src 'self' blocks them.
-  "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
+  // YouTube embeds, plus GTM's noscript fallback iframe.
+  "frame-src https://www.youtube-nocookie.com https://www.youtube.com https://www.googletagmanager.com",
   "frame-ancestors 'self'",
   "base-uri 'self'",
   "form-action 'self'",

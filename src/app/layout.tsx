@@ -3,7 +3,11 @@ import { Space_Grotesk } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/typography.css";
 import localFont from "next/font/local";
-import { Analytics } from "@/components/analytics";
+import {
+  Analytics,
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from "@/components/analytics";
 import { JsonLd } from "@/components/json-ld";
 import { LenisProvider } from "@/components/lenis";
 import { MediaProtection } from "@/components/media-protection";
@@ -128,6 +132,9 @@ export default function RootLayout({
       <body
         className={`${clashDisplay.variable} ${spaceGrotesk.className} antialiased`}
       >
+        {/* GTM's noscript fallback belongs immediately after <body>. */}
+        <GoogleTagManagerNoScript />
+
         {/* Site-wide entity graph: Organization, WebSite+SearchAction, LocalBusiness, FAQ */}
         <JsonLd
           data={graph(
@@ -145,6 +152,7 @@ export default function RootLayout({
           Skip to main content
         </a>
 
+        <GoogleTagManager />
         <Analytics />
         <MediaProtection />
         <LenisProvider>{children}</LenisProvider>
