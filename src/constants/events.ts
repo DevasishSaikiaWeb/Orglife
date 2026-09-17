@@ -17,8 +17,8 @@ export const Events: events = {
     {
       title: "Char Diwari",
       images: [
-        ["/assets/Home_page/Concerts/Char_diwari.webp"],
-        ["/assets/Home_page/Concerts/Char_diwari2.webp"],
+        ["/assets/Home_page/Concerts/Char Diwari/Char Diwari Concert 1.webp"],
+        ["/assets/Home_page/Concerts/Char Diwari/Char Diwari Concert 2.webp"],
       ],
       year: "2026",
       genre: "Music Concert",
@@ -28,10 +28,12 @@ export const Events: events = {
     {
       title: "Jasmine Sandlas",
       images: [
-        ["/assets/Home_page/Concerts/Jasmine_Sandlas1.webp"],
         [
-          "/assets/Home_page/Concerts/Jasmine_Sandlas2.webp",
-          "/assets/Home_page/Concerts/Jasmine_Sandlas3.webp",
+          "/assets/Home_page/Concerts/Jasmine Sandlas/Jasmine Sandlas India Tour 1.webp",
+        ],
+        [
+          "/assets/Home_page/Concerts/Jasmine Sandlas/Jasmine Sandlas India Tour 2.webp",
+          "/assets/Home_page/Concerts/Jasmine Sandlas/Jasmine Sandlas India Tour 3.webp",
         ],
       ],
       year: "2026",
@@ -41,7 +43,11 @@ export const Events: events = {
     },
     {
       title: "Madhur Sharma",
-      images: [["/assets/Home_page/Concerts/Madhur_Sharma.webp"]],
+      images: [
+        [
+          "/assets/Home_page/Concerts/Madhur Sharma/Madhur Sharma Concert x Orglife.webp",
+        ],
+      ],
       year: "2026",
       genre: "Music Concert",
       location: "Ahmedabad, Gujarat",
@@ -174,22 +180,40 @@ export const Events: events = {
       location: "Ahmedabad, Gujarat",
       subtext: "Production & Post Production",
     },
+    {
+      title: "Lucky Ali",
+      images: [
+        ["/assets/Home_page/Concerts/Lucky Ali/Lucky Ali 1.webp"],
+        [
+          "/assets/Home_page/Concerts/Lucky Ali/Lucky Ali 2.webp",
+          "/assets/Home_page/Concerts/Lucky Ali/Lucky Ali 3.webp",
+        ],
+      ],
+      year: "2018",
+      genre: "Music Concert",
+      location: "Ahmedabad, Gujarat",
+      subtext: "Production & Post Production",
+    },
   ],
 
   Events: [
     {
       title: "Ahmedabad Design Week",
       images: [
-        ["/assets/Home_page/Festivals/ADW/Army_chief_MM_Naravane.webp"],
+        ["/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 1.webp"],
         [
-          "/assets/Home_page/Festivals/ADW/ADW1.webp",
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 2.webp",
 
-          "/assets/Home_page/Festivals/ADW/Lieutenant_General_B.S._Jaswal.webp",
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 3.webp",
         ],
-        ["/assets/Home_page/Festivals/ADW/Prahlad_Kakar.webp"],
+        ["/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 4.webp"],
         [
-          "/assets/Home_page/Festivals/ADW/Masahiro_Hara.webp",
-          "/assets/Home_page/Festivals/ADW/Piyush_Mishra.webp",
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 5.webp",
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 6.webp",
+        ],
+        [
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 7.webp",
+          "/assets/Home_page/Festivals/ADW/Ahmedabad Design Week 8.webp",
         ],
       ],
       year: "2021 - 2026",
@@ -201,12 +225,12 @@ export const Events: events = {
       title: "KUGM",
       images: [
         [
-          "/assets/Home_page/Festivals/KUGM/Aditya_Gadhvi.webp",
-          "/assets/Home_page/Festivals/KUGM/Hardik_Dave.webp",
+          "/assets/Home_page/Festivals/KUGM/KUGM 1.webp",
+          "/assets/Home_page/Festivals/KUGM/KUGM 2.webp",
         ],
         [
-          "/assets/Home_page/Festivals/KUGM/Ishani_Dave.webp",
-          "/assets/Home_page/Festivals/KUGM/Jahnvi_Shrimankar.webp",
+          "/assets/Home_page/Festivals/KUGM/KUGM 3.webp",
+          "/assets/Home_page/Festivals/KUGM/KUGM 4.webp",
         ],
       ],
       year: "₹2021 - 2025",
@@ -217,8 +241,8 @@ export const Events: events = {
     {
       title: "TEDx",
       images: [
-        ["/assets/Home_page/Festivals/TEDx/Akshat_Gupta.webp"],
-        ["/assets/Home_page/Festivals/TEDx/Pratik_Gandhi.webp"],
+        ["/assets/Home_page/Festivals/TEDx/Event - Akshat Gupta TEDX.webp"],
+        ["/assets/Home_page/Festivals/TEDx/Event - Pratik Gandhi TEDX.webp"],
       ],
       year: "2022 - 2023",
       genre: "",
@@ -228,14 +252,14 @@ export const Events: events = {
     {
       title: "KLFF",
       images: [
-        ["/assets/Home_page/Festivals/KLFF/Anjum_Rajabali.webp"],
+        ["/assets/Home_page/Festivals/KLFF/KLFF 1.webp"],
         [
-          "/assets/Home_page/Festivals/KLFF/Pavan_Malhotra.webp",
-          "/assets/Home_page/Festivals/KLFF/Rajit_Kapur.webp",
+          "/assets/Home_page/Festivals/KLFF/KLFF 2.webp",
+          "/assets/Home_page/Festivals/KLFF/KLFF 3.webp",
         ],
         [
-          "/assets/Home_page/Festivals/KLFF/RJ_Devaki.webp",
-          "/assets/Home_page/Festivals/KLFF/Swastika_Mukherjee.webp",
+          "/assets/Home_page/Festivals/KLFF/KLFF 4.webp",
+          "/assets/Home_page/Festivals/KLFF/KLFF 5.webp",
         ],
       ],
       year: "2023",

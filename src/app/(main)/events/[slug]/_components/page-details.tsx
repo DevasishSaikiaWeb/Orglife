@@ -17,13 +17,14 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
       <section className="mt-16 grid grid-cols-1 space-y-32">
         {data.map((event: any) => {
           return (
-            <div className="grid grid-cols-1 space-8 ">
+            <div key={event?.title} className="grid grid-cols-1 space-8 ">
               {event?.images.map((images: any) =>
                 images?.length > 1 ? (
-                  <div className={"mt-8 grid gap-8 grid-cols-2"}>
+                  <div key={images[0]} className={"mt-8 grid gap-8 grid-cols-2"}>
                     {images?.map((img: string) => {
                       return img.includes(".mp4") ? (
                         <video
+                          key={img}
                           src={img}
                           width={1200}
                           height={1200}
@@ -35,6 +36,7 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                         />
                       ) : (
                         <Image
+                          key={img}
                           src={img}
                           alt={`${event?.title ?? title} — event photography`}
                           width={1200}
@@ -45,10 +47,11 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                     })}
                   </div>
                 ) : (
-                  <div className="mt-8">
+                  <div key={images?.[0]} className="mt-8">
                     {images?.map((img: string) => {
                       return img.includes(".mp4") ? (
                         <video
+                          key={img}
                           src={img}
                           width={800}
                           height={600}
@@ -60,6 +63,7 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                         />
                       ) : (
                         <Image
+                          key={img}
                           src={img}
                           alt={`${event?.title ?? title} — event photography`}
                           width={1400}

@@ -14,7 +14,7 @@ export const PAGE_DETAILS_SUBTITLE =
 
 export const CURRENT_PROJECTS: Project[] = [
   {
-    img: "assets/Home_page/Exploring a new world of creative possibilities/Sswai.mp4",
+    img: "/assets/Home_page/Exploring a new world of creative possibilities/Sswai.mp4",
     title: "SSWAI",
     description:
       "From brand identity design concepts to ingenious brand communications, we are empowering this young and dynamic fashion brand.",
@@ -22,7 +22,7 @@ export const CURRENT_PROJECTS: Project[] = [
     urlSlug: "sswai",
   },
   {
-    img: "assets/Home_page/Exploring a new world of creative possibilities/Army.mp4",
+    img: "/assets/Home_page/Exploring a new world of creative possibilities/Army.mp4",
     title: "Indian Army",
     description:
       "Our engagement covers multiple visual communication assignments for the Indian Army across domains and geographies.",
@@ -30,7 +30,7 @@ export const CURRENT_PROJECTS: Project[] = [
     urlSlug: "indian-army",
   },
   {
-    img: "assets/Home_page/Exploring a new world of creative possibilities/KU.mp4",
+    img: "/assets/Home_page/Exploring a new world of creative possibilities/KU.mp4",
     title: "Karnavati University",
     description:
       "Brand narratives, compelling visual communications and event theme designs, we’ve loved working with this brand, for half a decade now.",

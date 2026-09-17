@@ -73,27 +73,29 @@ const nextConfig: NextConfig = {
   },
 
   async headers() {
+    // Long-lived caching is for production only. In dev, Turbopack reuses the
+    // same chunk filenames across edits, so an `immutable` header pins the
+    // browser to stale JavaScript: the server sends fresh HTML, but the page
+    // hydrates with a year-old bundle and renders old data.
+    const isProd = process.env.NODE_ENV === "production";
+
     return [
       { source: "/:path*", headers: securityHeaders },
-      {
-        // Immutable, long-lived caching for hashed static assets.
-        source: "/_next/static/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/assets/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
+      // `/_next/static` is deliberately not listed: Next already serves it
+      // with immutable caching in production, where filenames are hashed.
+      ...(isProd
+        ? [
+            {
+              source: "/assets/:path*",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+              ],
+            },
+          ]
+        : []),
     ];
   },
 };
