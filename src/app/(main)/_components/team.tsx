@@ -19,7 +19,7 @@ export function TeamSection() {
       />
       <div className="mt-8">
         <video
-          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1784795213/WEBSITE_HOMEPAGE_2ST_VIDEO_xd6txn.mp4"
+          src="https://cdn.orglife.co.in/orglife_website/WEBSITE_HOMEPAGE_2ST_VIDEO.mp4"
           width={1920}
           height={1080}
           autoPlay

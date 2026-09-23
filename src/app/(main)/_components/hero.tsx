@@ -20,7 +20,7 @@ export function HeroSection() {
 
       <div className="mt-8" id="video-wrapper">
         <video
-          src="https://res.cloudinary.com/dpblcamaw/video/upload/v1784795221/WEBSITE_HOMEPAGE_1ST_VIDEO_fw32g7.mp4"
+          src="https://cdn.orglife.co.in/orglife_website/WEBSITE_HOMEPAGE_1ST_VIDEO.mp4"
           loop
           autoPlay
           muted

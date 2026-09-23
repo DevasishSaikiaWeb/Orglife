@@ -13,8 +13,8 @@ const CSP = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com data:",
   // GA still falls back to pixel beacons in some browsers.
-  "img-src 'self' data: blob: https://res.cloudinary.com https://www.google-analytics.com https://www.googletagmanager.com",
-  "media-src 'self' blob: https://res.cloudinary.com",
+  "img-src 'self' data: blob: https://res.cloudinary.com https://cdn.orglife.co.in https://www.google-analytics.com https://www.googletagmanager.com",
+  "media-src 'self' blob: https://res.cloudinary.com https://cdn.orglife.co.in",
   // GA4 posts its events here; without this the tag loads but reports nothing.
   "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
   // YouTube embeds (MediaTile). Without this, default-src 'self' blocks them.
@@ -64,6 +64,7 @@ const nextConfig: NextConfig = {
     contentDispositionType: "attachment",
     remotePatterns: [
       { protocol: "https", hostname: "res.cloudinary.com", pathname: "/**" },
+      { protocol: "https", hostname: "cdn.orglife.co.in", pathname: "/**" },
     ],
   },
 
