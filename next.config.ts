@@ -59,6 +59,8 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 480, 640, 750, 828, 1080, 1200, 1440, 1920, 2560],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // 85 is used for large photography; Next 16 rejects unlisted values.
+    qualities: [75, 85],
     minimumCacheTTL: 60 * 60 * 24 * 365,
     dangerouslyAllowSVG: false,
     contentDispositionType: "attachment",

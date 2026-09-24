@@ -18,6 +18,11 @@ type TextWithImageCardProps = {
    * renders as plain content instead of a link.
    */
   linked?: boolean;
+  /**
+   * Rendered width hint for next/image. Without it Next only generates a ~400px
+   * image, which gets upscaled (and blurred) in wide grid columns.
+   */
+  sizes?: string;
 };
 
 export function TextWithImageCard({
@@ -30,6 +35,7 @@ export function TextWithImageCard({
   urlSlug,
   date,
   linked = true,
+  sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
 }: TextWithImageCardProps) {
   const content = (
     <>
@@ -56,6 +62,8 @@ export function TextWithImageCard({
             alt={`${title}`}
             height={450}
             width={squareImage ? 450 : 400}
+            sizes={sizes}
+            quality={85}
           />
         )}
       </div>

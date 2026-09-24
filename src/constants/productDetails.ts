@@ -19,7 +19,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "Aigio is here to democratize enterprise-grade brand strategy for organizations of all sizes. This is more than a tool. It’s a paradigm shift that replaces guesswork with deep-researched brand discovery, high-fidelity insights and intelligent branding direction.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616028/AIGIO_2.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/AIGIO/AIGIO.mp4",
     sectionHeading: "Insight over guesswork.",
     sectionText_1:
       "AIGIO blends two decades of strategic creative expertise with modern data intelligence. With focus on features such as industry research to brand strategy, content and communication design to marketing campaigns, Aigio is engineered as the first true Operating System for Brand Continuity.",
@@ -38,7 +38,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "An evolved K-8 EdTech and cognitive assessment platform operating at the intersection of AI-generated entertainment and life-skills education, Microminds is driven by culturally localized, AI-generated animated short films on various foundational learning domains, paired with dynamic, real-time AI-driven quantitative and qualitative reasoning assessments.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616027/logo_reveal.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/Microminds/Micro_Minds.mp4",
     sectionHeading: "Building the next generation.",
     sectionText_1:
       "Microminds exists to eradicate the modern Indian parenting dilemma by transforming passive digital consumption into active cognitive and behavioral development. We do not just occupy a child's time. We engineer cinematic environments where essential life skills ranging from basic financial literacy to grassroots civic sense are absorbed, tested, and proven to parents in real time. Our purpose is to build the behavioral architecture of the next generation without sacrificing the entertainment value they crave.",
@@ -46,13 +46,13 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     gallery: [
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/image/upload/v1788616025/1half.webp",
+          "/assets/Products/webp/1half.png",
         title: "1half",
         span: "half",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/image/upload/v1788616024/2half.webp",
+          "/assets/Products/webp/2half.png",
         title: "2half",
         span: "half",
       },
@@ -65,7 +65,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "Our proprietary AI film architecture — a production engine built from the ground up and integrated with the world's leading AI platforms and LLMs powers a cinematic production capability that creates films, short-format series and animation content at global broadcast standards.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616049/ALL_FILMS.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/Ai+Films/Ai+Films.mp4",
     sectionHeading: "Cinema, reimagined.",
     sectionText_1:
       "Our AI cinematic films vertical revolutionizes the process of modern film-making. Desperate for efficiency, every industry is currrently looking up to the generative technology boom. What we have realized is that this has led to a chaotic creator economy full of operators producing generic visuals built on stolen intellectual property. Our cinematic vertical aims to sever this compromise. We indulge in regionally authentic, culturally accurate cinematic AI production tailored specifically for the Indian subcontinent's advertising and film industries, backed by enterprise-level IP indemnification and indigenously designed workflows and pipelines.",
@@ -73,25 +73,25 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     gallery: [
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617811/Jain.mp4",
+          "https://youtu.be/TX6831Tj3I4",
         title: "Jain",
         span: "half",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617811/Shauryam_-_MAJ_THAPA.mp4",
+          "https://youtu.be/5VFoURMiqcA",
         title: "Shauryam Maj THAPA",
         span: "half",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617815/Sahajanand_Swami_Trailer_1.mp4",
+          "https://youtu.be/0hmtabZKX-E",
         title: "Sahajanand Swami Trailer 1",
         span: "half",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617812/Ravishankar_Vyas.mp4",
+          "https://youtu.be/284oE-Kxta4",
         title: "Ravishankar Vyas",
         span: "half",
       },
@@ -106,7 +106,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "What makes our brand films and ads different is not the tools. It is the creative intelligence layered between them — the proprietary frameworks, the directorial discipline, brand alignment and the creative rigour that ensures every film we produce is a brand asset, not just a generated video.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616053/1.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/Ai+Campaigns/Ai+Campaigns.mp4",
     sectionHeading: "Stories that scale.",
     sectionText_1:
       "We blend experienced visualizers and creative animators with technologists, and as a result the output shifts from algorithmic generation to intentional cinematic direction. This hybrid approach allows us to slash traditional visual effects production costs and accelerate slow storyboarding processes without sacrificing the photorealism and consistency required by corporate clients and brands. The technology simply acts as the camera, while human directorial vision remains the decisive factor.",
@@ -114,37 +114,37 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     gallery: [
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788616046/2_Gujarat_Tourism.mp4",
+          "https://youtu.be/Y1WlZ0QerQk",
         title: "2 Gujarat Tourism",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788616036/Swaminarayan_podcast.mp4",
+          "https://youtu.be/IhU0OS1yAHQ",
         title: "Swaminarayan podcast",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788616040/CERC_2d_style.mp4",
+          "https://youtu.be/M6LBEXciGXc",
         title: "CERC 2d style",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788616053/CERC.mp4",
+          "https://youtu.be/i1hZi9wN5uo",
         title: "CERC",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617868/Safaai_Saarthi.mp4",
+          "https://youtu.be/zcnNJksHR54",
         title: "Safaai Saarthi",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788617866/Sterling_For_Web.mp4",
+          "https://youtu.be/PAzwYo496a4",
         title: "Sterling For Web",
         span: "full",
       },
@@ -157,7 +157,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "We produce 3D animated content across the full spectrum of formats and applications — from hyper-real product visualisations and animated brand mascots to stylised character series, process demonstration films, and fully animated campaign content — using a production pipeline that combines proprietary creative frameworks with industry-leading 3D modelling, rigging, and rendering platforms.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616042/3D_Showreel4.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/Animation/3D_Showreel4.mp4",
     heroIs360: false,
     sectionHeading: "From pixel ideas to live visual environments.",
     sectionText_1:
@@ -166,19 +166,19 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     gallery: [
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788618837/Earth_Day.mp4",
+          "https://youtu.be/FrhvNediaOg",
         title: "Earth Day",
         span: "full",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
+          "https://youtu.be/95W5Qb97rx8",
         title: "3D brand environment walkthrough",
         span: "half",
       },
       {
         media:
-          "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
+          "https://youtu.be/U0nYVjwt3aY",
         title: "3D product design Mudo",
         span: "half",
       },
@@ -191,7 +191,7 @@ export const PRODUCT_DETAILS: Record<string, ProductDetail> = {
     intro:
       "Product showcases, brand worlds, interactive experiences, immersive training environments, spatial campaign installations - all built from brief to final render with the same directorial discipline we bring to every film we make.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788616050/Earth_To_Mars.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Products/Extended+Reality/Earth_To_Mars.mp4",
     sectionHeading: "From pixel ideas to live visual environments.",
     sectionText_1:
       "Scrolling through a story is one thing. Experiencing it firest-hand is something else entirely, something your audience will not forget — because the human brain does not forget places and experiences the way it forgets pages. We design and produce 3D virtual reality environments and assets — brand worlds, product showrooms, spatial storytelling installations, and interactive XR experiences — for brands that want their audience to feel the brand from the inside rather than watch it on a flat screen.",

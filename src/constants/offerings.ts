@@ -10,15 +10,15 @@ export const PAGE_DETAILS_SUBTITLE2 =
 export const OFFERING_CARDS = [
   {
     title: "Brand Foundation Design",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795134/Brand_Foundation_Design_vqxle4.mp4",
+    img: "https://cdn.orglife.co.in/orglife_website/Services/Brand_Foundation_Design.mp4",
   },
   {
     title: "Visual Content and Communication",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795135/Visual_Content_and_Communication_bxobk1.mp4",
+    img: "https://cdn.orglife.co.in/orglife_website/Services/Visual_Content_and_Communication.mp4",
   },
   {
     title: "Brand Digital Assets",
-    img: "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795136/Brand_Digital_Assets_qactdz.mp4",
+    img: "https://cdn.orglife.co.in/orglife_website/Services/Brand_Digital.mp4",
   },
 ];
 

@@ -36,7 +36,7 @@ export function ContactForPartnership() {
       </div>
       <div className="flex-1">
         <video
-          src={"https://res.cloudinary.com/dpblcamaw/video/upload/v1784795218/WEBSITE_-_INVEST_IN_TOMO_njohum.mp4"}
+          src={"https://cdn.orglife.co.in/orglife_website/WEBSITE_Footer.mp4"}
           className="object-cover min-h-full min-w-full"
           autoPlay
           loop

@@ -32,13 +32,13 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "indian-army",
     brand: "Indian Army",
-    cardImage: `https://res.cloudinary.com/txchjkcd/video/upload/v1788178857/Army.mp4`,
+    cardImage: `https://cdn.orglife.co.in/orglife_website/Army.mp4`,
     cardDescription:
       "Multiple visual communication assignments for the Indian Army across domains and geographies.",
     industries: ["Indian Defence Forces"],
     intro:
       "Crafting visual communications with the discipline, dignity and impact the nation’s forces deserve.",
-    heroImage: `https://res.cloudinary.com/dpblcamaw/video/upload/v1788161454/1._Indian_Army_Logo_Animation_dnfuz7.mp4`,
+    heroImage: `https://cdn.orglife.co.in/orglife_website/Case+Studies/Indian+Army/Indian+Army+Logo+Animation.mp4`,
     cases: [
       {
         thecase:
@@ -95,7 +95,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/dpblcamaw/video/upload/v1784795237/Army_Ai_Video_fgivpc.mp4",
+              "https://youtu.be/WpXvyE5gm2I",
             title: "Hornbill Tribute Series",
           },
           {
@@ -139,14 +139,14 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: "ministry-of-external-affairs",
     brand: "Ministry of External Affairs",
     cardImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178855/MEA.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/MEA.mp4",
     cardDescription:
       "Projects ranging from a series of ebooks to international event communications.",
     industries: ["Government"],
     intro:
       "Communicating India to the world — with the nuance diplomacy demands.",
     heroImage:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1788166899/1_MEA_LOGO_ANIMATION_LOOP_c4qio7_bhdrwo.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/MEA/MEA+LOGO+ANIMATION.mp4",
     cases: [
       {
         thecase: "Ebooks of multiple events, with multimedia features",
@@ -194,13 +194,13 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "sswai",
     brand: "SSWAI",
-    cardImage: `https://res.cloudinary.com/txchjkcd/video/upload/v1788178881/Sswai.mp4`,
+    cardImage: `https://cdn.orglife.co.in/orglife_website/Sswai.mp4`,
     cardDescription:
       "From brand identity design concepts to ingenious brand communications for a young, dynamic fashion brand.",
     industries: ["Fashion and Lifestyle"],
     intro:
       "Empowering a young and dynamic contemporary Indian fashion brand with a bold, distinctive identity.",
-    heroImage: `https://res.cloudinary.com/dpblcamaw/video/upload/v1788167898/1_Sswai_Logo_Animation_kfnfla_oktstr.mp4`,
+    heroImage: `https://cdn.orglife.co.in/orglife_website/Case+Studies/Sswai/Sswai+Logo+Animation.mp4`,
     cases: [
       {
         thecase: "Brand foundation design",
@@ -256,7 +256,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/dpblcamaw/video/upload/v1788259916/Sswai_Web_riodqg.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Sswai/Sswai_Web.mp4",
             title: "SSWAI Web",
             span: "full",
           },
@@ -288,12 +288,12 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "ku",
     brand: "Karnavati University",
-    cardImage: `https://res.cloudinary.com/txchjkcd/video/upload/v1788178860/KU.mp4`,
+    cardImage: `https://cdn.orglife.co.in/orglife_website/KU.mp4`,
     cardDescription:
       "Brand narratives, compelling visual communications and event theme designs — for half a decade now.",
     industries: ["Education"],
     intro: "An exciting journey of creative partnership in storytelling.",
-    heroImage: `https://res.cloudinary.com/txchjkcd/video/upload/v1788170580/Karnavati_university_Logo_Animation.mp4`,
+    heroImage: `https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/Karnavati_University.mp4`,
     cases: [
       {
         thecase: "Visual content and communication",
@@ -305,33 +305,33 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171879/1_content_and_communication.mp4",
+              "https://youtu.be/SheRORR7KUg",
             title: "Event Theme",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171881/1.1_content_and_communication.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/content_and_communication_1.1.mp4",
             title: "Brand Narrative",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171876/1.2_content_and_communication.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/content_and_communication_1.2.mp4",
             title: "Campus Communications",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171895/1.3_content_and_communication.mp4",
+              "https://youtu.be/U8Jx2YHMV98",
             title: "Brand Narrative",
             span: "full",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171874/1.4_content_and_communication.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/content_and_communication_1.4.mp4",
             title: "Campus Communications",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788171871/1.5_content_and_communication.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/content_and_communication_1.5.mp4",
             title: "Campus Communications",
           },
         ],
@@ -346,12 +346,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788172211/2_Visual_Content_Strategy.mp4",
+              "https://youtu.be/UuQ9oRVBAsU",
             title: "Brand Narrative",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788173509/2.1_Visual_Content_Strategy.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/KU/Creative_direction_of_event_IPs.mp4",
             title: "Campus Communications",
           },
           {
@@ -367,12 +367,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: "wanta-santa",
     brand: "Wanta Santa",
     cardImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178860/WantASanta.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/WantASanta.mp4",
     cardDescription: "Never-before magic in the field of immersive experience.",
     industries: ["Amusement", "Event Management"],
     intro: "An universe of virtual worlds and magical experiences.",
     heroImage:
-      "https://res.cloudinary.com/dpblcamaw/video/upload/v1788168993/Wanta_SantaLogo_Animation_cyjegw.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Wanta+Santa/Wanta_SantaLogo_Animation.mp4",
     cases: [
       {
         thecase: "Mission Mars",
@@ -385,7 +385,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/dpblcamaw/video/upload/v1788169067/ARTH_TO_MARS_bqwzh4.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Wanta+Santa/ARTH_TO_MAR.mp4",
             title: "ARTH TO MARS",
             span: "full",
           },
@@ -413,7 +413,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/dpblcamaw/video/upload/v1788169405/Winter_Wonderland_jajl6f.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Wanta+Santa/Winter_Wonderland.mp4",
             title: "Winter Wonderland",
             span: "full",
           },
@@ -436,7 +436,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industries: ["Automobile"],
     intro: "Driving impactful automobile communications across platforms.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788173767/Landmark_Group_Logo.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Group+Landmark/Landmark_Group_Logo.mp4",
     cases: [
       {
         thecase: "Visual content and communication",
@@ -449,7 +449,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788173876/Visual_content_and_communication_2.mp4",
+              "https://youtu.be/rKUr_scBdFI",
             title: "Hornbill Tribute Series",
           },
           {
@@ -498,7 +498,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788175144/3D_CGI_animated_content.mp4",
+              "https://youtu.be/WmXlhXB2xWQ",
             title: "Hornbill Tribute Series",
           },
         ],
@@ -514,7 +514,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788175233/Volkswagen_Taigun_-_Gujarat_launc.mp4",
+              "https://youtu.be/leAXEb6ACrc",
             title: "Volkswagen Taigun Gujarat launch",
             span: "full",
           },
@@ -531,7 +531,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industries: ["Manufacturing", "Industrial"],
     intro: "World-class hydraulics. Finally, a world-class brand to match.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788175395/Actuate_Logo_Animation.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Actuate+Hyadraulics/Actuate_Logo_Animation.mp4",
     cases: [
       {
         thecase: "Brand identity design/ Rebranding",
@@ -612,12 +612,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: "mudo",
     brand: "Mudo",
     cardImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788178857/Mudo.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Mudo.mp4",
     cardDescription: "Nobody ever noticed an earplug. Until this one.",
     industries: ["Healthcare / Wellness", "Lifestyle"],
     intro: "Nobody ever noticed an earplug. Until this one.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788176620/Mudo_Logo_Animation.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Mudo/Mudo+Logo+Animation.mp4",
     cases: [
       {
         thecase: "3D product design",
@@ -630,7 +630,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788176711/3D_product_design_Mudo.mp4",
+              "https://youtu.be/U0nYVjwt3aY",
             title: "3D product design Mudo",
             span: "full",
           },
@@ -670,7 +670,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177180/Mudo_website.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Mudo/Mudo Web.mp4",
             title: "Mudo website",
             span: "full",
           },
@@ -688,7 +688,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     intro:
       "One brand. Every facility. Creating communication that goes beyond just care.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788177309/Sterling_Logo_Animation.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Sterling/Sterling_Logo_Animation.mp4",
     cases: [
       {
         thecase: "Brand campaign design",
@@ -722,13 +722,13 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177693/Advertisement_concepts_1.mp4",
+              "https://youtu.be/LBcVT0UhsG4",
             title: "Advertisement concepts 1",
             span: "full",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788177685/Advertisement_concepts_2.mp4",
+              "https://youtu.be/PAzwYo496a4",
             title: "Advertisement concepts 2",
             span: "full",
           },
@@ -740,14 +740,14 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: "cerc",
     brand: "CERC",
     cardImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/CERC.mp4",
     cardDescription:
       "Harnessing the power of visual storytelling in spreading awareness among children.",
     industries: ["Consumer Services", "Research/Advocacy"],
     intro:
       "Harnessing the power of visual storytelling in spreading awareness among children.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788270208/Render.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/CERC/CERC_Logo_Animation.mp4",
     cases: [
       {
         thecase: "AI-powered Educational Videos",
@@ -760,25 +760,25 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270212/CERC_1.mp4",
+              "https://youtu.be/YuIcr6e7jFk",
             title: "CERC 1",
             span: "full",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270213/CERC1.1.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/CERC/CERC1.1.mp4",
             title: "CERC1.1",
             span: "half",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270211/CERC_1.2.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/CERC/CERC_1.2.mp4",
             title: "CERC 1.2",
             span: "half",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788270220/CERC_2.mp4",
+              "https://youtu.be/i1hZi9wN5uo",
             title: "CERC 2",
             span: "full",
           },
@@ -796,7 +796,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     intro:
       "Laying the foundation of a new vision, a new brand in the field of modern education.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788266823/Dunes_Logo_Animations.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Dunes+College/Dunes+College+Logo.mp4",
     cases: [
       {
         thecase: "Brand foundation design",
@@ -845,7 +845,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industries: ["Consumer Durables"],
     intro: "Building a virtual world with the three dimensions.",
     heroImage:
-      "https://res.cloudinary.com/txchjkcd/video/upload/v1788266915/1.mp4",
+      "https://cdn.orglife.co.in/orglife_website/Case+Studies/Verity/Verity_Log.mp4",
     cases: [
       {
         thecase: "3D product designs and SOPs",
@@ -857,7 +857,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266911/2.mp4",
+              "https://youtu.be/95W5Qb97rx8",
             title: "3D product design and SOP animation",
             span: "full",
           },
@@ -874,13 +874,13 @@ export const CASE_STUDIES: CaseStudy[] = [
         gallery: [
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/3.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Verity/3.mp4",
             title: "3D product advertisement film",
             span: "half",
           },
           {
             media:
-              "https://res.cloudinary.com/txchjkcd/video/upload/v1788266918/4.mp4",
+              "https://cdn.orglife.co.in/orglife_website/Case+Studies/Verity/4.mp4",
             title: "3D feature demonstration film",
             span: "half",
           },

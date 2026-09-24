@@ -41,7 +41,11 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                           alt={`${event?.title ?? title} — event photography`}
                           width={1200}
                           height={1200}
-                          className="w-full h-full"
+                          // Two-up row (on every breakpoint). object-cover crops
+                          // instead of stretching when paired photos differ in ratio.
+                          sizes="50vw"
+                          quality={85}
+                          className="w-full h-full object-cover"
                         />
                       );
                     })}
@@ -68,6 +72,8 @@ export function PageDetails({ data, title }: { data: any; title: string }) {
                           alt={`${event?.title ?? title} — event photography`}
                           width={1400}
                           height={1400}
+                          sizes="100vw"
+                          quality={85}
                           className="w-full"
                         />
                       );

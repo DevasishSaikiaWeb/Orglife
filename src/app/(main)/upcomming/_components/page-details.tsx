@@ -34,6 +34,9 @@ export function PageDetails() {
                 alt={data.title ? `${data.title} — project visual` : ""}
                 width={800}
                 height={600}
+                // Full-width: without sizes Next serves an ~800px file here.
+                sizes="100vw"
+                quality={85}
                 className="w-full mt-8"
               />
             )}

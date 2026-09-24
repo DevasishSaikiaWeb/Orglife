@@ -27,6 +27,7 @@ function Memories() {
             title={project.title}
             description={project.description}
             type="event"
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
         ))}
       </div>
